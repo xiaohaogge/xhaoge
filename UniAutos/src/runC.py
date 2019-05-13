@@ -4,8 +4,8 @@
 
 import time
 import unittest
-from src.CommonFunc.HTMLTestRunner import HTMLTestRunner
-from src.InterfaceFunc.test_search import Mysearch
+from UniAutos.src.CommonFunc.HTMLTestRunner import HTMLTestRunner
+from UniAutos.src.InterfaceFunc.Test_search import Mysearch
 
 
 if __name__ == "__main__":
@@ -23,7 +23,7 @@ if __name__ == "__main__":
     # 获取当前时间，这样便于下面的使用。
     now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
     # 打开一个文件，将result写入此file中
-    with open(r"src\report\result" + now + ".html", 'wb') as fp:
+    with open(r"..\src\report\result" + now + ".html", 'wb') as fp:
         runner = HTMLTestRunner(stream=fp,
                                 title='Nima的测试报告',
                                 description=u'详细信息:'
