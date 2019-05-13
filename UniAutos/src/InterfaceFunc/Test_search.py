@@ -1,7 +1,7 @@
 import unittest
 import json
 import requests
-from src.CommonFunc.runmethon import RunMethod
+from UniAutos.src.CommonFunc.runmethon import RunMethod
 '''
     进行测试用例的编写；
 '''
@@ -54,7 +54,7 @@ class Mysearch(unittest.TestCase):
                 result = r.json()
                 print(result)
         s = 'ssss'
-        print('他大舅就是他酒',s)
+        print('他大舅都是他舅',s)
         print('2333333333333333333333333333333333333333333333333333')
         self.assertEqual(3,3,msg='nima')
 
