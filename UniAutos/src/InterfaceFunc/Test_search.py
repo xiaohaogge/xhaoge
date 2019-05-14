@@ -1,7 +1,7 @@
 import unittest
-import json
 import requests
-from UniAutos.src.CommonFunc.runmethon import RunMethod
+from UniAutos.src.CommonFunc.runRequest import RunRequest
+from UniAutos.src.ParameteCollection.SearchParamete import nima
 '''
     进行测试用例的编写；
 '''
@@ -29,30 +29,20 @@ class Mysearch(unittest.TestCase):
                                 "searchRatio":false
                             }
                         '''
-
-    # def test_post_event_list_eid_null(self):
-    #     ''' eid 参数为空 '''
-    #     r = requests.post(self.base_url, data=self.base_data)
-    #     result = r.json()
-    #     print(result)
-    #     if r.status_code != 200:
-    #         for i in range(2):
-    #             r = requests.post(self.base_url, data=self.base_data)
-    #             result = r.json()
-    #             print(result)
+        self.testcase = RunRequest(self.method,self.base_url,self.base_data)
 
     def test01(self):
         print('测试开始了哟')
         print('正在进行测试')
 
-        r = requests.post(self.base_url, data=self.base_data)
-        result = r.json()
-        print(result)
-        if r.status_code != 200:
-            for i in range(2):
-                r = requests.post(self.base_url, data=self.base_data)
-                result = r.json()
-                print(result)
+        # r = requests.post(self.base_url, data=self.base_data)
+        # result = r.json()
+        # print(result)
+        # if r.status_code != 200:
+        #     for i in range(2):
+        #         r = requests.post(self.base_url, data=self.base_data)
+        #         result = r.json()
+        #         print(result)
         s = 'ssss'
         print('他大舅都是他舅',s)
         print('2333333333333333333333333333333333333333333333333333')
@@ -62,6 +52,9 @@ class Mysearch(unittest.TestCase):
     def test02(self):
         print('进行第二次测试')
         self.assertEqual(4,4)
+        nima()
+        result = self.testcase.sendRequest()
+        print(result)
 
     def tearDown(self):
         print('环境销毁；')

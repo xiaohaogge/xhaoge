@@ -58,3 +58,8 @@ d = '''
             "useFilter":true,
             "searchRatio":false
     } '''
+
+
+def nima():
+    print('nizaiman')
+    print('这都不知道是哪里的测试了')
