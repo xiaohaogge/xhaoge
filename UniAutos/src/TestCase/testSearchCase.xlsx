@@ -1,4 +1,50 @@
-是否执行(1执行，0忽略)	接口名称	接口地址	参数1
-1	345	sdfasdf	{}
-1	34534543	fergvgfd	{}
-0			
+测试用例编写							
+ID	Provide	Proty	TestModule	Method	Url	Parametes	是否执行(1执行，0忽略)
+1	mystifly	ctrip	search	POST	345	sdfasdf	1
+2	mystifly	ctrip	search	POST	34534543	fergvgfd	1
+3	mystifly	ctrip	search	POST			0
+4	mystifly	ctrip	search	POST			
+5	mystifly	ctrip	search	POST			
+6	mystifly	ctrip	search	POST			
+7	mystifly	ctrip	search	POST			
+8	mystifly	ctrip	search	POST			
+9	mystifly	ctrip	search	POST			
+10	mystifly	ctrip	search	POST			
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
