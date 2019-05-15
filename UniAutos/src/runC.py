@@ -33,7 +33,7 @@ if __name__ == "__main__":
     # # 1、设置待执行用例的目录
     # test_dir = os.path.join(os.getcwd())
     #
-    # # 2、自动搜索指定目录下的cas，构造测试集,执行顺序是命名顺序：先执行test_add，再执行test_sub
+    # # 2、自动搜索指定目录下的case，构造测试集,执行顺序是命名顺序：先执行test_add，再执行test_sub
     # discover = unittest.defaultTestLoader.discover(test_dir, pattern='test_*.py')
     #
     # # 实例化TextTestRunner类
