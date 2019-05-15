@@ -29,7 +29,7 @@ class Mysearch(unittest.TestCase):
                                 "searchRatio":false
                             }
                         '''
-        self.testcase = RunRequest(self.method,self.base_url,self.base_data)
+        self.testcase = RunRequest()
 
     def test01(self):
         print('测试开始了哟')
@@ -53,7 +53,7 @@ class Mysearch(unittest.TestCase):
         print('进行第二次测试')
         self.assertEqual(4,4)
         nima()
-        result = self.testcase.sendRequest()
+        result = self.testcase.sendRequest(self.method,self.base_url,self.base_data)
         print(result)
 
     def tearDown(self):

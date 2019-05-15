@@ -1,7 +1,7 @@
 import unittest
 import json
 import requests
-from UniAutos.src.CommonFunc.runmethon import RunMethod
+from UniAutos.src.CommonFunc.runRequest import RunRequest
 '''
     进行测试用例的编写；
 '''
@@ -29,7 +29,7 @@ class Myticket(unittest.TestCase):
                                 "searchRatio":false
                             }
                         '''
-        self.testcase = RunMethod()
+        self.testcase = RunRequest()
     # def test_post_event_list_eid_null(self):
     #     ''' eid 参数为空 '''
     #     r = requests.post(self.base_url, data=self.base_data)
@@ -47,7 +47,7 @@ class Myticket(unittest.TestCase):
         method = 'get'
         url = 'get/policies'
         data = ''
-        xx = self.testcase.run_main(method=method, url=url)
+        xx = self.testcase.sendRequest(method=method, url=url)
         print(xx)
         # r = requests.post(self.base_url, data=self.base_data)
         # result = r.json()
@@ -71,7 +71,7 @@ class Myticket(unittest.TestCase):
         data = '''
                 {"baseInfo":{"creator":"pirlo1","id":"5cda69d97182598583882638"},"provider":{"provider":"SABRE","pcc":"pcc"},"airlines":["5555"],"depCities":["xxx"],"arrCities":["can"],"cabinGrade":"A","faretype":"PUBLISHED","chargedBy":"PASSENGER","currency":"USD","amount":100000}
                '''
-        xx = self.testcase.run_main(method=method, url=url,data=data)
+        xx = self.testcase.sendRequest(method=method, url=url,data=data)
         print(xx)
         self.assertEqual(4,4)
 
@@ -83,7 +83,7 @@ class Myticket(unittest.TestCase):
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
-        xx = self.testcase.run_main(method=method, url=url,data=data)
+        xx = self.testcase.sendRequest(method=method, url=url,data=data)
         print(xx)
         self.assertEqual(4,4)
 
@@ -95,7 +95,7 @@ class Myticket(unittest.TestCase):
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
-        xx = self.testcase.run_main(method=method, url=url,data=data)
+        xx = self.testcase.sendRequest(method=method, url=url,data=data)
         print(xx)
         self.assertEqual(4,4)
 
@@ -107,7 +107,7 @@ class Myticket(unittest.TestCase):
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
-        xx = self.testcase.run_main(method=method, url=url,data=data)
+        xx = self.testcase.sendRequest(method=method, url=url,data=data)
         print(xx)
         self.assertEqual(4,4)
 
@@ -120,7 +120,7 @@ class Myticket(unittest.TestCase):
                 {"baseInfo":{"creator":"pirlo718"},"provider":{"provider":"SABRE","pcc":"pcc"},"airlines":["airasia"],"depCities":["ctu"],"arrCities":["bjs","sha"],"cabinGrade":"A","faretype":"PRIVATE","chargedBy":"PASSENGER","currency":"TWD","amount":99.99}
                '''
         res = {"id": "5cda69d97182598583882638"}
-        xx = self.testcase.run_main(method=method, url=url,data=data)
+        xx = self.testcase.sendRequest(method=method, url=url,data=data)
         print(xx)
         self.assertEqual(4,4)
 
@@ -133,7 +133,7 @@ class Myticket(unittest.TestCase):
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
         res = {"id": "5cda69d97182598583882638"}
-        xx = self.testcase.run_main(method=method, url=url,data=data)
+        xx = self.testcase.sendRequest(method=method, url=url,data=data)
         print(xx)
         self.assertEqual(4,4)
 
@@ -146,7 +146,7 @@ class Myticket(unittest.TestCase):
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
         res = {"id": "5cda69d97182598583882638"}
-        xx = self.testcase.run_main(method=method, url=url,data=data)
+        xx = self.testcase.sendRequest(method=method, url=url,data=data)
         print(xx)
         self.assertEqual(4,4)
 
