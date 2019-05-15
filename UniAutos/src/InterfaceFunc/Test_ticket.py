@@ -45,7 +45,7 @@ class Myticket(unittest.TestCase):
         # retrieveTicketFeePolicies impl
         print('测试开始了哟')
         method = 'get'
-        url = 'get/policies'
+        url = 'dev-restful-api.gloryholiday.com/marineford/get/policies'
         data = ''
         xx = self.testcase.sendRequest(method=method, url=url)
         print(xx)
@@ -67,7 +67,7 @@ class Myticket(unittest.TestCase):
         # updateTicketFeePolicy impl
         print('进行第二次测试')
         method = 'post'
-        url = 'policy/ticketfee/update'
+        url = 'dev-restful-api.gloryholiday.com/marineford/policy/ticketfee/update'
         data = '''
                 {"baseInfo":{"creator":"pirlo1","id":"5cda69d97182598583882638"},"provider":{"provider":"SABRE","pcc":"pcc"},"airlines":["5555"],"depCities":["xxx"],"arrCities":["can"],"cabinGrade":"A","faretype":"PUBLISHED","chargedBy":"PASSENGER","currency":"USD","amount":100000}
                '''
@@ -79,7 +79,7 @@ class Myticket(unittest.TestCase):
         # archiveTicketFeePolicy impl
         print('进行第san次测试')
         method = 'post'
-        url = '/policy/ticketfee/archive'
+        url = 'dev-restful-api.gloryholiday.com/marineford/policy/ticketfee/archive'
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
@@ -91,7 +91,7 @@ class Myticket(unittest.TestCase):
         # enableTicketFeePolicy impl
         print('进行第4次测试')
         method = 'post'
-        url = '/policy/ticketfee/enable'
+        url = 'dev-restful-api.gloryholiday.com/marineford/policy/ticketfee/enable'
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
@@ -103,7 +103,7 @@ class Myticket(unittest.TestCase):
         # copyTicketFeePolicy impl
         print('进行第5次测试')
         method = 'post'
-        url = '/policy/ticketfee/copy'
+        url = 'dev-restful-api.gloryholiday.com/marineford/policy/ticketfee/copy'
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
@@ -115,7 +115,7 @@ class Myticket(unittest.TestCase):
         #  createTicketFeePolicy impl
         print('进行第6次测试')
         method = 'post'
-        url = '/policy/ticketfee/create'
+        url = 'dev-restful-api.gloryholiday.com/marineford/policy/ticketfee/create'
         data = '''
                 {"baseInfo":{"creator":"pirlo718"},"provider":{"provider":"SABRE","pcc":"pcc"},"airlines":["airasia"],"depCities":["ctu"],"arrCities":["bjs","sha"],"cabinGrade":"A","faretype":"PRIVATE","chargedBy":"PASSENGER","currency":"TWD","amount":99.99}
                '''
@@ -128,7 +128,7 @@ class Myticket(unittest.TestCase):
         #  disableTicketFeePolicy impl
         print('进行第7次测试')
         method = 'post'
-        url = 'policy/ticketfee/disable'
+        url = 'dev-restful-api.gloryholiday.com/marineford/policy/ticketfee/disable'
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''
@@ -141,7 +141,7 @@ class Myticket(unittest.TestCase):
         #  retrieveTicketFeePolicy impl
         print('进行第8次测试')
         method = 'get'
-        url = '/policy/ticketfee?id={id}'
+        url = 'dev-restful-api.gloryholiday.com/marineford/policy/ticketfee?id={id}'
         data = '''
                 {"id": "5cda63becd5a6f7dded612b7"}
                '''

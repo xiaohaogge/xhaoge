@@ -5,8 +5,8 @@
 import time
 import unittest
 from UniAutos.src.CommonFunc.HTMLTestRunner import HTMLTestRunner
-from UniAutos.src.InterfaceFunc.Test_search import Mysearch
-
+# from UniAutos.src.InterfaceFunc.Test_search import Mysearch
+from UniAutos.src.InterfaceFunc.Test_ticket import Myticket
 
 if __name__ == "__main__":
     # # unittest.main()
@@ -18,8 +18,14 @@ if __name__ == "__main__":
     print('Hello World')
     testunit = unittest.TestSuite()
     # 将测试用例加入到测试容器中
-    testunit.addTest(Mysearch("test01"))
-    testunit.addTest(Mysearch("test02"))
+    testunit.addTest(Myticket("test01"))
+    testunit.addTest(Myticket("test02"))
+    testunit.addTest(Myticket("test03"))
+    testunit.addTest(Myticket("test04"))
+    testunit.addTest(Myticket("test05"))
+    testunit.addTest(Myticket("test06"))
+    testunit.addTest(Myticket("test07"))
+    testunit.addTest(Myticket("test08"))
     # 获取当前时间，这样便于下面的使用。
     now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
     # 打开一个文件，将result写入此file中
