@@ -15,6 +15,6 @@ class GodMain(CaseSearch0001):
 
 if __name__ == "__main__":
     IamGod = GodMain()
-    IamGod.log.info("开始进入主阶段了哦！")
+    print(IamGod.log.info("开始进入主流程了哦！"))
     IamGod.TestProcess()
     print('Game Over')

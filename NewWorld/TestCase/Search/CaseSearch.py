@@ -25,5 +25,9 @@ class CaseSearch0001(AllBase):
 
     def TestProcess(self):
         res = self.sendRequest(method='POST',url=self.url,data=self.data)
-        print(res)
+        if res:
+            self.log.info('搜索成功，有返回')
+            print(res)
+        else:
+            print(self.log.error('nothing'))
 
