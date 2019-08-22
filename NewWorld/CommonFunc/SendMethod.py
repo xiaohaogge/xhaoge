@@ -1,8 +1,6 @@
 import requests
 import json
 
-# 定义一个基本请求类，后续有其他请求方式再逐步完善；
-
 class RunRequest:
 
     def post_main(self,url,data,header=None):
@@ -19,7 +17,7 @@ class RunRequest:
              res = requests.get(url=url,data=data,verify=False)
          return res.json()
 
-    def sendRequest(self,method,url,data=None,header=None):
+    def sendRequest(self,method='POST',url=None,data=None,header=None):
          if method.upper() == 'POST':
              res = self.post_main(url,data,header)
          else:
