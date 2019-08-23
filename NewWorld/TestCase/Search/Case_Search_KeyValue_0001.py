@@ -1,8 +1,11 @@
 # first case
+# 此case 用于简单的发送请求，对于响应字段的对比；
 
+
+import json
 from NewWorld.CommonFunc.Base import AllBase
 
-class CaseSearch0001(AllBase):
+class Case_Search_KeyValue_0001(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)
@@ -27,7 +30,13 @@ class CaseSearch0001(AllBase):
         res = self.sendRequest(method='POST',url=self.url,data=self.data)
         if res:
             self.log.info('搜索成功，有返回')
-            print(res)
+            print(type(res))
+            rr = json.loads(res)
+            #print(res)
         else:
             print(self.log.error('nothing'))
+
+
+    def TestResult(self):
+        print("测试结果很成功，perfect！")
 

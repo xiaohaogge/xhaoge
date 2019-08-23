@@ -15,7 +15,7 @@ class AllBase(RunRequest):
         timename = time.strftime("%Y-%m-%d-%I-%M-%S", time.localtime()) + "-MairiLog"
         filename = r'F:\Program\Logging\yuetu\%s.txt' % timename
 
-        logging.basicConfig(
+        self.log.basicConfig(
             # 设置告警级别为INFO
             # 自定义打印的格式
             # 将日志输出到指定的文件中
@@ -25,4 +25,4 @@ class AllBase(RunRequest):
             filename=filename,
             filemode='a'
         )
-        pass
+

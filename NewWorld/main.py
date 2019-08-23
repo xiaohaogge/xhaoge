@@ -1,13 +1,12 @@
 # 定义程序的主入口
 
 
-from NewWorld.TestCase.Search.CaseSearch import CaseSearch0001
+from NewWorld.TestCase.Search.Case_Search_KeyValue_0001 import Case_Search_KeyValue_0001
 
-class GodMain(CaseSearch0001):
+class GodMain(Case_Search_KeyValue_0001):
 
     def __init__(self):
-        CaseSearch0001.__init__(self)
-        pass
+        Case_Search_KeyValue_0001.__init__(self)
 
 
 
