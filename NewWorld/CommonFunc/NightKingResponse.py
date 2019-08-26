@@ -15,73 +15,77 @@ class NightKingRes():
         self.nkTraceTimes = self.nightkingResponse['traceTimes']
 
 
+    # 定义获取response中的基本信息，return value
     def baseResponse(self,key):
         try:
-            value = self.nkBaseResponse[key]
-            if value or value == '':
-                return value
+            basevalue = self.nkBaseResponse[key]
+            if basevalue or basevalue == '':
+                return basevalue
             else:
                 return "baseres something is woring"
         except Exception as e:
             return e
 
-
+    # 定义获取routing中某个字段的信息；return value
     def routing(self,key):
         try:
-            value = self.nkRouting[key]
-            if value or value == '':
-                return value
+            routingvalue = self.nkRouting[key]
+            if routingvalue or routingvalue == '':
+                return routingvalue
             else:
                 return "routing something is woring"
         except Exception as e:
             return e
 
-
+    # 定义获取tracespans的基本信息；return list
     def traceSpans(self,key):
         try:
-            value = self.nkTraceSpans[key]
-            if value or value == '':
-                return value
+            Spansvalue = self.nkTraceSpans[key]
+            if Spansvalue or Spansvalue == '':
+                return Spansvalue
             else:
                 return "traceSpans something is woring"
         except Exception as e:
             return e
 
-
+    # 定义获取tracetimes中的基本信息，return list
     def traceTimes(self,key):
         try:
-            value = self.nkTraceTimes[key]
-            if value or value == '':
-                return value
+            Timesvalue = self.nkTraceTimes[key]
+            if Timesvalue or Timesvalue == '':
+                return Timesvalue
             else:
                 return "traceTimes something is woring"
         except Exception as e:
             return e
 
-
+    # 定义获取routing中的基本信息；return value list
     def routingBaseInfo(self,key):
         try:
-            value = []
+            RouBasevalue = []
             for baseinfo in self.nkRouting[key]:
-                value.append(baseinfo)
+                RouBasevalue.append(baseinfo)
 
-            if len(value) == 0:
-                return 'routing 里面没有这个信息，或者为null，值：%s' % value
-            return value
+            if len(RouBasevalue) == 0:
+                return 'routing 里面没有这个信息，或者为null，值：%s' % RouBasevalue
+            return RouBasevalue
         except Exception as e:
             return e
 
-
-    def routingItineraryInfo(self,key):
-        self.routingIt
+    # 定义获取Itinerary中的信息；return value list
+    def routingItineraryBaseInfo(self,key):
+        self.Itinerary = self.nkRouting['itinerary']
         try:
-            value = []
-            for baseinfo in self.nkRouting[key]:
-                value.append(baseinfo)
+            RouItinevalue = []
+            for Itineinfo in self.Itinerary[key]:
+                RouItinevalue.append(Itineinfo)
 
-            if len(value) == 0:
-                return 'routing 里面没有这个信息，或者为null，值：%s' % value
-            return value
+            if len(RouItinevalue) == 0:
+                return 'routing 里面没有这个信息，或者为null，值：%s' % RouItinevalue
+            return RouItinevalue
         except Exception as e:
             return e
 
+    # 定义从segment中获取flight信息；return value list
+    def routingItinerarySegmentInfo(self):
+        pass
