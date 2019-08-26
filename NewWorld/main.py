@@ -13,7 +13,7 @@ class GodMain(Case_Search_KeyValue_0001):
 
 
 if __name__ == "__main__":
-    IamGod = GodMain()
-    print(IamGod.log.info("开始进入主流程了哦！"))
-    IamGod.TestProcess()
+    GodRun = GodMain()
+    print(GodRun.log.info("开始进入主流程了哦！"))
+    GodRun.TestProcess()
     print('Game Over')

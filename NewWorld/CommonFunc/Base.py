@@ -13,7 +13,7 @@ class AllBase(RunRequest):
         self.log = logging
         myformat = '%(asctime)s---%(levelname)s-[line:%(lineno)d]---"message":%(message)s'
         timename = time.strftime("%Y-%m-%d-%I-%M-%S", time.localtime()) + "-MairiLog"
-        filename = r'F:\Program\Logging\yuetu\%s.txt' % timename
+        filename = r'D:\program\logging\python\%s.txt' % timename
 
         self.log.basicConfig(
             # 设置告警级别为INFO
