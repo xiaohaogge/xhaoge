@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc>
+    <switch id="1" condition="dev">
+        <item caption="nightking">
+
+            <url username="nightking_search">http://dev-api.gloryholiday.com/yuetu/search</url>
+
+        </item>
+    </switch>
+
+    <logAddress>F:\Program\Logging\yuetu\</logAddress>
+</doc>
