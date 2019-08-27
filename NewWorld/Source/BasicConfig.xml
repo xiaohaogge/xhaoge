@@ -4,7 +4,7 @@
     <switch id="1" condition="dev">
         <item caption="nightking">
 
-            <url site="nightking_search">http://dev-api.gloryholiday.com/yuetu/search</url>
+            <nkReq_url site="nightking_search">http://dev-api.gloryholiday.com/yuetu/search</nkReq_url>
 
         </item>
     </switch>
