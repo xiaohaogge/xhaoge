@@ -18,12 +18,19 @@ class ReadBaseConfig():
 
     def startRead(self):
         self.Dom.getroot()
-        url = self.Dom.findall('./switch/item/nkReq_url')[0]
-        nkRequrl = url.text
-        self.nkReqData["url"]=nkRequrl
+        nkRequrl = self.Dom.findall('./switch/item/nkReq_url')[0]
+        self.nkReqData["url"]=nkRequrl.text
         path = self.Dom.findall('./logAddress')[0]
         self.logPath['path']=path.text
 
+        self.caseList = []
+        case = {}
+        self.caseId = self.Dom.findall('./RunCase/case/id')[0]
+        self.caseAddr = self.Dom.findall('./RunCase/case/Address')[0]
+        case['id']=self.caseId.text
+        case['Address']=self.caseAddr.text
+        self.caseList.append(case)
+        print(self.caseList)
         print(self.ParaCollection)
 
 
