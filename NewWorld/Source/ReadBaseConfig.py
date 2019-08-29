@@ -3,7 +3,7 @@
 import xml.etree.ElementTree as ET
 
 
-class Readxml():
+class ReadBaseConfig():
 
     def __init__(self):
         self.Dom = ET.parse('BasicConfig.xml')
@@ -29,7 +29,7 @@ class Readxml():
 
 
 if __name__ == "__main__":
-    readme = Readxml()
+    readme = ReadBaseConfig()
     readme.startRead()
 
 
