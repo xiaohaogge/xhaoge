@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="993c32a1-1968-4e59-ace4-b60566b442c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/Handle/Solve.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/Handle/Solve.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/Source/ReadXml.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/Source/ReadBaseConfig.py" afterDir="false" />
-    </list>
+    <list default="true" id="993c32a1-1968-4e59-ace4-b60566b442c6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +11,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/yueTu$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1567041221272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
     <SUITE FILE_PATH="coverage/yueTu$test.coverage" NAME="test Coverage Results" MODIFIED="1566531848183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
-    <SUITE FILE_PATH="coverage/yueTu$main.coverage" NAME="main Coverage Results" MODIFIED="1567041276326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
+    <SUITE FILE_PATH="coverage/yueTu$main.coverage" NAME="main Coverage Results" MODIFIED="1567041424253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
     <SUITE FILE_PATH="coverage/yueTu$common_run.coverage" NAME="common run Coverage Results" MODIFIED="1566183968609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/src" />
     <SUITE FILE_PATH="coverage/xhaoge$NewDataFrombase64.coverage" NAME="NewDataFrombase64 Coverage Results" MODIFIED="1557757700438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/src/CommonFunc" />
     <SUITE FILE_PATH="coverage/xhaoge$common_run.coverage" NAME="common run Coverage Results" MODIFIED="1557760302125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/src" />
@@ -117,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NewWorld/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="361">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -353,8 +349,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NewWorld/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="361">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
