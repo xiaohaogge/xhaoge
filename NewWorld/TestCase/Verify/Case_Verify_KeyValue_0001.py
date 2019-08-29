@@ -5,7 +5,7 @@
 import json
 from NewWorld.CommonFunc.Base import AllBase
 
-class Case_Search_KeyValue_0002(AllBase):
+class Case_Verify_KeyValue_0001(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)
@@ -27,17 +27,7 @@ class Case_Search_KeyValue_0002(AllBase):
 
 
     def TestProcess(self):
-        print('我是case2')
-        pass
-        # res = self.sendRequest(method='POST',url=self.url,data=self.data)
-        # if res:
-        #     self.log.info('搜索成功，有返回')
-        #     print(type(res))
-        #     rr = json.loads(res)
-        #     #print(res)
-        # else:
-        #     print(self.log.error('nothing'))
-
+        print('这是验价的 case1 ')
 
     def TestResult(self):
         print("测试结果很成功，perfect！")

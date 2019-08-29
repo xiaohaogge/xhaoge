@@ -20,9 +20,17 @@
             <id>Case_Search_KeyValue_0002</id>
             <Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0002</Address>
         </case>
+        <case>
+            <id>Case_Search_KeyValue_0003</id>
+            <Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0003</Address>
+        </case>
         <!--<case>-->
             <!--<id>Case_Search_KeyValue_0002</id>-->
             <!--<Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
         <!--</case>-->
+        <case>
+            <id>Case_Verify_KeyValue_0001</id>
+            <Address>NewWorld.TestCase.Verify.Case_Verify_KeyValue_0001</Address>
+        </case>
     </RunCase>
 </doc>

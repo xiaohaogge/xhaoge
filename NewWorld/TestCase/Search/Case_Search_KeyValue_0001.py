@@ -28,14 +28,14 @@ class Case_Search_KeyValue_0001(AllBase):
 
     def TestProcess(self):
         res = self.sendRequest(method='POST',url=self.url,data=self.data)
+        print(res)
         if res:
             self.log.info('搜索成功，有返回')
             print(type(res))
+            print('这是case1 的if 条件语句中；')
             rr = json.loads(res)
-            #print(res)
         else:
             print(self.log.error('nothing'))
-
 
     def TestResult(self):
         print("测试结果很成功，perfect！")
