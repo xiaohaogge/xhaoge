@@ -2,7 +2,7 @@
 
 import importlib
 
-from NewWorld.Source.ReadXml import Readxml
+from NewWorld.Source.ReadBaseConfig import ReadBaseConfig
 
 
 class DealData():
