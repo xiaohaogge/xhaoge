@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <doc>
+    # 配置测试用例中所涉及到的url，严格按照格式来读取；
     <switch id="1" condition="dev">
         <item caption="nightking">
-
             <nkReq_url site="nightking_search">http://dev-api.gloryholiday.com/yuetu/search</nkReq_url>
-
         </item>
     </switch>
 
+    # 配置log日志打印的存放地址
     <logAddress>F:\Program\Logging\yuetu\</logAddress>
+
+    # 配置此时需要run的测试用例；
+    <RunCase>
+        <case time="1">
+            <id>Case_Search_KeyValue_0001</id>
+            <Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0001</Address>
+        </case>
+        <!--<case>-->
+            <!--<id>Case_Search_KeyValue_0002</id>-->
+            <!--<Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
+        <!--</case>-->
+    </RunCase>
 </doc>
