@@ -17,9 +17,7 @@ class DataControl(ReadBaseConfig):
             print(runner["Address"])
             try:
                 r = importlib.import_module(runner["Address"])
-                print(r)
                 rr = getattr(r,runner["Casename"])
-                print("进来了吗？")
                 rrr = rr()
                 rrr.TestProcess()
                 rrr.TestResult()

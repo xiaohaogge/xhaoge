@@ -4,10 +4,10 @@
 import json
 from NewWorld.CommonFunc.Base import AllBase
 
-class NightKingRes(AllBase):
+class NightKingRes():
 
     def __init__(self,nightkingRes):
-        AllBase.__init__(self)
+        # self.log.info('开始进行nightkingres的初始化')
         self.nightkingResponse = json.loads(nightkingRes)
         self.nkBaseResponse = self.nightkingResponse['baseResponse']
         self.nkRouting = self.nightkingResponse['routing']
@@ -90,9 +90,12 @@ class NightKingRes(AllBase):
     # 定义获取currencyConversions list信息；return value list
     def routingCurrencyConversionsInfo(self):
         self.CurrencyConversion = self.nkRouting['currencyConversions']
-
         pass
 
     # 定义从segment中获取flight信息；return value list
     def routingItinerarySegmentInfo(self):
         pass
+
+
+if __name__ == "__main__":
+    res = self.sendRequest(method='POST', url=self.url, data=self.data)
