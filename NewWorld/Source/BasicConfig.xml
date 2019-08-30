@@ -12,10 +12,11 @@
 
     # 配置此时需要run的测试用例；
     <RunCase>
-        <case>
-            <id>Case_Search_KeyValue_0001</id>
-            <Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0001</Address>
-        </case>
+        # search case
+        <!--<case>-->
+            <!--<id>Case_Search_KeyValue_0001</id>-->
+            <!--<Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0001</Address>-->
+        <!--</case>-->
         <case>
             <id>Case_Search_KeyValue_0002</id>
             <Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0002</Address>
@@ -28,9 +29,27 @@
             <!--<id>Case_Search_KeyValue_0002</id>-->
             <!--<Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
         <!--</case>-->
+        # verify case
         <case>
             <id>Case_Verify_KeyValue_0001</id>
             <Address>NewWorld.TestCase.Verify.Case_Verify_KeyValue_0001</Address>
         </case>
+
+
+        # order case
+        <!--<case>-->
+            <!--<id>Case_Search_KeyValue_0002</id>-->
+            <!--<Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
+        <!--</case>-->
+
+
+        # currency case
+        <!--<case>-->
+            <!--<id>Case_Search_KeyValue_0002</id>-->
+            <!--<Address>NewWorld.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
+        <!--</case>-->
+
+
+
     </RunCase>
 </doc>
