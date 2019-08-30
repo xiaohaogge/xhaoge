@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="993c32a1-1968-4e59-ace4-b60566b442c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/NewWorld/Handle/DataController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/CommonFunc/Base.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/CommonFunc/Base.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/Handle/Solve.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/Source/ReadBaseConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/Source/ReadBaseConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0001.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0001.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NewWorld/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="993c32a1-1968-4e59-ace4-b60566b442c6" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +28,7 @@
     <session id="-1215792211">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.15" value="2" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.40" value="1" />
@@ -89,8 +79,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NewWorld/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <marker date="1567081554168" expanded="true" signature="149:191" ph="..." />
                 <marker date="1567081554168" expanded="true" signature="172:177" ph="..." />
@@ -149,7 +139,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1911" />
-    <option name="y" value="-246" />
+    <option name="y" value="-247" />
     <option name="width" value="1385" />
     <option name="height" value="745" />
   </component>
@@ -167,49 +157,6 @@
             <path>
               <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
               <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="CommonFunc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="Handle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="Source" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
-              <item name="Search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
-              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
-              <item name="Verify" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -328,9 +275,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1359" y="-674" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19161677" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19161677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289256" />
@@ -489,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NewWorld/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        <state relative-caret-position="285">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <marker date="1567081554168" expanded="true" signature="149:191" ph="..." />
             <marker date="1567081554168" expanded="true" signature="172:177" ph="..." />
