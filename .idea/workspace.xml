@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="993c32a1-1968-4e59-ace4-b60566b442c6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/NewWorld/CommonFunc/NightKingResponse.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/CommonFunc/NightKingResponse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewWorld/Handle/DataController.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/Handle/DataController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NewWorld/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/NewWorld/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/searchRes.json" beforeDir="false" afterPath="$PROJECT_DIR$/searchRes.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,13 +18,14 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/yueTu$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1567041221272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
     <SUITE FILE_PATH="coverage/yueTu$Solve.coverage" NAME="Solve Coverage Results" MODIFIED="1567080013640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld/Handle" />
+    <SUITE FILE_PATH="coverage/yueTu$Case_Search_KeyValue_0002.coverage" NAME="Case_Search_KeyValue_0002 Coverage Results" MODIFIED="1567148759146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld/TestCase/Search" />
     <SUITE FILE_PATH="coverage/yueTu$ReadBaseConfig.coverage" NAME="ReadBaseConfig Coverage Results" MODIFIED="1567079495268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld/Source" />
     <SUITE FILE_PATH="coverage/yueTu$common_run.coverage" NAME="common run Coverage Results" MODIFIED="1566183968609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/src" />
     <SUITE FILE_PATH="coverage/yueTu$log.coverage" NAME="log Coverage Results" MODIFIED="1566300334400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mairi/Logging" />
     <SUITE FILE_PATH="coverage/yueTu$nima.coverage" NAME="nima Coverage Results" MODIFIED="1557933202820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/src/CommonFunc" />
     <SUITE FILE_PATH="coverage/yueTu$runC.coverage" NAME="runC Coverage Results" MODIFIED="1566370862254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/AllBlueUI" />
     <SUITE FILE_PATH="coverage/yueTu$test.coverage" NAME="test Coverage Results" MODIFIED="1566531848183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
-    <SUITE FILE_PATH="coverage/yueTu$main.coverage" NAME="main Coverage Results" MODIFIED="1567130588873" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
+    <SUITE FILE_PATH="coverage/yueTu$main.coverage" NAME="main Coverage Results" MODIFIED="1567153963453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewWorld" />
     <SUITE FILE_PATH="coverage/xhaoge$NewDataFrombase64.coverage" NAME="NewDataFrombase64 Coverage Results" MODIFIED="1557757700438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/src/CommonFunc" />
     <SUITE FILE_PATH="coverage/xhaoge$common_run.coverage" NAME="common run Coverage Results" MODIFIED="1557760302125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UniAutos/src" />
     <SUITE FILE_PATH="coverage/yueTu$logging.coverage" NAME="logging Coverage Results" MODIFIED="1566267781088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Mairi/Logging" />
@@ -41,34 +47,36 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="JSON" value="3" />
-          <entry key="json" value="9" />
-          <entry key="md" value="2" />
-          <entry key="py" value="12" />
+          <entry key="json" value="11" />
+          <entry key="md" value="3" />
+          <entry key="py" value="18" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="5" />
+          <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="12" />
-          <entry key="Markdown" value="2" />
+          <entry key="JSON" value="14" />
+          <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
-          <entry key="Python" value="12" />
-          <entry key="XML" value="5" />
+          <entry key="Python" value="18" />
+          <entry key="XML" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="32" />
-          <entry key="py" value="1182" />
+          <entry key="json" value="41" />
+          <entry key="py" value="1766" />
           <entry key="txt" value="42" />
           <entry key="xml" value="251" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JSON" value="41" />
           <entry key="PLAIN_TEXT" value="74" />
-          <entry key="Python" value="1182" />
+          <entry key="Python" value="1766" />
           <entry key="XML" value="251" />
         </counts>
       </usages-collector>
@@ -78,26 +86,114 @@
     <favorites_list name="yueTu" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewWorld/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/NewWorld/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="152">
+                  <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/NewWorld/CommonFunc/NightKingResponse.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="12">
+                  <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+                  <folding>
+                    <element signature="e#76#87#0" expanded="true" />
+                    <marker date="1567154245020" expanded="true" signature="200:554" ph="..." />
+                    <marker date="1567154245020" expanded="true" signature="3025:3031" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/NewWorld/CommonFunc/Base.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="7" column="13" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#18#29#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="418">
+                  <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="33" column="73" lean-forward="true" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
+                  <folding>
+                    <element signature="e#44#55#0" expanded="true" />
+                    <marker date="1567153963400" expanded="true" signature="1068:1077" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/searchRes.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="12">
+                  <caret line="5" column="12" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#210#22958#0" />
+                    <element signature="e#22970#46116#0" />
+                    <element signature="e#23147#27644#0" />
+                    <element signature="e#27662#31764#0" />
+                    <element signature="e#32805#35765#0" />
+                    <element signature="e#36580#36827#0" />
+                    <element signature="e#36976#45608#0" />
+                    <element signature="e#46124#69269#0" />
+                    <element signature="e#69279#92028#0" />
+                    <element signature="e#92038#110766#0" />
+                    <element signature="e#110776#129901#0" />
+                    <element signature="e#129911#148639#0" />
+                    <element signature="e#148649#167774#0" />
+                    <element signature="e#167784#186512#0" />
+                    <element signature="e#186522#205250#0" />
+                    <element signature="e#205260#224385#0" />
+                    <element signature="e#224395#243520#0" />
+                    <element signature="e#243530#262258#0" />
+                    <element signature="e#262268#281393#0" />
+                    <element signature="e#281403#300131#0" />
+                    <element signature="e#300141#319266#0" />
+                    <element signature="e#319276#342071#0" />
+                    <element signature="e#342081#364877#0" />
+                    <element signature="e#364887#387682#0" />
+                    <element signature="e#387692#410487#0" />
+                    <element signature="e#410497#433289#0" />
+                    <element signature="e#433299#456092#0" />
+                    <element signature="e#456102#478898#0" />
+                    <element signature="e#2015460#2020134#0" />
+                    <element signature="n#!!block;n#traceTimers#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -120,13 +216,11 @@
       <list>
         <option value="$PROJECT_DIR$/MissYou.txt" />
         <option value="$PROJECT_DIR$/NewWorld/Source/ReadXml.py" />
-        <option value="$PROJECT_DIR$/searchRes.json" />
         <option value="$PROJECT_DIR$/22.JSON" />
         <option value="$PROJECT_DIR$/11.JSON" />
         <option value="$PROJECT_DIR$/11.json" />
         <option value="$PROJECT_DIR$/22.json" />
         <option value="$PROJECT_DIR$/NewWorld/CommonFunc/Base.py" />
-        <option value="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py" />
         <option value="$PROJECT_DIR$/NewWorld/Handle/Solve.py" />
         <option value="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0001.py" />
         <option value="$PROJECT_DIR$/NewWorld/Handle/SolveGo.py" />
@@ -135,7 +229,11 @@
         <option value="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0003.py" />
         <option value="$PROJECT_DIR$/NewWorld/TestCase/Verify/Case_Verify_KeyValue_0001.py" />
         <option value="$PROJECT_DIR$/NewWorld/main.py" />
+        <option value="$PROJECT_DIR$/NewWorld/Handle/DataController.py" />
+        <option value="$PROJECT_DIR$/searchRes.json" />
         <option value="$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml" />
+        <option value="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py" />
+        <option value="$PROJECT_DIR$/NewWorld/CommonFunc/NightKingResponse.py" />
       </list>
     </option>
   </component>
@@ -145,11 +243,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1911" />
-    <option name="y" value="-247" />
-    <option name="width" value="1385" />
-    <option name="height" value="745" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-134" />
+    <option name="y" value="121" />
+    <option name="width" value="1108" />
+    <option name="height" value="596" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -175,7 +273,7 @@
               <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
               <item name="yueTu" type="462c0819:PsiDirectoryNode" />
               <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
-              <item name="Handle" type="462c0819:PsiDirectoryNode" />
+              <item name="CommonFunc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
@@ -188,6 +286,13 @@
               <item name="yueTu" type="462c0819:PsiDirectoryNode" />
               <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
               <item name="TestCase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yueTu" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yueTu" type="462c0819:PsiDirectoryNode" />
+              <item name="NewWorld" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCase" type="462c0819:PsiDirectoryNode" />
+              <item name="Search" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -212,7 +317,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="Case_Search_KeyValue_0002" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="xhaoge" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NewWorld/TestCase/Search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python">
       <module name="xhaoge" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,6 +362,15 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.Case_Search_KeyValue_0002" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Case_Search_KeyValue_0002" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -250,14 +386,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1359" y="-674" width="2062" height="1126" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19361277" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18229954" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289256" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.45674044" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1590164" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3993964" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -301,13 +436,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/22.json" />
     <entry file="file://$PROJECT_DIR$/11.json" />
-    <entry file="file://$PROJECT_DIR$/searchRes.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2347">
-          <caret line="14572" column="50" lean-forward="true" selection-start-line="14572" selection-start-column="50" selection-end-line="14572" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NewWorld/Source/ReadBaseConfig.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -315,31 +443,6 @@
           <folding>
             <element signature="e#21#55#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewWorld/CommonFunc/NightKingResponse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1014">
-          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewWorld/Handle/DataController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-          <folding>
-            <element signature="e#21#37#0" expanded="true" />
-            <marker date="1567080879348" expanded="true" signature="154:223" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -364,27 +467,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewWorld/CommonFunc/Base.py">
+    <entry file="file://$PROJECT_DIR$/NewWorld/Handle/DataController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="551">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#18#29#0" expanded="true" />
+            <element signature="e#21#37#0" expanded="true" />
+            <marker date="1567136365921" expanded="true" signature="157:226" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewWorld/CommonFunc/SendMethod.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-199">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewWorld/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/searchRes.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="12" />
+          <folding>
+            <element signature="e#210#22958#0" />
+            <element signature="e#22970#46116#0" />
+            <element signature="e#23147#27644#0" />
+            <element signature="e#27662#31764#0" />
+            <element signature="e#32805#35765#0" />
+            <element signature="e#36580#36827#0" />
+            <element signature="e#36976#45608#0" />
+            <element signature="e#46124#69269#0" />
+            <element signature="e#69279#92028#0" />
+            <element signature="e#92038#110766#0" />
+            <element signature="e#110776#129901#0" />
+            <element signature="e#129911#148639#0" />
+            <element signature="e#148649#167774#0" />
+            <element signature="e#167784#186512#0" />
+            <element signature="e#186522#205250#0" />
+            <element signature="e#205260#224385#0" />
+            <element signature="e#224395#243520#0" />
+            <element signature="e#243530#262258#0" />
+            <element signature="e#262268#281393#0" />
+            <element signature="e#281403#300131#0" />
+            <element signature="e#300141#319266#0" />
+            <element signature="e#319276#342071#0" />
+            <element signature="e#342081#364877#0" />
+            <element signature="e#364887#387682#0" />
+            <element signature="e#387692#410487#0" />
+            <element signature="e#410497#433289#0" />
+            <element signature="e#433299#456092#0" />
+            <element signature="e#456102#478898#0" />
+            <element signature="e#2015460#2020134#0" />
+            <element signature="n#!!block;n#traceTimers#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NewWorld/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="152">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewWorld/Source/BasicConfig.xml">
+    <entry file="file://$PROJECT_DIR$/NewWorld/CommonFunc/Base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="133">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="e#18#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewWorld/TestCase/Search/Case_Search_KeyValue_0002.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="33" column="73" lean-forward="true" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
+          <folding>
+            <element signature="e#44#55#0" expanded="true" />
+            <marker date="1567153963400" expanded="true" signature="1068:1077" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NewWorld/CommonFunc/NightKingResponse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+          <folding>
+            <element signature="e#76#87#0" expanded="true" />
+            <marker date="1567154245020" expanded="true" signature="200:554" ph="..." />
+            <marker date="1567154245020" expanded="true" signature="3025:3031" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,12 +2,12 @@
 # return 对象实例，以及可使用的相关属性，提取信息；
 
 import json
+from NewWorld.CommonFunc.Base import AllBase
 
-
-class NightKingRes():
+class NightKingRes(AllBase):
 
     def __init__(self,nightkingRes):
-
+        AllBase.__init__(self)
         self.nightkingResponse = json.loads(nightkingRes)
         self.nkBaseResponse = self.nightkingResponse['baseResponse']
         self.nkRouting = self.nightkingResponse['routing']
@@ -18,13 +18,14 @@ class NightKingRes():
     # 定义获取response中的基本信息，return value
     def baseResponse(self,key):
         try:
+            print('是不是进来了,baseresponse')
             basevalue = self.nkBaseResponse[key]
             if basevalue or basevalue == '':
                 return basevalue
             else:
                 return "baseres something is woring"
         except Exception as e:
-            return e
+            print('nima   获取失败了')
 
     # 定义获取routing中某个字段的信息；return value
     def routing(self,key):
@@ -85,6 +86,12 @@ class NightKingRes():
             return RouItinevalue
         except Exception as e:
             return e
+
+    # 定义获取currencyConversions list信息；return value list
+    def routingCurrencyConversionsInfo(self):
+        self.CurrencyConversion = self.nkRouting['currencyConversions']
+
+        pass
 
     # 定义从segment中获取flight信息；return value list
     def routingItinerarySegmentInfo(self):

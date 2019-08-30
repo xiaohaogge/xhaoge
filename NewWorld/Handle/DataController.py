@@ -4,7 +4,7 @@ import importlib
 from NewWorld.Source.ReadBaseConfig import ReadBaseConfig
 
 
-class DealData(ReadBaseConfig):
+class DataControl(ReadBaseConfig):
 
     def __init__(self):
         ReadBaseConfig.__init__(self)
@@ -26,7 +26,6 @@ class DealData(ReadBaseConfig):
                 print('========================')
             except Exception as e:
                 print(e)
-        pass
 
 
 # if __name__ == "__main__":
