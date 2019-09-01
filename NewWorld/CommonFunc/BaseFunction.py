@@ -3,7 +3,7 @@
 
 
 # 定义用于判断俩个值是否相等；
-def isEqual():
+def isEqualTo():
     pass
 
 
