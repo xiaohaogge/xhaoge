@@ -1,12 +1,12 @@
 # 定义程序的主入口
 
 
-from NewWorld.Handle.DataController import DataControl
+from NewWorld.Handle.DataController import Controler
 
-class GodMain(DataControl):
+class GodMain(Controler):
 
     def __init__(self):
-        DataControl.__init__(self)
+        Controler.__init__(self)
 
 
     def HappyGo(self):
