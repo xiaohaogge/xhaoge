@@ -12,7 +12,8 @@ class NightKingRes(AllBase):
         self.nkBaseResponse = self.nightkingResponse['baseResponse']
         self.nkRouting = self.nightkingResponse['routing']
         self.nkTraceSpans = self.nightkingResponse['traceSpans']
-        self.nkTraceTimes = self.nightkingResponse['traceTimes']
+        self.nkTraceTimes = self.nightkingResponse['traceTimers']
+        self.Itinerary = self.nkRouting['itinerary']
 
 
     # 定义获取response中的基本信息，return value
@@ -75,7 +76,6 @@ class NightKingRes(AllBase):
 
     # 定义获取Itinerary中的信息；return value list
     def routingItineraryBaseInfo(self,key):
-        self.Itinerary = self.nkRouting['itinerary']
         try:
             RouItinevalue = []
             for Itineinfo in self.Itinerary[key]:
