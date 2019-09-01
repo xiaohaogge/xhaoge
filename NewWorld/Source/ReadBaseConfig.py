@@ -41,9 +41,6 @@ class ReadBaseConfig(AllBase):
 
         except Exception as e:
             print(e)
-            pass
-
-
         print(self.ParaCollection)
 
 

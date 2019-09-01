@@ -4,7 +4,7 @@ import importlib
 from NewWorld.Source.ReadBaseConfig import ReadBaseConfig
 
 
-class DataControl(ReadBaseConfig):
+class Controler(ReadBaseConfig):
 
     def __init__(self):
         ReadBaseConfig.__init__(self)
@@ -17,9 +17,7 @@ class DataControl(ReadBaseConfig):
             print(runner["Address"])
             try:
                 r = importlib.import_module(runner["Address"])
-                print(r)
                 rr = getattr(r,runner["Casename"])
-                print("进来了吗？")
                 rrr = rr()
                 rrr.TestProcess()
                 rrr.TestResult()

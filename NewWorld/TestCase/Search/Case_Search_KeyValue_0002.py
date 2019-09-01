@@ -6,12 +6,12 @@
 
 import json
 from NewWorld.CommonFunc.NightKingResponse import NightKingRes
-from NewWorld.CommonFunc.Base import AllBase
+from NewWorld.TestCase.AllCaseBase import CaseBase
 
-class Case_Search_KeyValue_0002(AllBase):
+class Case_Search_KeyValue_0002(CaseBase):
 
     def __init__(self):
-        AllBase.__init__(self)
+        CaseBase.__init__(self)
         self.log.info("nima,开始case的初始化")
         self.url = 'http://dev-api.gloryholiday.com/yuetu/search'
         self.data = '''
@@ -34,12 +34,13 @@ class Case_Search_KeyValue_0002(AllBase):
         res = self.sendRequest(method='POST',url=self.url,data=self.data)
         if res:
             self.log.info('搜索成功，有返回')
-            # print(res)
-            cc = json.loads(res)
-            print(cc)
-            print(cc['baseResponse'])
+            print(type(res))
+            # cc = json.loads(res)
+            # print(type(cc))
+            # print(cc['baseResponse'])
             rr = NightKingRes(res)
-            rr.baseResponse('cid')
+            print(rr.nkRouting)
+            # print(yy)
             #print(res)
         else:
             print('case 2 nali')
