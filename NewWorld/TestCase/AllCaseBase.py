@@ -2,13 +2,13 @@
 
 
 from NewWorld.CommonFunc.Base import AllBase
-from NewWorld.Source.ReadBaseConfig import ReadBaseConfig
+from NewWorld.Source.ReadBaseConfig import BaseConfig
 
 
-class CaseBase(ReadBaseConfig):
+class CaseBase(BaseConfig):
 
     def __init__(self):
-        ReadBaseConfig.__init__(self)
+        BaseConfig.__init__(self)
 
 
     def TeseProcess(self):
