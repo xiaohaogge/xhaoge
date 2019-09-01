@@ -2,10 +2,9 @@
 
 
 
-def createClass(Cts):
-    class Cts():
-        def __init__(self):
-            pass
+# 定义用于判断俩个值是否相等；
+def isEqual():
+    pass
 
 
 

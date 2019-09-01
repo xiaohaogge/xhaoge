@@ -1,13 +1,13 @@
 # 定义在测试用力run前的数据处理；
 
 import importlib
-from NewWorld.Source.ReadBaseConfig import ReadBaseConfig
+from NewWorld.Source.ReadBaseConfig import BaseConfig
 
 
-class Controler(ReadBaseConfig):
+class Controler(BaseConfig):
 
     def __init__(self):
-        ReadBaseConfig.__init__(self)
+        BaseConfig.__init__(self)
         self.buildCase()
 
     def buildCase(self):

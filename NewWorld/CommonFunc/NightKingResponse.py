@@ -28,9 +28,10 @@ class NightKingRes():
             print('nima   获取失败了')
 
     # 定义获取routing中某个字段的信息；return value
-    def routing(self,key):
+    def routing(self):
+        pass
         try:
-            routingvalue = self.nkRouting[key]
+            routingvalue = self.nkRouting
             if routingvalue or routingvalue == '':
                 return routingvalue
             else:
@@ -50,7 +51,7 @@ class NightKingRes():
             return e
 
     # 定义获取tracetimes中的基本信息，return list
-    def traceTimes(self,key):
+    def traceTimers(self,key):
         try:
             Timesvalue = self.nkTraceTimes[key]
             if Timesvalue or Timesvalue == '':
@@ -64,12 +65,22 @@ class NightKingRes():
     def routingBaseInfo(self,key):
         try:
             RouBasevalue = []
-            for baseinfo in self.nkRouting[key]:
-                RouBasevalue.append(baseinfo)
+            for baseinfo in self.nkRouting:
+                valueInfo = baseinfo[key]
+                RouBasevalue.append(valueInfo)
 
             if len(RouBasevalue) == 0:
                 return 'routing 里面没有这个信息，或者为null，值：%s' % RouBasevalue
             return RouBasevalue
+        except Exception as e:
+            return e
+
+    # 定义一个函数，方便获取routing中第一个航线信息；
+    def routingFirstBaseInfo(self,key):
+        try:
+            firstInfo = self.nkRouting[0]
+            val = firstInfo[key]
+            return val
         except Exception as e:
             return e
 
@@ -96,6 +107,3 @@ class NightKingRes():
     def routingItinerarySegmentInfo(self):
         pass
 
-
-if __name__ == "__main__":
-    res = self.sendRequest(method='POST', url=self.url, data=self.data)
