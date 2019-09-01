@@ -7,7 +7,6 @@ class BaseConfig(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)
-        print('readxml __init__')
         self.Dom = ET.parse('F:\Program\python\yueTu\\NewWorld\Source\BasicConfig.xml')
         self.nkReqData = {"url":""}
         self.nkResData = {"url":""}
@@ -19,7 +18,6 @@ class BaseConfig(AllBase):
                             {"id":"nightkingRes","data":self.nkResData},
                             {"id":"logPath","data":self.logPath},
                             {"id":"case","data":self.caseList}]
-        #self.nextdom = self.Dom.documentElement
         self.startRead()
 
 
@@ -45,9 +43,6 @@ class BaseConfig(AllBase):
 
 
 
-# if __name__ == "__main__":
-#     readme = ReadBaseConfig()
-#     readme.startRead()
 
 
 
