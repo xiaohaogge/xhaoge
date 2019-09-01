@@ -4,7 +4,7 @@ import importlib
 from NewWorld.Source.ReadBaseConfig import ReadBaseConfig
 
 
-class DataControl(ReadBaseConfig):
+class Controler(ReadBaseConfig):
 
     def __init__(self):
         ReadBaseConfig.__init__(self)

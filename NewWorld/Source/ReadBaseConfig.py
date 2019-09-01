@@ -3,7 +3,7 @@
 import xml.etree.ElementTree as ET
 from NewWorld.CommonFunc.Base import AllBase
 
-class ReadBaseConfig(AllBase):
+class BaseConfig(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)

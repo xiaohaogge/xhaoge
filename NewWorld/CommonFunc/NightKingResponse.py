@@ -12,7 +12,7 @@ class NightKingRes():
         self.nkBaseResponse = self.nightkingResponse['baseResponse']
         self.nkRouting = self.nightkingResponse['routing']
         self.nkTraceSpans = self.nightkingResponse['traceSpans']
-        self.nkTraceTimes = self.nightkingResponse['traceTimes']
+        self.nkTraceTimes = self.nightkingResponse['traceTimers']
 
 
     # 定义获取response中的基本信息，return value
