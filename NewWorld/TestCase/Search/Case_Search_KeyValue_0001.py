@@ -33,7 +33,6 @@ class Case_Search_KeyValue_0001(AllBase):
             self.log.info('搜索成功，有返回')
             print(type(res))
             print('这是case1 的if 条件语句中；')
-            rr = json.loads(res)
         else:
             print(self.log.error('nothing'))
 
