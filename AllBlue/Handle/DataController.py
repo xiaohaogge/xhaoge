@@ -1,7 +1,7 @@
 # 定义在测试用力run前的数据处理；
 
 import importlib
-from NewWorld.Source.ReadBaseConfig import BaseConfig
+from AllBlue.Source.ReadBaseConfig import BaseConfig
 
 
 class Controler(BaseConfig):
@@ -27,6 +27,6 @@ class Controler(BaseConfig):
 
 
 # if __name__ == "__main__":
-#     # caselist = [{"case": "Case_Search_KeyValue_0001", "Address": "NewWorld\TestCase\Search\Case_Search_KeyValue_0001"}]
+#     # caselist = [{"case": "Case_Search_KeyValue_0001", "Address": "AllBlue\TestCase\Search\Case_Search_KeyValue_0001"}]
 #     rr = DealData()
 #     rr.buildCase()

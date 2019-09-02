@@ -3,9 +3,9 @@
 
 
 import json
-from NewWorld.CommonFunc.Base import AllBase
+from AllBlue.CommonFunc.Base import AllBase
 
-class Case_Search_KeyValue_0003(AllBase):
+class Case_Verify_KeyValue_0001(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)
@@ -27,7 +27,7 @@ class Case_Search_KeyValue_0003(AllBase):
 
 
     def TestProcess(self):
-        print("这是case3  暂时不知道写什么了")
+        print('这是验价的 case1 ')
 
     def TestResult(self):
         print("测试结果很成功，perfect！")

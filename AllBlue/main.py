@@ -1,7 +1,7 @@
 # 定义程序的主入口
 
 
-from NewWorld.Handle.DataController import Controler
+from AllBlue.Handle.DataController import Controler
 
 class GodMain(Controler):
 

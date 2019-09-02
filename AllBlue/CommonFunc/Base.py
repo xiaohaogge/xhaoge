@@ -3,7 +3,7 @@
 
 import time
 import logging
-from NewWorld.CommonFunc.SendMethod import RunRequest
+from AllBlue.CommonFunc.SendMethod import RunRequest
 
 class AllBase(RunRequest):
 

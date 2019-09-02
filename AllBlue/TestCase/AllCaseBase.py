@@ -1,7 +1,7 @@
 
 
 import json
-from NewWorld.Source.ReadBaseConfig import BaseConfig
+from AllBlue.Source.ReadBaseConfig import BaseConfig
 
 
 class CaseBase(BaseConfig):

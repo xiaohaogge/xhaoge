@@ -4,7 +4,7 @@
 
 from selenium import webdriver
 import time
-from Mairi.TestSuite.search import Search
+from NewWorld.TestSuite.search import Search
 
 if __name__ == '__main__':
     mybrowser = webdriver.Chrome("./Source/chromedriver.exe")

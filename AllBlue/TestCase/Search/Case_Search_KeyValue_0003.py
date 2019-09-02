@@ -3,9 +3,9 @@
 
 
 import json
-from NewWorld.CommonFunc.Base import AllBase
+from AllBlue.CommonFunc.Base import AllBase
 
-class Case_Search_KeyValue_0001(AllBase):
+class Case_Search_KeyValue_0003(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)
@@ -27,14 +27,7 @@ class Case_Search_KeyValue_0001(AllBase):
 
 
     def TestProcess(self):
-        res = self.sendRequest(method='POST',url=self.url,data=self.data)
-        print(res)
-        if res:
-            self.log.info('搜索成功，有返回')
-            print(type(res))
-            print('这是case1 的if 条件语句中；')
-        else:
-            print(self.log.error('nothing'))
+        print("这是case3  暂时不知道写什么了")
 
     def TestResult(self):
         print("测试结果很成功，perfect！")
