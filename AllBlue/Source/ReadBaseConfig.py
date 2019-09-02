@@ -18,7 +18,7 @@ class BaseConfig(AllBase):
                             {"id":"nightkingRes","data":self.nkResData},
                             {"id":"logPath","data":self.logPath},
                             {"id":"case","data":self.caseList}]
-        self.startRead()
+        #self.startRead()
 
 
     def startRead(self):
@@ -37,8 +37,8 @@ class BaseConfig(AllBase):
                 case['Address'] = caseAddr.text
                 self.caseList.append(case)
 
-        except Exception as e:
-            print(e)
+        except Exception:
+            pass
         print(self.ParaCollection)
 
 

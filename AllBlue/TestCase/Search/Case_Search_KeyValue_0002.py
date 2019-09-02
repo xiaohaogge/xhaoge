@@ -12,7 +12,6 @@ class Case_Search_KeyValue_0002(CaseBase):
 
     def __init__(self):
         CaseBase.__init__(self)
-        self.flag = True
         self.log.info("Case_Search_KeyValue_0002,测试开始")
 
 
@@ -33,6 +32,7 @@ class Case_Search_KeyValue_0002(CaseBase):
 
         self.log.info('测试iwoflyCN的本位币,请求币种是CNY,本位币应该是CNY')
         self.Test_Master_Currency(plat='iwoflyCN', reqC='CNY', MstCurrecy='CNY')
+        self.flag = True
 
 
     def TestResult(self):
@@ -56,10 +56,8 @@ class Case_Search_KeyValue_0002(CaseBase):
             case2_nk = NightKingRes(res)
             ms_currency = case2_nk.routingFirstBaseInfo('masterCurrency')
             if ms_currency != MstCurrecy:
-                self.flag = False
                 self.log.error('%s 请求币种为 %s 时，mastercurrencty为：%s' % (plat,reqC,ms_currency))
             self.log.info('%s 请求币种为 %s 时，mastercurrencty为：%s' % (plat,reqC,ms_currency))
         else:
-            self.flag = False
             self.log.error('搜索无返回，或者返回信息为null；')
 

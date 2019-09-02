@@ -8,22 +8,24 @@ class Controler(BaseConfig):
 
     def __init__(self):
         BaseConfig.__init__(self)
+        self.startRead()
         self.buildCase()
 
     def buildCase(self):
         self.runcase = ''
         for runner in self.caseList:
-            print(runner["Casename"])
-            print(runner["Address"])
+            print("Casename:"+runner["Casename"],"   Address:"+runner["Address"])
             try:
-                r = importlib.import_module(runner["Address"])
-                rr = getattr(r,runner["Casename"])
-                rrr = rr()
-                rrr.TestProcess()
-                rrr.TestResult()
+                caseModule = importlib.import_module(runner["Address"])
+                ModuleClass = getattr(caseModule,runner["Casename"])
+                self.caseRun = ModuleClass()
+                self.caseRun.TestProcess()
                 print('========================')
             except Exception as e:
+                self.log.error('casename:',runner["Casename"]+"报错：",e)
                 print(e)
+
+                self.caseRun.TestResult()
 
 
 # if __name__ == "__main__":
