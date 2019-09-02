@@ -12,12 +12,11 @@ class Case_Search_KeyValue_0002(CaseBase):
 
     def __init__(self):
         CaseBase.__init__(self)
-        self.flag = True
-        self.log.info("Case_Search_KeyValue_0002,测试开始")
+        self.log.info("===Case_Search_KeyValue_0002,测试开始===")
 
 
     def TestProcess(self):
-        self.log.info('Case_Search_KeyValue_0002,进入测试步骤！')
+        self.log.info('===Case_Search_KeyValue_0002,进入测试步骤！===')
 
         self.log.info('测试ctrip的本位币,请求币种是CNY,本位币应该是USD')
         self.Test_Master_Currency(plat='ctrip', reqC='CNY', MstCurrecy='CNY')
@@ -33,15 +32,16 @@ class Case_Search_KeyValue_0002(CaseBase):
 
         self.log.info('测试iwoflyCN的本位币,请求币种是CNY,本位币应该是CNY')
         self.Test_Master_Currency(plat='iwoflyCN', reqC='CNY', MstCurrecy='CNY')
+        self.flag = True
 
 
     def TestResult(self):
-        self.log.info('Case_Search_KeyValue_0002,测试完毕')
+        self.log.info('===Case_Search_KeyValue_0002,测试完毕===')
         if self.flag:
             self.log.info('Case_Search_KeyValue_0002,测试通过')
             print("测试结果很成功，perfect！")
         else:
-            self.log.info('Case_Search_KeyValue_0002,测试失败')
+            self.log.info('【Case_Search_KeyValue_0002,测试失败】')
 
     # 定义公共方法，用于判断masterCuurrncy；
     def Test_Master_Currency(self,plat='ctrip',reqC='CNY',MstCurrecy='CNY'):
@@ -56,10 +56,8 @@ class Case_Search_KeyValue_0002(CaseBase):
             case2_nk = NightKingRes(res)
             ms_currency = case2_nk.routingFirstBaseInfo('masterCurrency')
             if ms_currency != MstCurrecy:
-                self.flag = False
                 self.log.error('%s 请求币种为 %s 时，mastercurrencty为：%s' % (plat,reqC,ms_currency))
             self.log.info('%s 请求币种为 %s 时，mastercurrencty为：%s' % (plat,reqC,ms_currency))
         else:
-            self.flag = False
             self.log.error('搜索无返回，或者返回信息为null；')
 

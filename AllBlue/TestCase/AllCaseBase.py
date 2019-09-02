@@ -8,6 +8,7 @@ class CaseBase(BaseConfig):
 
     def __init__(self):
         BaseConfig.__init__(self)
+        self.flag = False
         self.nkRequesturl = 'http://dev-api.gloryholiday.com/yuetu/search'
         data = '''
                                 {
