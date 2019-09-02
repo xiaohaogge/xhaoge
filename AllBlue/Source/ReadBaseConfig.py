@@ -1,13 +1,13 @@
 # 此模块用于读取xml文件中的信息；
 
 import xml.etree.ElementTree as ET
-from NewWorld.CommonFunc.Base import AllBase
+from AllBlue.CommonFunc.Base import AllBase
 
 class BaseConfig(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)
-        self.Dom = ET.parse('F:\Program\python\yueTu\\NewWorld\Source\BasicConfig.xml')
+        self.Dom = ET.parse('F:\Program\python\yueTu\\AllBlue\Source\BasicConfig.xml')
         self.nkReqData = {"search_url":""}
         self.nkResData = {"search_url":""}
         self.logPath = {"log_path":""}

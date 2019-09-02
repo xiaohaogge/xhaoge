@@ -2,7 +2,7 @@
 # return 对象实例，以及可使用的相关属性，提取信息；
 
 import json
-from NewWorld.CommonFunc.Base import AllBase
+from AllBlue.CommonFunc.Base import AllBase
 
 class NightKingRes():
 

@@ -5,8 +5,8 @@
 
 
 import json
-from NewWorld.CommonFunc.NightKingResponse import NightKingRes
-from NewWorld.TestCase.AllCaseBase import CaseBase
+from AllBlue.CommonFunc.NightKingResponse import NightKingRes
+from AllBlue.TestCase.AllCaseBase import CaseBase
 
 class Case_Search_KeyValue_0002(CaseBase):
 
