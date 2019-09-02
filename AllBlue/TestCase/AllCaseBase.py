@@ -14,8 +14,8 @@ class CaseBase(BaseConfig):
                                 {
                                     "Cid": "ctrip",
                                     "TripType": "1",
-                                    "FromCity": "TPE",
-                                    "ToCity": "HKG",
+                                    "FromCity": "BJS",
+                                    "ToCity": "LAX",
                                     "FromDate": "20191123",
                                     "RetDate": "20191221",
                                     "AdultNumber": 1,

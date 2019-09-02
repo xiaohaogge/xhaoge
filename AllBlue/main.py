@@ -6,7 +6,9 @@ from AllBlue.Handle.Control import Controler
 class GodMain(Controler):
 
     def __init__(self):
+        print('Hello World!')
         Controler.__init__(self)
+
 
 
     def HappyGo(self):
