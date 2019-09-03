@@ -1,13 +1,13 @@
 
 
 import json
-from AllBlue.Source.ReadBaseConfig import BaseConfig
+from AllBlue.CommonFunc.Base import AllBase
 
 
-class CaseBase(BaseConfig):
+class CaseBase(AllBase):
 
     def __init__(self):
-        BaseConfig.__init__(self)
+        AllBase.__init__(self)
         self.flag = False
         self.nkRequesturl = 'http://dev-api.gloryholiday.com/yuetu/search'
         data = '''
