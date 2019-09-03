@@ -12,7 +12,7 @@ class GodMain(Controler):
 
 
     def HappyGo(self):
-        pass
+        print("What Should I Do?")
 
 
 
