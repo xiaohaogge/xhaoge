@@ -7,7 +7,7 @@ class BaseConfig(AllBase):
 
     def __init__(self):
         AllBase.__init__(self)
-        self.Dom = ET.parse('F:\Program\python\yueTu\\AllBlue\Source\BasicConfig.xml')
+        self.Dom = ET.parse('D:\program\Python\yueTu\AllBlue\Source\BasicConfig.xml')
         self.nkReqData = {"search_url":""}
         self.nkResData = {"search_url":""}
         self.logPath = {"log_path":""}
