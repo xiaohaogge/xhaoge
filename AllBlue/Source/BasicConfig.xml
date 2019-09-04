@@ -18,10 +18,10 @@
             <!--<id>Case_Search_KeyValue_0001</id>-->
             <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0001</Address>-->
         <!--</case>-->
-        <case>
-            <id>Case_Search_KeyValue_0002</id>
-            <Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0002</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Search_KeyValue_0002</id>-->
+            <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
+        <!--</case>-->
         <!--<case>-->
             <!--<id>Case_Search_KeyValue_0003</id>-->
             <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0003</Address>-->
@@ -45,10 +45,10 @@
 
 
         # currency case
-        <!--<case>-->
-            <!--<id>Case_Search_KeyValue_0002</id>-->
-            <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
-        <!--</case>-->
+        <case>
+            <id>Case_Currency_FromToRate_0001</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0001</Address>
+        </case>
 
 
 
