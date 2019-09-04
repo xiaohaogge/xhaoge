@@ -1,17 +1,15 @@
 # 定义在测试用力run前的数据处理；
 
 import importlib
-from AllBlue.Source.ReadBaseConfig import BaseConfig
+from AllBlue.TestCase.AllCaseBase import CaseBase
 
-
-class Controler(BaseConfig):
+class Controler(CaseBase):
 
     def __init__(self):
-        BaseConfig.__init__(self)
-        self.startRead()
-        self.buildCase()
+        CaseBase.__init__(self)
+        self.buildSearchCase()
 
-    def buildCase(self):
+    def buildSearchCase(self):
         self.runcase = ''
         for runner in self.caseList:
             print("Casename:"+runner["Casename"],"   Address:"+runner["Address"])
@@ -29,6 +27,6 @@ class Controler(BaseConfig):
 
 
 # if __name__ == "__main__":
-#     # caselist = [{"case": "Case_Search_KeyValue_0001", "Address": "AllBlue\TestCase\Search\Case_Search_KeyValue_0001"}]
-#     rr = DealData()
-#     rr.buildCase()
+# #     # caselist = [{"case": "Case_Search_KeyValue_0001", "Address": "AllBlue\TestCase\Search\Case_Search_KeyValue_0001"}]
+# #     rr = DealData()
+# #     rr.buildCase()

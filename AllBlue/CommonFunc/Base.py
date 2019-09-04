@@ -4,15 +4,22 @@
 import time
 import logging
 from AllBlue.CommonFunc.SendMethod import RunRequest
+from AllBlue.Source.ReadBaseConfig import BaseConfig
 
-class AllBase(RunRequest):
+class AllBase(RunRequest,BaseConfig):
 
 
     def __init__(self):
+        BaseConfig.__init__(self)
+        self.startRead()
+        self.buildLog()
+
+
+    def buildLog(self):
         self.log = logging
         myformat = '%(asctime)s---%(levelname)s-[line:%(lineno)d]---"message":%(message)s'
         timename = time.strftime("%Y-%m-%d-%I-%M-%S", time.localtime()) + "-MairiLog"
-        filename = r'F:\Program\Logging\yuetu\%s.txt' % timename
+        filename = r'%s%s' % (self.logPath['log_path'],timename)+'.txt'
 
         self.log.basicConfig(
             # 设置告警级别为INFO

@@ -8,7 +8,8 @@
     </switch>
 
     # 配置log日志打印的存放地址
-    <logAddress>D:\program\logging\python\</logAddress>
+    <!--<logAddress>D:\program\logging\python\</logAddress>-->
+    <logAddress>F:\Program\Logging\yuetu\</logAddress>
 
     # 配置此时需要run的测试用例；
     <RunCase>
@@ -17,10 +18,10 @@
             <!--<id>Case_Search_KeyValue_0001</id>-->
             <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0001</Address>-->
         <!--</case>-->
-        <case>
-            <id>Case_Search_KeyValue_0002</id>
-            <Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0002</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Search_KeyValue_0002</id>-->
+            <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
+        <!--</case>-->
         <!--<case>-->
             <!--<id>Case_Search_KeyValue_0003</id>-->
             <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0003</Address>-->
@@ -44,10 +45,10 @@
 
 
         # currency case
-        <!--<case>-->
-            <!--<id>Case_Search_KeyValue_0002</id>-->
-            <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
-        <!--</case>-->
+        <case>
+            <id>Case_Currency_FromToRate_0001</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0001</Address>
+        </case>
 
 
 
