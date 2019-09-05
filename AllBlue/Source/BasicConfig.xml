@@ -8,8 +8,8 @@
     </switch>
 
     # 配置log日志打印的存放地址
-    <!--<logAddress>D:\program\logging\python\</logAddress>-->
-    <logAddress>F:\Program\Logging\yuetu\</logAddress>
+    <logAddress>D:\program\logging\python\</logAddress>
+    <!--<logAddress>F:\Program\Logging\yuetu\</logAddress>-->
 
     # 配置此时需要run的测试用例；
     <RunCase>
