@@ -53,6 +53,7 @@ class Case_Search_KeyValue_0002(CaseBase):
         res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
         if res:
             self.log.info('搜索成功，有返回')
+            print('res:',res)
             case2_nk = NightKingRes(res)
             ms_currency = case2_nk.routingFirstBaseInfo('masterCurrency')
             if ms_currency != MstCurrecy:
