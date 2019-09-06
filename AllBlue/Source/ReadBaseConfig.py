@@ -6,7 +6,7 @@ import xml.etree.ElementTree as ET
 class BaseConfig():
 
     def __init__(self):
-        self.Dom = ET.parse(r'D:\program\Python\yueTu\AllBlue\Source\BasicConfig.xml')
+        self.Dom = ET.parse(r'.\Source\BasicConfig.xml')
         self.nkReqData = {"id":"nightKingReq","search_url":""}
         self.nkResData = {"id":"nightkingRes","search_url":""}
         self.logPath = {"id":"logPath","log_path":""}
