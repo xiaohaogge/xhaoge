@@ -23,7 +23,7 @@ class Controler(CaseBase):
                 self.log.error('casename:',runner["Casename"]+"报错：",e)
                 print(e)
 
-                self.caseRun.TestResult()
+            self.caseRun.TestResult()
 
 
 # if __name__ == "__main__":
