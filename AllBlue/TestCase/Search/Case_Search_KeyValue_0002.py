@@ -45,12 +45,12 @@ class Case_Search_KeyValue_0002(CaseBase):
 
     # 定义公共方法，用于判断masterCuurrncy；
     def Test_Master_Currency(self,plat='ctrip',reqC='CNY',MstCurrecy='CNY'):
-        self.nkRequestData['Cid'] = plat
-        self.nkRequestData['Currency'] = reqC
-        print(self.nkRequestData)
-        self.sendData = json.dumps(self.nkRequestData)
-        self.log.info(self.sendData)
-        res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
+        self.nkRequestDataDict['Cid'] = plat
+        self.nkRequestDataDict['Currency'] = reqC
+        print(self.nkRequestDataDict)
+        sendData = json.dumps(self.nkRequestDataDict)
+        self.log.info(sendData)
+        res = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
         if res:
             self.log.info('搜索成功，有返回')
             print('res:',res)
