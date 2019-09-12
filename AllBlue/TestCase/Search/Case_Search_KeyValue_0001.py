@@ -3,31 +3,17 @@
 
 
 import json
-from AllBlue.CommonFunc.Base import AllBase
+from AllBlue.TestCase.AllCaseBase import CaseBase
 
-class Case_Search_KeyValue_0001(AllBase):
+class Case_Search_KeyValue_0001(CaseBase):
 
     def __init__(self):
-        AllBase.__init__(self)
+        CaseBase.__init__(self)
         self.log.info("nima,开始case的初始化")
-        self.url = 'http://dev-api.gloryholiday.com/yuetu/search'
-        self.data = '''
-                        {
-                            "Cid": "qunarytb",
-                            "TripType": "1",
-                            "FromCity": "hkg",
-                            "ToCity": "icn",
-                            "FromDate": "20190923",
-                            "RetDate": "20190921",
-                            "AdultNumber": 1,
-                            "ChildNumber": 0,
-                            "InfantNumber":0,
-                            "GodPerspective":false
-                        }'''
 
 
     def TestProcess(self):
-        res = self.sendRequest(method='POST',url=self.url,data=self.data)
+        res = self.sendRequest(method='POST',url=self.nkRequesturl,data=self.nkRequestdata)
         print(res)
         if res:
             self.log.info('搜索成功，有返回')
