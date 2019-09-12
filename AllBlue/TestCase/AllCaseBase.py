@@ -29,6 +29,7 @@ class CaseBase(AllBase):
 
         self.PreProdRate = 'http://pre-prod-restful-api.gloryholiday.com/nightking/exchangeRate'
         self.ProdRate = 'http://prod-restful-api.gloryholiday.com/nightking/exchangeRate'
+        self.devRate = 'http:dev-restful-api.gloryholiday.com/nightking/exchangeRate'
 
 
     def TestProcess(self):
@@ -47,12 +48,10 @@ class CaseBase(AllBase):
         # pre-prod-restful-api.gloryholiday.com/nightking/exchangeRate?providerName=sscts&cid=ctrip&originalCode=USD&targetCode=CNY
         resjson = self.sendRequest(method='GET',url=sendUrl)
         resdict = json.loads(resjson)
-        print(resdict)
+        # print(resdict)
         try:
             if resdict['msg'] == "success":
                 self.log.info('获取汇率%s；' % resdict['msg'])
-            else:
-                self.log.error('获取汇率%s；' % resdict['msg'])
         except Exception as e:
             self.log.error('获取汇率:%s,报错：%s'%(resdict,e))
         self.log.info('from:%s to:%s rate:%s'%(ori,tar,resdict['exchange_rate']['exchange_rate']))
