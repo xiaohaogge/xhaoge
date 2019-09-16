@@ -19,54 +19,24 @@ class Case_Currency_FromToRate_0002(CaseBase):
 
         self.log.info('【1.测试从night king中返回获取provider币种(以qunarytb为例)】')
         res = self.sendRequest(method='POST',url=self.nkRequesturl,data=self.nkRequestdata)
-        if res:
-            self.log.info('搜索成功，有返回')
-        else:
-            self.log.error('搜索无返回，或者返回信息为null；')
-
-        case_c2 = NightKingRes(res)
-        routingslist = case_c2.nkRouting
-        print("routingslist:",routingslist)
-        for i in case_c2.nkTraceSpans:
-            try:
-                pro = i['tags']['nk-wb-final-target-providers']
-                self.target_providers = pro.split(',')
-                print(self.target_providers)
-                break
-            except Exception:
-                pass
-        print(self.target_providers)
+        self.checkNkStatus(res)
+        self.Test_TargetProviders(res)
+        self.log.info('target_provider:%s'%self.target_providers,'routingslist:',self.routingslist)
 
         self.log.info('【2.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
         for tar in self.target_providers:
-            self.Test_Provider_Master(cid='',provider=tar,routings=routingslist,reqCurrency='CNY')
+            self.Test_Provider_Master(cid='',provider=tar,routings=self.routingslist,reqCurrency='CNY')
 
         self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM为例)】')
         self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
         print(self.nkRequestDataDict)
         sendData = json.dumps(self.nkRequestDataDict)
         res = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
-        if res:
-            self.log.info('搜索成功，有返回')
-        else:
-            self.log.error('搜索无返回，或者返回信息为null；')
-
-        case_c2 = NightKingRes(res)
-        routingslist = case_c2.nkRouting
-        print("routingslist:", routingslist)
-        for i in case_c2.nkTraceSpans:
-            try:
-                pro = i['tags']['nk-wb-final-target-providers']
-                self.target_providers = pro.split(',')
-                print(self.target_providers)
-                break
-            except Exception:
-                pass
-        print(self.target_providers)
-
+        self.Test_TargetProviders(res)
         self.log.info('【4.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        self.log.info('target_provider:%s' % self.target_providers, 'routingslist:', self.routingslist)
         for tar in self.target_providers:
-            self.Test_Provider_Master(cid='', provider=tar, routings=routingslist, reqCurrency='CNY')
+            self.Test_Provider_Master(cid='', provider=tar, routings=self.routingslist, reqCurrency='CNY')
 
         self.flag = True
 
@@ -78,6 +48,25 @@ class Case_Currency_FromToRate_0002(CaseBase):
             print("测试结果很成功，perfect！")
         else:
             self.log.info('=========Case_Currency_FromToRate_0002,测试失败')
+
+    def Test_TargetProviders(self,res):
+        case_c2 = NightKingRes(res)
+        self.routingslist = case_c2.nkRouting
+        # self.log.info("routingslist:%s" % routingslist)
+        print("routingslist:", self.routingslist)
+        for i in case_c2.nkTraceSpans:
+            try:
+                pro = i['tags']['nk-wb-final-target-providers']
+                self.target_providers = pro.split(',')
+                print(self.target_providers)
+                break
+            except Exception:
+                pass
+        self.log.info(self.target_providers)
+
+        # self.log.info('【4.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        # for tar in self.target_providers:
+        #     self.Test_Provider_Master(cid='', provider=tar, routings=routingslist, reqCurrency='CNY')
 
 
 
