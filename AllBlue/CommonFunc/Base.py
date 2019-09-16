@@ -11,12 +11,11 @@ class AllBase(RunRequest,BaseConfig):
 
 
     def __init__(self):
-        BaseConfig.__init__(self)
-        self.startRead()
         self.buildLog()
 
 
     def buildLog(self):
+        self.startRead()
         self.log = logging
         myformat = '%(asctime)s---%(levelname)s-[line:%(lineno)d]---"message":%(message)s'
         timename = time.strftime("%Y-%m-%d-%I-%M-%S", time.localtime()) + "-MairiLog"

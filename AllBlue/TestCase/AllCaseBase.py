@@ -46,38 +46,42 @@ class CaseBase(AllBase):
     def TestResult(self):
         pass
 
+
     # todo 对响应状态进行判断；low
     def checkNkStatus(self,nk):
         res = json.loads(nk)
         res_Status = res['baseResponse']['status']
         if res_Status == 500:
             self.log.error('status:%s,message:%s' % (res['baseResponse']['status'], res['baseResponse']['message']))
+            raise Exception(500)
         elif res_Status == 200:
             if len(res['routing']) == 0:
                 self.log.error('status:200,routing信息为null；')
+                raise Exception(204)
             else:
                 self.log.info('status:200,返回报价无错误；')
         else:
-            self.log.error('不知道名的错误；')
+            self.log.error('checkNKStatus: unknow error ')
+            raise Exception(404)
 
 
-
-
-
-    def Test_Currency(self,pro='sscts',cid='ctrip',ori="USD",tar='CNY'):
-        '''定义公共方法，用于获取Cuurrncy rate；'''
+    def Test_Currency(self,method=1,env='dev',pro='sscts',cid='ctrip',ori="USD",tar='CNY'):
+        '''定义公共方法，用于获取Cuurrncy rate；
+            method=1,表示check 是否有获取到汇率，method=2,表示return currency；
+        '''
         strJoin = "?providerName={}&cid={}&originalCode={}&targetCode={}".format(pro,cid,ori,tar)
-        sendUrl = self.ProdExchangeRate+strJoin
+        sendUrl = self.devExchangeRate+strJoin if env=='dev' else self.ProdExchangeRate+strJoin
         # pre-prod-restful-api.gloryholiday.com/nightking/exchangeRate?providerName=sscts&cid=ctrip&originalCode=USD&targetCode=CNY
         resjson = self.sendRequest(method='GET',url=sendUrl)
         resdict = json.loads(resjson)
-        try:
-            if resdict['msg'] == "success":
-                self.log.info('获取汇率%s；' % resdict['msg'])
-        except Exception as e:
-            self.log.error('获取汇率:%s,报错：%s'%(resdict,e))
-        self.log.info('from:%s to:%s rate:%s'%(ori,tar,resdict['exchange_rate']['exchange_rate']))
-        print('from:%s to:%s rate:%s'%(ori,tar,resdict['exchange_rate']['exchange_rate']))
+        if resdict['msg'] == "success":
+            self.log.info('获取汇率%s；from:%s to:%s rate:%s' % (resdict['msg'], ori, tar, resdict['exchange_rate']['exchange_rate']))
+            print('获取汇率%s；from:%s to:%s rate:%s' % (resdict['msg'], ori, tar, resdict['exchange_rate']['exchange_rate']))
+        else:
+            return 404
+        if method==2:
+            return resdict['exchange_rate']['exchange_rate']
+        return 200
 
 
     def Test_Provider_Master(self,cid='',provider='',routings='',reqCurrency='CNY'):
@@ -98,11 +102,11 @@ class CaseBase(AllBase):
         masCurrency = testrouting['masterCurrency']
         outcurrency = testrouting['currency']
         cuyconversions = testrouting['currencyConversions']
-        self.log.info('【2.1.%s是否有获取到provider 到master currency】' )%cid
+        self.log.info('【2.1.%s是否有获取到provider 到master currency】'%provider )
         pro_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
                                          fromC=proCurrency,toC=masCurrency)
         if pro_res:
-            self.log.info('测试汇率转化有获取；')
+            self.log.info('汇率转化有获取；%s'% pro_res)
         else:
             self.log.error('不存在转化汇率；from %s to %s')%(proCurrency,masCurrency)
         if cid=='iwoflyCOM':
@@ -110,7 +114,7 @@ class CaseBase(AllBase):
                 out_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
                                                        fromC=masCurrency,toC=outcurrency)
                 if out_res:
-                    self.log.info('测试汇率转化有获取；')
+                    self.log.info('汇率转化有获取；')
                 else:
                     self.log.error('不存在转化汇率；from %s to %s') % (proCurrency, masCurrency)
 
