@@ -101936,3 +101936,151 @@
     "persist": true
   }
 }
+
+
+# 平台不在线
+{
+    "baseResponse": {
+        "status": 500,
+        "message": "Platform Not Online",
+        "cid": "ctrip",
+        "traceId": "a8f6d53b-cdb3-4f3c-85eb-064194c5ec45",
+        "pid": ""
+    },
+    "routing": [],
+    "traceSpans": [],
+    "traceTimers": null
+}
+
+
+# 搜索限制
+
+{
+    "baseResponse": {
+        "status": 200,
+        "message": "success",
+        "cid": "ctrip",
+        "traceId": "0043db4e-5de7-446d-b586-5185f6bef11c",
+        "pid": ""
+    },
+    "routing": [],
+    "traceSpans": [
+        {
+            "spanId": "82de50b9-1246-4e92-968a-cf1e253b45c1",
+            "traceType": "None",
+            "application": "night-king",
+            "desc": "night-king search",
+            "tags": {
+                "cost": "5ms",
+                "trip": "SYD-BJS-2019-10-07-2019-10-22"
+            },
+            "createdAt": "2019-09-16T01:23:41.310233338Z"
+        },
+        {
+            "spanId": "6ddf8654-093c-449d-82c6-81b967fdec3b",
+            "traceType": "WB",
+            "application": "night-king",
+            "desc": "target providers by w/b rules",
+            "tags": {
+                "nk-wb-all-online-providers": "amsav",
+                "nk-wb-amsav": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: true",
+                "nk-wb-avia": "ID: 5d37b475b7395a0001d327b5, displayNumber: WB1907243608, revision: 11.. Black/White: ALLOW, Online: false, ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-daran": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-final-target-providers": "amsav",
+                "nk-wb-list": "ID: 5d37b475b7395a0001d327b5, displayNumber: WB1907243608, revision: 11.,ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.",
+                "nk-wb-mondee": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-myslcc": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-mystifly": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-qunarf": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-sihai": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-skypk": "ID: 5d37b475b7395a0001d327b5, displayNumber: WB1907243608, revision: 11.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssact": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssanda": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssatkt": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssbelair": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-sscts": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-sseas": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssgmt": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssjdu": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-sslion": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssrainbow": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ssxm": "ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false",
+                "nk-wb-ttnet": "ID: 5d37b475b7395a0001d327b5, displayNumber: WB1907243608, revision: 11.. Black/White: ALLOW, Online: false",
+                "nk-wb-via": "ID: 5d37b475b7395a0001d327b5, displayNumber: WB1907243608, revision: 11.. Black/White: ALLOW, Online: false, ID: 5d65f7aba426e80001a65c52, displayNumber: WB190828150B, revision: 0.. Black/White: ALLOW, Online: false"
+            },
+            "createdAt": "2019-09-16T01:23:41.310362545Z"
+        },
+        {
+            "spanId": "86bea19c-be8e-4452-b787-d2a3f2624a0e",
+            "traceType": "None",
+            "application": "night-king",
+            "desc": "search limiter",
+            "tags": {
+                "provider": "amsav",
+                "s2b-30days": "Actual: 130/130, Limit: 1",
+                "search-s2b": "Hit"
+            },
+            "createdAt": "2019-09-16T01:23:41.314333447Z"
+        },
+        {
+            "spanId": "d4de116b-7aea-4335-a8b0-f8f89de3b0da",
+            "traceType": "None",
+            "application": "night-king",
+            "desc": "provider search stats",
+            "tags": {
+                "cacheHit": "false",
+                "error": "provider [AMADEUS] search blocked by limitation",
+                "provider": "amsav",
+                "provider-pcc": "MOWR228RP",
+                "searchCost": "4ms",
+                "searchThrottled": "false"
+            },
+            "createdAt": "2019-09-16T01:23:41.315515815Z"
+        }
+    ],
+    "traceTimers": {
+        "traceId": "",
+        "self": {
+            "startAt": "2019-09-16T01:23:41.310253217Z",
+            "stopAt": "2019-09-16T01:23:41.315559870Z",
+            "application": "night-king",
+            "operation": "search",
+            "nickName": "",
+            "timeout": false,
+            "bypassed": true,
+            "status": "",
+            "msg": ""
+        },
+        "subTimers": [],
+        "persist": true
+    }
+}
+
+# 黑名单
+{
+    "baseResponse": {
+        "status": 500,
+        "message": "Blocked by W/B Rule",
+        "cid": "ctrip",
+        "traceId": "f8d75d91-f946-49c7-ae4a-59ade41aca27",
+        "pid": ""
+    },
+    "routing": [],
+    "traceSpans": [
+        {
+            "spanId": "5d7ee4e7d894830001ea6a8b",
+            "traceType": "WB",
+            "application": "no-one",
+            "desc": "w/b rules",
+            "tags": {
+                "no-wb-type": "Black",
+                "wb-display-number": "WB190916RNPO",
+                "wb-revision": "0"
+            },
+            "createdAt": "2019-09-16T01:27:05.386773692Z"
+        }
+    ],
+    "traceTimers": null
+}
+
+
