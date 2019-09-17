@@ -1,5 +1,5 @@
 '''Currency Rate
-  此case用于测试nightking search 时返回的provider、MasterCurrency，再到报价币种转换汇率是否有拿到；
+  此case用于测试nightking search 时返回的所有政策匹配涉及到的Currency-masterCurrency转换汇率是否有拿到；
 '''
 
 
@@ -7,15 +7,15 @@ import json
 from AllBlue.TestCase.AllCaseBase import CaseBase
 from AllBlue.CommonFunc.NightKingSearchResponse import NightKingRes
 
-class Case_Currency_FromToRate_0002(CaseBase):
+class Case_Currency_FromToRate_0003(CaseBase):
 
     def __init__(self):
         CaseBase.__init__(self)
-        self.log.info("===Case_Currency_FromToRate_0002,测试开始===")
+        self.log.info("===Case_Currency_FromToRate_0003,测试开始===")
 
 
     def TestProcess(self):
-        self.log.info('【Case_Currency_FromToRate_0001,进入测试步骤！】')
+        self.log.info('【Case_Currency_FromToRate_0003,进入测试步骤！】')
 
         self.log.info('【1.测试从night king中返回获取provider币种(以qunarytb为例)】')
         res = self.sendRequest(method='POST',url=self.nkRequesturl,data=self.nkRequestdata)
@@ -42,17 +42,16 @@ class Case_Currency_FromToRate_0002(CaseBase):
 
 
     def TestResult(self):
-        self.log.info('===Case_Currency_FromToRate_0002,测试完毕===')
+        self.log.info('===Case_Currency_FromToRate_0003,测试完毕===')
         if self.flag:
-            self.log.info('=========Case_Currency_FromToRate_0002,测试通过')
+            self.log.info('=========Case_Currency_FromToRate_0003,测试通过')
             print("测试结果很成功，perfect！")
         else:
-            self.log.info('=========Case_Currency_FromToRate_0002,测试失败')
+            self.log.info('=========Case_Currency_FromToRate_0003,测试失败')
 
     def Test_TargetProviders(self,res):
         case_c2 = NightKingRes(res)
         self.routingslist = case_c2.nkRouting
-        #print("routingslist:", self.routingslist)
         for i in case_c2.nkTraceSpans:
             try:
                 pro = i['tags']['nk-wb-final-target-providers']

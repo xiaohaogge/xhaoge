@@ -50,7 +50,10 @@ class CaseBase(AllBase):
     # todo 对响应状态进行判断；low
     def checkNkStatus(self,nk):
         res = json.loads(nk)
-        res_Status = res['baseResponse']['status']
+        try:
+            res_Status = res['baseResponse']['status']
+        except Exception as e:
+            return e
         if res_Status == 500:
             self.log.error('status:%s,message:%s' % (res['baseResponse']['status'], res['baseResponse']['message']))
             raise Exception(500)
