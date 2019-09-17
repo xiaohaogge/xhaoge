@@ -24,6 +24,7 @@ class Case_Currency_VNDtoCNY_0101(CaseBase):
         res = self.sendRequest(method='POST',url=self.getCurrency,data=sendData)
         resC = json.loads(res)
         currencyList = resC['currencies']
+        self.log.info(currencyList)
         for i in currencyList:
             if i['source'] == 'VCB':
                 if i['status_code']!=200:

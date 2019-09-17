@@ -54,10 +54,10 @@
             <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0002</Address>
         </case>
 
-        <!--<case>-->
-            <!--<id>Case_Currency_VNDtoCNY_0101</id>-->
-            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_VNDtoCNY_0101</Address>-->
-        <!--</case>-->
+        <case>
+            <id>Case_Currency_VNDtoCNY_0101</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_VNDtoCNY_0101</Address>
+        </case>
 
 
 

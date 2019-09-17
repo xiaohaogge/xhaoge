@@ -17,7 +17,7 @@ class AllBase(RunRequest,BaseConfig):
     def buildLog(self):
         self.startRead()
         self.log = logging
-        myformat = '%(asctime)s---%(levelname)s-[line:%(lineno)d]---"message":%(message)s'
+        myformat = '%(asctime)s--%(levelname)s--[%(funcName)s-line:%(lineno)d]---"message":%(message)s'
         timename = time.strftime("%Y-%m-%d-%I-%M-%S", time.localtime()) + "-MairiLog"
         filename = r'%s%s' % (self.logPath['log_path'],timename)+'.txt'
 
@@ -31,6 +31,7 @@ class AllBase(RunRequest,BaseConfig):
             # 以追加的方式将日志写入文件中，w是以覆盖写的方式哟
             level=logging.INFO,
             format=myformat,
+            datefmt='%Y %H:%M:%S',
             filename=filename,
             filemode='a'
         )

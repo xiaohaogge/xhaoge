@@ -20,7 +20,6 @@ class Controler(CaseBase):
                 self.caseRun.TestProcess()
                 print('========================')
             except Exception as e:
-                self.log.error('casename:',runner["Casename"]+"报错：",e)
-
+                self.log.error('casename:%s,报错：%s'%(runner["Casename"],e))
             self.caseRun.TestResult()
 
