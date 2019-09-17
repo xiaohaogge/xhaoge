@@ -3,6 +3,7 @@
 import json
 import random
 from AllBlue.CommonFunc.Base import AllBase
+from AllBlue.CommonFunc.NightKingSearchResponse import NightKingRes
 
 
 class CaseBase(AllBase):
@@ -45,6 +46,15 @@ class CaseBase(AllBase):
 
     def TestResult(self):
         pass
+
+
+
+
+
+
+
+
+
 
 
     # todo 对响应状态进行判断；low
@@ -99,8 +109,8 @@ class CaseBase(AllBase):
             return self.log.info('该供应商没有航线报出:%s'%provider)
         '''随机抽取其中一条航线，进行测试计算；'''
         testnum = random.randint(0,num-1)
+        self.log.info('总航线数目：%s,选择的是：%s'%(num,testnum))
         testrouting = prolist[testnum]
-        print('testrouting',testrouting)
         proCurrency = testrouting['providerCurrency']
         masCurrency = testrouting['masterCurrency']
         outcurrency = testrouting['currency']
@@ -109,7 +119,7 @@ class CaseBase(AllBase):
         pro_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
                                          fromC=proCurrency,toC=masCurrency)
         if pro_res:
-            self.log.info('汇率转化有获取；%s'% pro_res)
+            self.log.info('汇率转化是否有获取；%s'% pro_res)
         else:
             self.log.error('不存在转化汇率；from %s to %s')%(proCurrency,masCurrency)
         if cid=='iwoflyCOM':
@@ -138,6 +148,17 @@ class CaseBase(AllBase):
                 if method==2:
                     return n['rate'],n['source'],n['policyId']
         return "汇率 from %s to %s nothing"%(fromC,toC)
+
+    def Test_TargetProviders(self,res):
+        case_c2 = NightKingRes(res)
+        self.routingslist = case_c2.nkRouting
+        for i in case_c2.nkTraceSpans:
+            try:
+                pro = i['tags']['nk-wb-final-target-providers']
+                providers = pro.split(',')
+                return providers
+            except Exception:
+                pass
 
 
 
