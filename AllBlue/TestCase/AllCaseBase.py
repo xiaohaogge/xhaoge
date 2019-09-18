@@ -140,7 +140,7 @@ class CaseBase(AllBase):
         '''
         if len(conversions)==0:
             self.log.error('conversions is null，big problem；')
-            # todo 主动抛异常；
+            # todo 需要主动抛异常；
         for n in conversions:
             if n['from']==fromC and n['to']==toC:
                 if method==1:
