@@ -1,7 +1,7 @@
 # 定义程序的主入口
 
 
-from AllBlue.Handle.Control import Controler
+from AllBlue.Suite.Control import Controler
 
 class GodMain(Controler):
 
