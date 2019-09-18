@@ -1,5 +1,13 @@
-# 此文件用于定于一些公共方法；
+# 此文件用于定义一些公共的函数，可以使用；
+
 import json
+
+# 定义用于判断俩个值是否相等；
+def isEqualTo():
+    pass
+
+
+
 
 
 def checkGetCurrency(res,source='BOC',fromC='USD',toC='CNY'):
@@ -20,5 +28,7 @@ def checkGetCurrency(res,source='BOC',fromC='USD',toC='CNY'):
 def checkExchangeRate(method=1,fromC='USD',toC='CNY',res=''):
     '''定义exchangeRate接口返回的check，res 类型为字符串，接口的响应数据；'''
     resp = json.loads(res)
+
+
 
 

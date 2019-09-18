@@ -5,7 +5,7 @@
 
 import json
 from AllBlue.TestCase.AllCaseBase import CaseBase
-from AllBlue.CommonFunc.NightKingSearchResponse import NightKingRes
+from AllBlue.Common.NightKingSearchResponse import NightKingRes
 
 class Case_Currency_FromToRate_0002(CaseBase):
 

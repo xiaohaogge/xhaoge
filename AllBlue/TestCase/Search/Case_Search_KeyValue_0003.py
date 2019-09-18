@@ -3,7 +3,7 @@
 
 
 import json
-from AllBlue.CommonFunc.Base import AllBase
+from AllBlue.Common.Base import AllBase
 
 class Case_Search_KeyValue_0003(AllBase):
 

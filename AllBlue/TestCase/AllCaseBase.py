@@ -2,8 +2,8 @@
 
 import json
 import random
-from AllBlue.CommonFunc.Base import AllBase
-from AllBlue.CommonFunc.NightKingSearchResponse import NightKingRes
+from AllBlue.Common.Base import AllBase
+from AllBlue.Common.NightKingSearchResponse import NightKingRes
 
 
 class CaseBase(AllBase):

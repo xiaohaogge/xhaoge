@@ -5,7 +5,7 @@
 
 
 import json
-from AllBlue.CommonFunc.NightKingSearchResponse import NightKingRes
+from AllBlue.Common.NightKingSearchResponse import NightKingRes
 from AllBlue.TestCase.AllCaseBase import CaseBase
 
 class Case_Search_KeyValue_0002(CaseBase):

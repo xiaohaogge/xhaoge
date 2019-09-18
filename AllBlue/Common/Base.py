@@ -4,7 +4,7 @@
 import os
 import time
 import logging
-from AllBlue.CommonFunc.SendMethod import RunRequest
+from AllBlue.Common.SendMethod import RunRequest
 from AllBlue.Source.ReadBaseConfig import BaseConfig
 
 class AllBase(RunRequest,BaseConfig):
