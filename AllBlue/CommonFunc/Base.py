@@ -31,7 +31,7 @@ class AllBase(RunRequest,BaseConfig):
             # 以追加的方式将日志写入文件中，w是以覆盖写的方式哟
             level=logging.INFO,
             format=myformat,
-            datefmt='%Y %H:%M:%S',
+            datefmt='%Y-%m/%d-%H:%M:%S',
             filename=filename,
             filemode='a'
         )

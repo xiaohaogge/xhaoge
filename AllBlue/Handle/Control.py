@@ -23,3 +23,6 @@ class Controler(CaseBase):
                 self.log.error('casename:%s,报错：%s'%(runner["Casename"],e))
             self.caseRun.TestResult()
 
+
+    # todo 每运行一个测试脚本，会去读取一次配置待解决
+
