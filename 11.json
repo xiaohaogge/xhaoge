@@ -1,0 +1,161 @@
+{
+  "yuetu_verify_response": {
+    "base_response": {
+      "status": 200,
+      "cid": "iwoflyCOM",
+      "trace_id": "7003b3ba-0587-4c09-9c7d-e94e14a9dbb8"
+    },
+    "routing": {
+      "itinerary": [
+        {
+          "origin_city": "SIN",
+          "destination_city": "LAX",
+          "segment": [
+            {
+              "carrier": "TR",
+              "flight_number": "TR100",
+              "operating_carrier": "TR",
+              "departure_airport": "SIN",
+              "departure_time": "201911210525",
+              "arrival_airport": "CAN",
+              "arrival_time": "201911210930",
+              "cabin": "E",
+              "fare_basis": "X1TRAPID",
+              "seats": 5,
+              "baggage": {},
+              "id": "18840f37472d000024e7bdc0_0"
+            },
+            {
+              "carrier": "MU",
+              "flight_number": "MU9312",
+              "operating_carrier": "FM",
+              "departure_airport": "CAN",
+              "departure_time": "201911211245",
+              "arrival_airport": "PVG",
+              "arrival_time": "201911211510",
+              "cabin": "E",
+              "fare_basis": "TLE0Z3RC",
+              "seats": 5,
+              "baggage": {
+                "baggage_check": true
+              },
+              "id": "0f37243e472d47367c280fa1_0"
+            },
+            {
+              "carrier": "MU",
+              "flight_number": "MU577",
+              "operating_carrier": "MU",
+              "departure_airport": "PVG",
+              "departure_time": "201911212100",
+              "arrival_airport": "LAX",
+              "arrival_time": "201911211700",
+              "cabin": "E",
+              "fare_basis": "TLE0Z3RC",
+              "seats": 5,
+              "baggage": {},
+              "id": "0f37243e472d47367c280fa1_1"
+            }
+          ],
+          "segment_splicing": true
+        },
+        {
+          "origin_city": "LAX",
+          "destination_city": "SIN",
+          "segment": [
+            {
+              "carrier": "AA",
+              "flight_number": "AA193",
+              "operating_carrier": "AA",
+              "departure_airport": "LAX",
+              "departure_time": "201912182345",
+              "arrival_airport": "HKG",
+              "arrival_time": "201912200725",
+              "cabin": "E",
+              "fare_basis": "MJX00MN0",
+              "seats": 5,
+              "baggage": {},
+              "id": "243e1712474800002fa2084b_0"
+            },
+            {
+              "carrier": "CX",
+              "flight_number": "CX530",
+              "operating_carrier": "CX",
+              "departure_airport": "HKG",
+              "departure_time": "201912200900",
+              "arrival_airport": "TPE",
+              "arrival_time": "201912201100",
+              "cabin": "E",
+              "fare_basis": "MJX00MN0",
+              "seats": 5,
+              "baggage": {},
+              "id": "243e1712474800002fa2084b_1"
+            },
+            {
+              "carrier": "VJ",
+              "flight_number": "VJ845",
+              "operating_carrier": "VJ",
+              "departure_airport": "TPE",
+              "departure_time": "201912201400",
+              "arrival_airport": "SGN",
+              "arrival_time": "201912201625",
+              "cabin": "E",
+              "seats": 5,
+              "baggage": {
+                "baggage_check": true
+              },
+              "id": "171221bc474a000017e79d9c_0"
+            },
+            {
+              "carrier": "3K",
+              "flight_number": "3K552",
+              "operating_carrier": "3K",
+              "departure_airport": "SGN",
+              "departure_time": "201912202110",
+              "arrival_airport": "SIN",
+              "arrival_time": "201912210010",
+              "cabin": "E",
+              "fare_basis": "KLECOK",
+              "seats": 5,
+              "baggage": {
+                "baggage_check": true
+              },
+              "id": "21bc1884474a00000c2c0898_0"
+            }
+          ],
+          "segment_splicing": true
+        }
+      ],
+      "adult_price": 1222.0,
+      "child_price": 1222.0,
+      "adult_tax_type": 1,
+      "child_tax_type": 1,
+      "currency": "EUR",
+      "validating_carrier": "TR",
+      "seats": 5,
+      "multi_ticket": true,
+      "ticket_invoice_type": 1,
+      "rule": {
+        "rule_from_ota": -404,
+        "mini_rule": -404,
+        "refund_before_dep": -404,
+        "refund_before_dep_fee": -404.0,
+        "change_before_dep": -404,
+        "change_before_dep_fee": -404.0,
+        "no_show_change": -404,
+        "no_show_change_fee": -404.0,
+        "no_show_refund": -404,
+        "no_show_refund_fee": -404.0,
+        "part_refund": -404,
+        "part_refund_fee": -404.0,
+        "part_endorse": -404,
+        "part_endorse_price": -404.0,
+        "no_show_change_after": -404,
+        "no_show_change_after_fee": -404.0,
+        "no_show_refund_after": -404,
+        "no_show_refund_after_fee": -404.0
+      },
+      "cabin": "E",
+      "itinerary_splicing": true,
+      "booking_token": "AY0P-md5xVj8ZoyTIOot2qK-o4qSg4Dx5G13Sih9_VpDI-V4nOSbVBfwzoZyS7dpR3CPfDh3QCi3-Ke6bVmPTgdmX-VXh3glUvCdpai_A_pq1Wqa1OG63Mf3X1FKeV7eO2HtD3uBCvFaNwv3aoCR22BMAHAJYAtstfSnsG_fY65f0m7Spi8ajlmIn6eGg1zQSh4U1jMUYUHSPEgBeNUcpRPc4tvsMd8JatQdcd425sSevT46hSgoBwJlu2NfBmulAvDKKO8BEUrabeQVpAFltws8t_n94llQrCbk94J1qVIuYYNXtULvdIxH1ojqWHIX79lNEkfrMBWMhMRRNham4QsgpMal7tBvUm5aIRVm1KEjbEuerXdSn0JG6rEJrJyVsehl2LU0R0VJMnhToU9cftL9rIJMaXJa3vz37V84Eum5Km-rfTT_mdOvt5HnItslMnsHhD-cIlU3LWuiu9QmYGLWCAY9_o0rnkagUAjIThnJQ01T8nGzHasqAJiXv2Dv2eZ-20g2M_laZTD2clCQFTqi6jWfrjv2LLSY7KwhpR_s3aHRHar-d1agaQ2BygHJz6QD9QizsK_Ad-lrKbWXjEn4D3FH0EFCpVB6HTzqNcMo6nuw8tSInnHM2C8OjJ1ceAwIB6SFV0ROc4nI5p5b1nrZ2fA_Ygw5e3Xqh7Pa4BDwQGUppEyHUqXvtM6ADceIei1sHGHSkpfuxToj8lkVGew=="
+    }
+  }

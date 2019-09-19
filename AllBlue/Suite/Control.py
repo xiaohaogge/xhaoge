@@ -7,6 +7,7 @@ class Controler(CaseBase):
 
     def __init__(self):
         CaseBase.__init__(self)
+        self.log.info('==============测试开始 =============')
         self.buildSearchCase()
 
     def buildSearchCase(self):

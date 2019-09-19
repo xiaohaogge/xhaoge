@@ -97,7 +97,7 @@ class CaseBase(AllBase):
         return 200
 
 
-    def Test_Provider_Master(self,cid='',provider='',routings='',reqCurrency='CNY'):
+    def Test_Provider_Master(self,provider='',routings=''):
         '''定义方法，测试从provider 币种到本位币，再到报价币种的测试；'''
         prolist = []
         for d in routings:
@@ -122,14 +122,15 @@ class CaseBase(AllBase):
             self.log.info('汇率转化是否有获取；%s'% pro_res)
         else:
             self.log.error('不存在转化汇率；from %s to %s')%(proCurrency,masCurrency)
-        if cid=='iwoflyCOM':
-            if reqCurrency != 'USD' and reqCurrency !='HKD':
-                out_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
-                                                       fromC=masCurrency,toC=outcurrency)
-                if out_res:
-                    self.log.info('汇率转化有获取；')
-                else:
-                    self.log.error('不存在转化汇率；from %s to %s') % (proCurrency, masCurrency)
+        # if cid=='iwoflyCOM':
+        #     if reqCurrency != 'USD' and reqCurrency !='HKD':
+        #         out_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
+        #                                                fromC=masCurrency,toC=outcurrency)
+        #         if out_res:
+        #             self.log.info('汇率转化有获取；')
+        #         else:
+        #             self.log.error('不存在转化汇率；from %s to %s') % (proCurrency, masCurrency)
+
 
 
     def getRoutingCurrencyConvs(self,method=1,conversions=None,fromC='',toC=''):

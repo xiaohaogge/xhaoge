@@ -1,5 +1,5 @@
 '''Currency Rate
-  此case用于测试nightking search 时返回的所有政策匹配涉及到的Currency-masterCurrency转换汇率是否有拿到；
+  此case用于测试nightking search 时返回的rule政策匹配涉及到的Currency-masterCurrency转换汇率是否有拿到；
 '''
 
 
@@ -8,15 +8,15 @@ import random
 from AllBlue.TestCase.AllCaseBase import CaseBase
 
 
-class Case_Currency_FromToRate_0003(CaseBase):
+class Case_Currency_FromToRate_0004(CaseBase):
 
     def __init__(self):
         CaseBase.__init__(self)
-        self.log.info("===Case_Currency_FromToRate_0003,测试开始===")
+        self.log.info("===Case_Currency_FromToRate_0004,测试开始===")
 
 
     def TestProcess(self):
-        self.log.info('【Case_Currency_FromToRate_0003,进入测试步骤！】')
+        self.log.info('【Case_Currency_FromToRate_0004,进入测试步骤！】')
 
         self.log.info('【1.测试从night king中返回获取provider币种(以qunarytb为例)】')
         res = self.sendRequest(method='POST',url=self.nkRequesturl,data=self.nkRequestdata)
@@ -24,53 +24,31 @@ class Case_Currency_FromToRate_0003(CaseBase):
         self.target_providers = self.Test_TargetProviders(res)
         self.log.info('target_provider:%s'%self.target_providers)
 
-        self.log.info('【1.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        self.log.info('【2.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
         for tar in self.target_providers:
             self.Test_PolicyChange(provider=tar,routings=self.routingslist)
 
-        self.log.info('【2.测试从night king中返回获取provider币种(以iwoflyCOM 请求币种是CNY为例)】')
+        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM为例)】')
         self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
-        self.nkRequestDataDict['Currency'] = 'CNY'
-        sendData = json.dumps(self.nkRequestDataDict)
-        resCOM = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
-        self.target_providers = self.Test_TargetProviders(resCOM)
-        self.log.info('【2.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
-        self.log.info('target_provider:%s' % self.target_providers)
-        for tar in self.target_providers:
-            self.Test_Provider_Master(provider=tar, routings=self.routingslist)
-
-        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM 请求币种是HKD为例)】')
-        self.nkRequestDataDict['Currency'] = 'HKD'
-        sendData = json.dumps(self.nkRequestDataDict)
-        resCOM2 = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
-        self.target_providers = self.Test_TargetProviders(resCOM2)
-        self.log.info('【2.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
-        self.log.info('target_provider:%s' % self.target_providers)
-        for tar in self.target_providers:
-            self.Test_Provider_Master(provider=tar, routings=self.routingslist)
-
-        self.log.info('【4.测试从night king中返回获取provider币种(以iwoflyCN 请求币种是HKD为例)】')
-        self.nkRequestDataDict['Cid'] = 'iwoflyCN'
-        self.nkRequestDataDict['Currency'] = 'HKD'
-        sendData = json.dumps(self.nkRequestDataDict)
-        resCN = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
-        self.target_providers = self.Test_TargetProviders(resCN)
-        self.log.info('【4.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
-        self.log.info('target_provider:%s' % self.target_providers)
-        for tar in self.target_providers:
-            self.Test_Provider_Master(provider=tar, routings=self.routingslist)
-
+        # #print(self.nkRequestDataDict)
+        # sendData = json.dumps(self.nkRequestDataDict)
+        # res = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
+        # self.Test_TargetProviders(res)
+        # self.log.info('【4.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        # self.log.info('target_provider:%s' % self.target_providers)
+        # for tar in self.target_providers:
+        #     self.Test_Provider_Master(cid='', provider=tar, routings=self.routingslist, reqCurrency='CNY')
 
         self.flag = True
 
 
     def TestResult(self):
-        self.log.info('===Case_Currency_FromToRate_0003,测试完毕===')
+        self.log.info('===Case_Currency_FromToRate_0004,测试完毕===')
         if self.flag:
-            self.log.info('=========Case_Currency_FromToRate_0003,测试通过')
+            self.log.info('=========Case_Currency_FromToRate_0004,测试通过')
             print("测试结果很成功，perfect！")
         else:
-            self.log.info('=========Case_Currency_FromToRate_0003,测试失败')
+            self.log.info('=========Case_Currency_FromToRate_0004,测试失败')
 
 
     def Test_PolicyChange(self,cid='',provider='',routings=''):
