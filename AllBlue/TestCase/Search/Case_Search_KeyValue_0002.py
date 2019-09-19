@@ -5,7 +5,7 @@
 
 
 import json
-from AllBlue.Common.NightKingSearchResponse import NightKingRes
+from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
 from AllBlue.TestCase.AllCaseBase import CaseBase
 
 class Case_Search_KeyValue_0002(CaseBase):
@@ -54,7 +54,7 @@ class Case_Search_KeyValue_0002(CaseBase):
         if res:
             self.log.info('搜索成功，有返回')
             print('res:',res)
-            case2_nk = NightKingRes(res)
+            case2_nk = NightKingSearchRes(res)
             ms_currency = case2_nk.routingFirstBaseInfo('masterCurrency')
             if ms_currency != MstCurrecy:
                 self.log.error('%s 请求币种为 %s 时，mastercurrencty为：%s' % (plat,reqC,ms_currency))

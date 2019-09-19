@@ -3,7 +3,7 @@
 import json
 import random
 from AllBlue.Common.Base import AllBase
-from AllBlue.Common.NightKingSearchResponse import NightKingRes
+from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
 
 
 class CaseBase(AllBase):
@@ -150,7 +150,7 @@ class CaseBase(AllBase):
         return "汇率 from %s to %s nothing"%(fromC,toC)
 
     def Test_TargetProviders(self,res):
-        case_c2 = NightKingRes(res)
+        case_c2 = NightKingSearchRes(res)
         self.routingslist = case_c2.nkRouting
         for i in case_c2.nkTraceSpans:
             try:
