@@ -18,13 +18,13 @@ class Case_Currency_FromToRate_0004(CaseBase):
     def TestProcess(self):
         self.log.info('【Case_Currency_FromToRate_0004,进入测试步骤！】')
 
-        self.log.info('【1.测试从night king中返回获取provider币种(以qunarytb为例)】')
+        self.log.info('【1.测试从night king中返回获取不同的provider(以平台qunarytb为例)】')
         res = self.sendRequest(method='POST',url=self.nkRequesturl,data=self.nkRequestdata)
         self.checkNkStatus(res)
         self.target_providers = self.Test_TargetProviders(res)
         self.log.info('target_provider:%s'%self.target_providers)
 
-        self.log.info('【2.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        self.log.info('【2.根据不同的供应商,可能匹配不同的政策，政策内的币种可能会不一样；】')
         for tar in self.target_providers:
             self.Test_PolicyChange(provider=tar,routings=self.routingslist)
 
@@ -61,7 +61,7 @@ class Case_Currency_FromToRate_0004(CaseBase):
             return self.log.info('该供应商没有航线报出:%s'%provider)
         '''随机抽取其中一条航线，进行测试计算；'''
         testnum = random.randint(0, num - 1)
-        self.log.info('总航线数目：%s,选择的是：%s' % (num, testnum))
+        self.log.info('%s总航线数目：%s,选择的是：%s' % (provider,num, testnum))
         test_Routing = pro_Routing_List[testnum]
         pro_Currency = test_Routing['providerCurrency']
         mas_Currency = test_Routing['masterCurrency']
@@ -70,15 +70,19 @@ class Case_Currency_FromToRate_0004(CaseBase):
         policy_Price_Changes = test_Routing['policyPriceChanges']
         self.log.info('【2.1.check %s是否有获取到policyPriceChanges】' % provider)
         if len(policy_Price_Changes)!=0:
-            cnylist = self.Test_GetPolicyCurrecy(masterC=mas_Currency,policy=policy_Price_Changes)
-            for i in cnylist:
+            policy_Currency_List = self.Test_GetPolicyCurrecy(masterC=mas_Currency,policy=policy_Price_Changes)
+            for i in policy_Currency_List:
                 if i != mas_Currency:
-                    self.getRoutingCurrencyConvs(conversions=cuyconversions,fromC=i,toC=mas_Currency)
-
+                    result = self.getRoutingCurrencyConvs(conversions=cuyconversions,fromC=i,toC=mas_Currency)
+                    if result:
+                        self.log.info('政策中from %s to %s 有获取到汇率'%(i,mas_Currency))
+                    else:
+                        self.log.error('政策中from %s to %s 没有获取到汇率'%(i,mas_Currency))
 
 
 
     def Test_GetPolicyCurrecy(self,masterC='CNY',policy=''):
+        '''定义获取policyPriceChanges 里的需要的from to的币种转换 return list'''
         po_Currency_List = []
         for c in policy:
             if c['adultChange']['totalChange']['currency']!=masterC:

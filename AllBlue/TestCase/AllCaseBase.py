@@ -109,7 +109,7 @@ class CaseBase(AllBase):
             return self.log.info('该供应商没有航线报出:%s'%provider)
         '''随机抽取其中一条航线，进行测试计算；'''
         testnum = random.randint(0,num-1)
-        self.log.info('总航线数目：%s,选择的是：%s'%(num,testnum))
+        self.log.info('%s总航线数目：%s,选择的是：%s'%(provider,num,testnum))
         testrouting = prolist[testnum]
         proCurrency = testrouting['providerCurrency']
         masCurrency = testrouting['masterCurrency']
@@ -119,9 +119,9 @@ class CaseBase(AllBase):
         pro_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
                                          fromC=proCurrency,toC=masCurrency)
         if pro_res:
-            self.log.info('汇率转化是否有获取；%s'% pro_res)
+            self.log.info('汇率转化存在；%s'% pro_res)
         else:
-            self.log.error('不存在转化汇率；from %s to %s')%(proCurrency,masCurrency)
+            self.log.error('转化汇率不存在；from %s to %s')%(proCurrency,masCurrency)
         # if cid=='iwoflyCOM':
         #     if reqCurrency != 'USD' and reqCurrency !='HKD':
         #         out_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
