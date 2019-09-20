@@ -24,20 +24,42 @@ class Case_Currency_FromToRate_0003(CaseBase):
         self.target_providers = self.Test_TargetProviders(res)
         self.log.info('target_provider:%s'%self.target_providers)
 
-        self.log.info('【2.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        self.log.info('【1.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
         for tar in self.target_providers:
             self.Test_PolicyChange(provider=tar,routings=self.routingslist)
 
-        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM为例)】')
+        self.log.info('【2.测试从night king中返回获取provider币种(以iwoflyCOM 请求币种是CNY为例)】')
         self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
-        # #print(self.nkRequestDataDict)
-        # sendData = json.dumps(self.nkRequestDataDict)
-        # res = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
-        # self.Test_TargetProviders(res)
-        # self.log.info('【4.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
-        # self.log.info('target_provider:%s' % self.target_providers)
-        # for tar in self.target_providers:
-        #     self.Test_Provider_Master(cid='', provider=tar, routings=self.routingslist, reqCurrency='CNY')
+        self.nkRequestDataDict['Currency'] = 'CNY'
+        sendData = json.dumps(self.nkRequestDataDict)
+        resCOM = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
+        self.target_providers = self.Test_TargetProviders(resCOM)
+        self.log.info('【2.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        self.log.info('target_provider:%s' % self.target_providers)
+        for tar in self.target_providers:
+            self.Test_Provider_Master(provider=tar, routings=self.routingslist)
+
+        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM 请求币种是HKD为例)】')
+        self.nkRequestDataDict['Currency'] = 'HKD'
+        sendData = json.dumps(self.nkRequestDataDict)
+        resCOM2 = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
+        self.target_providers = self.Test_TargetProviders(resCOM2)
+        self.log.info('【2.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        self.log.info('target_provider:%s' % self.target_providers)
+        for tar in self.target_providers:
+            self.Test_Provider_Master(provider=tar, routings=self.routingslist)
+
+        self.log.info('【4.测试从night king中返回获取provider币种(以iwoflyCN 请求币种是HKD为例)】')
+        self.nkRequestDataDict['Cid'] = 'iwoflyCN'
+        self.nkRequestDataDict['Currency'] = 'HKD'
+        sendData = json.dumps(self.nkRequestDataDict)
+        resCN = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
+        self.target_providers = self.Test_TargetProviders(resCN)
+        self.log.info('【4.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
+        self.log.info('target_provider:%s' % self.target_providers)
+        for tar in self.target_providers:
+            self.Test_Provider_Master(provider=tar, routings=self.routingslist)
+
 
         self.flag = True
 

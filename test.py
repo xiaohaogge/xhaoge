@@ -1,10 +1,8 @@
 
+import re
 
-i = [1,3,4,5,6,7]
+f = {"data": "039885ad-70a5-4fc7-9af4-16a21a648fad#e147456b-d03d-46c2-8ba0-7f4e8927e23a#KE854_E_KE795_E_KE766_E_KE859_E#1"}
 
-for x in i:
-    if x == 7:
-        # raise Exception('抛异常了')
-        print('x == 7 you ')
-    else:
-        print('nothing')
+str1 = f['data'][73:-2]
+
+print(str1)
