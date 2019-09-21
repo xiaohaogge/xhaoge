@@ -1,0 +1,24 @@
+#阐述：
+Case_Search_KeyValue_0001
+    此case用于简单的发送请求，检测是否能有正常的相应数据返回；
+
+Case_Search_KeyValue_0002
+    此case用于测试几个平台请求，以及检查本位币的取值情况；
+
+Case_Search_KeyValue_0003
+    此case用于测试价格的准确与否，从供应商原始价格，到每一层政策的加价值，再到最终的报价；
+
+Case_Search_KeyValue_0004
+    此case用于测试rule加价的准确与否，只有原始退改最后的报价rule(无复用和退改加价)；
+
+Case_Search_KeyValue_0005
+    此case用于测试rule加价的准确与否，含退改加价到最后的报价rule(无复用)；
+
+Case_Search_KeyValue_0006
+    此case用于测试rule加价的准确与否，从原始退改，退改加价和复用退改到最后的报价rule；
+
+Case_Search_PlatConfig_RepeatFareRule_0001
+    此Case用于测试search platform config 是否复用GDS退改信息开关；
+
+Case_Search_ProvConfig_RepeatFareRule_0001
+    此Case用于测试search provider config 是否复用GDS退改信息开关；
