@@ -85,9 +85,7 @@ class Case_Currency_FromToRate_0003(CaseBase):
         testnum = random.randint(0, num - 1)
         self.log.info('总航线数目：%s,选择的是：%s' % (num, testnum))
         test_Routing = pro_Routing_List[testnum]
-        pro_Currency = test_Routing['providerCurrency']
         mas_Currency = test_Routing['masterCurrency']
-        out_Currency = test_Routing['currency']
         cuyconversions = test_Routing['currencyConversions']
         policy_Price_Changes = test_Routing['policyPriceChanges']
         self.log.info('【2.1.check %s是否有获取到policyPriceChanges】' % provider)
