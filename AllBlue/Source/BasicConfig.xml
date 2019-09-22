@@ -27,9 +27,21 @@
             <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0003</Address>-->
         <!--</case>-->
         <!--<case>-->
-            <!--<id>Case_Search_KeyValue_0002</id>-->
-            <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0002</Address>-->
+            <!--<id>Case_Search_KeyValue_0004</id>-->
+            <!--<Address>AllBlue.TestCase.Search.Case_Search_KeyValue_0004</Address>-->
         <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Search_PlatConfig_RepeatFareRule_0001</id>-->
+            <!--<Address>AllBlue.TestCase.Search.Case_Search_PlatConfig_RepeatFareRule_0001</Address>-->
+        <!--</case>-->
+
+        <case>
+            <id>Case_Search_ProvConfig_RepeatFareRule_0001</id>
+            <Address>AllBlue.TestCase.Search.Case_Search_ProvConfig_RepeatFareRule_0001</Address>
+        </case>
+
+
+
         <!--<case>-->
             <!--<id>Case_Search_Test_0001</id>-->
             <!--<Address>AllBlue.TestCase.Search.Case_Search_Test_0001</Address>-->
@@ -62,10 +74,10 @@
             <!--<id>Case_Currency_FromToRate_0003</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>-->
         <!--</case>-->
-        <case>
-            <id>Case_Currency_FromToRate_0004</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0004</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>-->
+        <!--</case>-->
 
         <!--<case>-->
             <!--<id>Case_Currency_VNDtoCNY_0101</id>-->
