@@ -77,10 +77,12 @@
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>-->
         <!--</case>-->
 
-        <!--<case>-->
-            <!--<id>Case_Currency_VNDtoCNY_0101</id>-->
-            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_VNDtoCNY_0101</Address>-->
-        <!--</case>-->
+        <case>
+            <id>Case_Others_Monitor_Deduction</id>
+            <Address>AllBlue.TestCase.Others.Case_Others_Monitor_Deduction</Address>
+        </case>
+
+
 
     </RunCase>
 </doc>

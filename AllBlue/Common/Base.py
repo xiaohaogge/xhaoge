@@ -5,9 +5,9 @@ import os
 import time
 import logging
 from AllBlue.Common.SendMethod import RunRequest
-from AllBlue.Source.ReadBaseConfig import BaseConfig
+from AllBlue.Source.BaseConfig import BaseReadConfig
 
-class AllBase(RunRequest,BaseConfig):
+class AllBase(RunRequest,BaseReadConfig):
 
 
     def __init__(self):

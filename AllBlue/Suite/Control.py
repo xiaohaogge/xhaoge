@@ -2,6 +2,7 @@
 
 import importlib
 from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.Source.CaseConfig import startReadCase
 
 class Controler(CaseBase):
 
@@ -12,8 +13,9 @@ class Controler(CaseBase):
 
     def buildSearchCase(self):
         self.runcase = ''
+        self.caseList = startReadCase()
         for runner in self.caseList:
-            print("Casename:"+runner["Casename"],"   Address:"+runner["Address"])
+            print("开始测试用例：","Casename:"+runner["Casename"],"   Address:"+runner["Address"])
             try:
                 caseModule = importlib.import_module(runner["Address"])
                 ModuleClass = getattr(caseModule,runner["Casename"])
