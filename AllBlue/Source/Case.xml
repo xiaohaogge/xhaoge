@@ -59,10 +59,10 @@
             <!--<id>Case_Currency_FromToRate_0003</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>-->
         <!--</case>-->
-        <!--<case>-->
-            <!--<id>Case_Currency_FromToRate_0004</id>-->
-            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>-->
-        <!--</case>-->
+        <case>
+            <id>Case_Currency_FromToRate_0004</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>
+        </case>
 
         <!--<case>-->
             <!--<id>Case_Currency_VNDtoCNY_0101</id>-->
@@ -70,10 +70,10 @@
         <!--</case>-->
 
         # others case
-        <case>
-            <id>Case_Others_Platform_Update</id>
-            <Address>AllBlue.TestCase.Others.Case_Others_Platform_Update</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Others_Platform_Update</id>-->
+            <!--<Address>AllBlue.TestCase.Others.Case_Others_Platform_Update</Address>-->
+        <!--</case>-->
 
     </RunCase>
 </doc>
