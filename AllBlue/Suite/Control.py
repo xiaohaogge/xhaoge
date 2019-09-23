@@ -15,7 +15,7 @@ class Controler(CaseBase):
         self.runcase = ''
         self.caseList = startReadCase()
         for runner in self.caseList:
-            print("Casename:"+runner["Casename"],"   Address:"+runner["Address"])
+            print("开始测试用例：","Casename:"+runner["Casename"],"   Address:"+runner["Address"])
             try:
                 caseModule = importlib.import_module(runner["Address"])
                 ModuleClass = getattr(caseModule,runner["Casename"])
