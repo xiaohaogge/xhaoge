@@ -2,6 +2,7 @@
 
 import importlib
 from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.Source.CaseConfig import startReadCase
 
 class Controler(CaseBase):
 
@@ -12,6 +13,7 @@ class Controler(CaseBase):
 
     def buildSearchCase(self):
         self.runcase = ''
+        self.caseList = startReadCase()
         for runner in self.caseList:
             print("Casename:"+runner["Casename"],"   Address:"+runner["Address"])
             try:
