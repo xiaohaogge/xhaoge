@@ -29,8 +29,9 @@ class Case_Currency_FromToRate_0004(CaseBase):
         for tar in self.target_providers:
             self.Test_RuleChange(provider=tar,routings=self.routingslist)
 
-        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM为例)】')
+        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM,请求为CNY为例)】')
         self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
+
         # #print(self.nkRequestDataDict)
         # sendData = json.dumps(self.nkRequestDataDict)
         # res = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
@@ -40,6 +41,8 @@ class Case_Currency_FromToRate_0004(CaseBase):
         # for tar in self.target_providers:
         #     self.Test_Provider_Master(cid='', provider=tar, routings=self.routingslist, reqCurrency='CNY')
 
+
+        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM,请求为USD为例)】')
         self.flag = True
 
 
