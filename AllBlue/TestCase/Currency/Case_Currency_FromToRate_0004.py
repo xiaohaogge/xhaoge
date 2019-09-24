@@ -2,10 +2,8 @@
   此case用于测试nightking search 时返回的rule政策匹配涉及到的Currency-masterCurrency转换汇率是否有拿到；
 '''
 
-
-import json
 import random
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 
 
 class Case_Currency_FromToRate_0004(CaseBase):

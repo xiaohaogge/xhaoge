@@ -5,7 +5,7 @@
 
 import json
 import random
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 
 
 class Case_Currency_FromToRate_0003(CaseBase):

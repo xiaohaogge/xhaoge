@@ -2,8 +2,7 @@
 # 此case用于并发进行监控余额扣款测试；
 
 
-import json
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 import threading
 
 class Case_Others_Monitor_Deduction(CaseBase):

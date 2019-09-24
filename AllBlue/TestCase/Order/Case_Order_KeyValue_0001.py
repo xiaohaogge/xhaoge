@@ -1,6 +1,6 @@
 # nothing
 
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 
 class Case_Order_KeyValue_0001(CaseBase):
 
