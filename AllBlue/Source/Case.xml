@@ -55,10 +55,10 @@
             <!--<id>Case_Currency_FromToRate_0002</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0002</Address>-->
         <!--</case>-->
-        <!--<case>-->
-            <!--<id>Case_Currency_FromToRate_0003</id>-->
-            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>-->
-        <!--</case>-->
+        <case>
+            <id>Case_Currency_FromToRate_0003</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>
+        </case>
         <case>
             <id>Case_Currency_FromToRate_0004</id>
             <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>

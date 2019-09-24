@@ -145,10 +145,10 @@ class CaseBase(AllBase):
         for n in conversions:
             if n['from']==fromC and n['to']==toC:
                 if method==1:
-                    return True
+                    return True,n['rate']
                 if method==2:
                     return n['rate'],n['source'],n['policyId']
-        return "汇率 from %s to %s nothing"%(fromC,toC)
+        return False,"汇率 from %s to %s nothing"%(fromC,toC)
 
     def Test_TargetProviders(self,res):
         case_c2 = NightKingSearchRes(res)
