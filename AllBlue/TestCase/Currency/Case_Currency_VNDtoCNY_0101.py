@@ -4,7 +4,7 @@
 
 
 import json
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 
 class Case_Currency_VNDtoCNY_0101(CaseBase):
 

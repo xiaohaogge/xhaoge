@@ -1,7 +1,7 @@
 # 定义在测试用力run前的数据处理；
 
 import importlib
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 from AllBlue.Source.CaseConfig import startReadCase
 
 class Controler(CaseBase):

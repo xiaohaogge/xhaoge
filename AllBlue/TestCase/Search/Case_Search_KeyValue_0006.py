@@ -4,7 +4,7 @@
 
 import json
 from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 
 class Case_Search_KeyValue_0006(CaseBase):
 

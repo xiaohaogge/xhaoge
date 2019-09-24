@@ -2,8 +2,7 @@
 # 此case 用于简单的发送请求，对于响应字段的对比；
 
 
-import json
-from AllBlue.TestCase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 
 class Case_Search_KeyValue_0001(CaseBase):
 
