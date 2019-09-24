@@ -5,6 +5,7 @@
 
 import json
 import random
+from AllBlue.TestCase.CaseBase.CommonFunc import CheckListOnly
 from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
 
 
@@ -91,6 +92,7 @@ class Case_Currency_FromToRate_0003(CaseBase):
         self.log.info('【2.1.check %s是否有获取到policyPriceChanges】' % provider)
         if len(policy_Price_Changes)!=0:
             cnylist = self.Test_GetPolicyCurrecy(masterC=mas_Currency,policy=policy_Price_Changes)
+            cnylist = CheckListOnly(cnylist)
             for i in cnylist:
                 if i != mas_Currency:
                     self.getRoutingCurrencyConvs(conversions=cuyconversions,fromC=i,toC=mas_Currency)

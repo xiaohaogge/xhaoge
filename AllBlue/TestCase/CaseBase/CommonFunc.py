@@ -40,3 +40,10 @@ def Test_FindProviderRouting(res1='', pro=''):
 
 
 # currency case
+
+def CheckListOnly(dataList):
+    result = []
+    for i in dataList:
+        if i != '' and i not in result:
+            result.append(i)
+    return result
