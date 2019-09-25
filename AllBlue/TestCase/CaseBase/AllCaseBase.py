@@ -148,7 +148,8 @@ class CaseBase(AllBase):
                     return True,n['rate']
                 if method==2:
                     return n['rate'],n['source'],n['policyId']
-        return False,"汇率 from %s to %s nothing"%(fromC,toC)
+        resultFalse = "汇率 from %s to %s nothing"%(fromC,toC)
+        return False,resultFalse
 
     def Test_TargetProviders(self,res):
         case_c2 = NightKingSearchRes(res)
