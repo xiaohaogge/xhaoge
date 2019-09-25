@@ -83,7 +83,7 @@ class Case_Currency_FromToRate_0004(CaseBase):
             return self.log.info('该供应商没有航线报出:%s'%provider)
         '''随机抽取其中一条航线，进行测试计算；'''
         testnum = random.randint(0, num - 1)
-        self.log.info('%s总航线数目：%s,选择的是：%s' % (provider,num, testnum))
+        self.log.info('%s总航线数目：%s,选择的是：%s进行测试；' % (provider,num, testnum))
         test_Routing = pro_Routing_List[testnum]
         Rule_List_Currency = []
         Rule_All = test_Routing['rule']
@@ -104,7 +104,7 @@ class Case_Currency_FromToRate_0004(CaseBase):
         out_Currency = test_Routing['currency']
         cuyconversions = test_Routing['currencyConversions']
 
-        self.log.info('【check %s 的rule中是否有获取到Currency】' % provider)
+        self.log.info('【check[%s]的rule中是否有获取到Currency】' % provider)
         if len(Rule_List_Currency)!=0:
             Rule_List_Currency = CheckListOnly(dataList=Rule_List_Currency)
             for i in Rule_List_Currency:

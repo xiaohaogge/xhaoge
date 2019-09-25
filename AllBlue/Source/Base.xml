@@ -9,4 +9,22 @@
 
     # 配置log日志打印的存放地址
     <logAddress>D:\Logging\yuetu\</logAddress>
+    <currencyURL>
+        <dev>
+            <exchangeRate>http://dev-restful-api.gloryholiday.com/nightking/exchangeRate</exchangeRate>
+            <getCurrencyList>http://dev-restful-api.gloryholiday.com/currencyservice/getCurrencyList</getCurrencyList>
+            <getCurrency>http://dev-restful-api.gloryholiday.com/currencyservice/getCurrency</getCurrency>
+            <getCurrencyList25>http://dev-restful-api.gloryholiday.com/currencyservice/getCurrencyListOfLatest25Hour</getCurrencyList25>
+            <manualquota>http://dev-restful-api.gloryholiday.com/marineford/currency/manualquota</manualquota>
+        </dev>
+
+        <prod>
+            <exchangeRate>http://prod-restful-api.gloryholiday.com/nightking/exchangeRate</exchangeRate>
+            <getCurrencyList>http://prod-restful-api.gloryholiday.com/currencyservice/getCurrencyList</getCurrencyList>
+            <getCurrency>http://prod-restful-api.gloryholiday.com/currencyservice/getCurrency</getCurrency>
+            <getCurrencyList25>http://prod-restful-api.gloryholiday.com/currencyservice/getCurrencyListOfLatest25Hour</getCurrencyList25>
+            <manualquota>http://prod-restful-api.gloryholiday.com/marineford/currency/manualquota</manualquota>
+        </prod>
+    </currencyURL>
+
 </doc>

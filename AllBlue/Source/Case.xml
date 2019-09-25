@@ -55,19 +55,24 @@
             <!--<id>Case_Currency_FromToRate_0002</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0002</Address>-->
         <!--</case>-->
-        <case>
-            <id>Case_Currency_FromToRate_0003</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>
-        </case>
-        <case>
-            <id>Case_Currency_FromToRate_0004</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0003</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0004</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>-->
+        <!--</case>-->
 
         <!--<case>-->
             <!--<id>Case_Currency_VNDtoCNY_0101</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_VNDtoCNY_0101</Address>-->
         <!--</case>-->
+        <case>
+            <id>Case_Currency_SGDToKRW_0102</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_SGDToKRW_0102</Address>
+        </case>
+
 
         # others case
         <!--<case>-->
