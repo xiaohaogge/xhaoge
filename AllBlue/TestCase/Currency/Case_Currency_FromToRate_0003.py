@@ -71,7 +71,8 @@ class Case_Currency_FromToRate_0003(CaseBase):
             self.log.info('=========Case_Currency_FromToRate_0003,测试通过')
             print("测试结果很成功，perfect！")
         else:
-            self.log.info('=========Case_Currency_FromToRate_0003,测试失败')
+            self.log.error('=========Case_Currency_FromToRate_0003,测试失败')
+            print('测试结果很成功，so bad!')
 
 
     def Test_PolicyChange(self,cid='',provider='',routings=''):
