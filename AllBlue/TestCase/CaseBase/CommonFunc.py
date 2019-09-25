@@ -1,5 +1,5 @@
-''' Case Common
-    定义case 中使用的公共函数，以供调用；
+'''
+    Case Common Function 定义case 中使用的公共函数，以供调用；
 '''
 
 from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
@@ -40,8 +40,8 @@ def Test_FindProviderRouting(res1='', pro=''):
 
 
 # currency case
-
 def CheckListOnly(dataList):
+    '''定义函数，传参一个list，return list中只含唯一值并且不为空字符串；'''
     result = []
     for i in dataList:
         if i != '' and i not in result:

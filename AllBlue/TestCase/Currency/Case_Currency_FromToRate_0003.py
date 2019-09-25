@@ -61,7 +61,6 @@ class Case_Currency_FromToRate_0003(CaseBase):
         for tar in self.target_providers:
             self.Test_Provider_Master(provider=tar, routings=self.routingslist)
 
-
         self.flag = True
 
 
@@ -96,9 +95,7 @@ class Case_Currency_FromToRate_0003(CaseBase):
             cnylist = CheckListOnly(cnylist)
             for i in cnylist:
                 if i != mas_Currency:
-                    self.getRoutingCurrencyConvs(conversions=cuyconversions,fromC=i,toC=mas_Currency)
-
-
+                    r,n = self.getRoutingCurrencyConvs(conversions=cuyconversions,fromC=i,toC=mas_Currency)
 
 
     def Test_GetPolicyCurrecy(self,masterC='CNY',policy=''):
@@ -112,7 +109,8 @@ class Case_Currency_FromToRate_0003(CaseBase):
                 if c['policyType']=='TICKET_FEE' or c['policyType']=='PLATFORM':
                     '''顺便check一下 婴儿加价'''
                     if not c.has_key("infantChange"):
-                        self.log.error('%s政策中不存在婴儿计算'%c['policyType'])
+                        result = c['policyType']
+                        self.log.error('%s政策中不存在婴儿计算'%result)
             except Exception:
                 pass
         return po_Currency_List
