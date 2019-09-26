@@ -6,3 +6,11 @@ f = {"data": "039885ad-70a5-4fc7-9af4-16a21a648fad#e147456b-d03d-46c2-8ba0-7f4e8
 str1 = f['data'][73:-2]
 
 print(str1)
+
+
+r = 4.3463453563245
+print(type(r))
+
+
+c = 0.345233453
+print(type(c))
