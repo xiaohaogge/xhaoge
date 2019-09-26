@@ -1,7 +1,10 @@
 '''
     Case Common Function 定义case 中使用的公共函数，以供调用；
 '''
-
+import json
+import time
+from datetime import datetime
+from AllBlue.Common.SendMethod import RunRequest
 from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
 
 # search case
@@ -47,3 +50,30 @@ def CheckListOnly(dataList):
         if i != '' and i not in result:
             result.append(i)
     return result
+
+
+def GetTimeCurrency(method=1, fromC='USD', toC='CNY', source='BOC',timeC='2019-09-26T00:00:00.123Z'):
+    '''定义获取某个节点的汇率
+        method=1，获取当前时间节点的某个汇率；method=2，获取某个时间的汇率；
+    '''
+    s = RunRequest()
+    dt = datetime.now()
+    cc =dt.isoformat()
+    url = 'http://dev-restful-api.gloryholiday.com/currencyservice/getCurrency'
+    data = {"originalCode": "USD", "targetCode": "CNY", "publishTimestamp": "2019-00-00T00:00:00.123Z"}
+    data['originalCode'] = fromC
+    data['targetCode'] = toC
+    if method == 1:
+        data['publishTimestamp'] = cc+"Z"
+    if method == 2:
+        data['publishTimestamp'] = timeC
+
+    data = json.dumps(data)
+    res = s.sendRequest(method='POST',url=url, data=data)
+    resp = json.loads(res)
+    sourcelist = resp['currencies']
+    for s in sourcelist:
+        if s['source'] == source and s['status_code']==200:
+            return True,s
+    return False,resp
+

@@ -8,9 +8,26 @@ str1 = f['data'][73:-2]
 print(str1)
 
 
-r = 4.3463453563245
-print(type(r))
 
+import time
+from datetime import datetime
+from AllBlue.TestCase.CaseBase.CommonFunc import GetTimeCurrency
 
-c = 0.345233453
-print(type(c))
+t = time.time()
+r = time.localtime()
+c = time.asctime()
+dt = datetime.now()
+dd = dt.date()
+de = str(dt.month)
+print(type(de))
+cc = dt.isoformat()
+print(cc)
+
+print(t)
+print(r)
+print(c)
+print(dt)
+print(dd)
+print(de)
+
+GetTimeCurrency(method=2)
