@@ -4,7 +4,7 @@
 
 import json
 from AllBlue.TestCase.CaseBase.CommonFunc import GetTimeCurrency
-from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 
 class Case_Currency_OAutoRise_0103(CaseBase):
 
@@ -43,7 +43,7 @@ class Case_Currency_OAutoRise_0103(CaseBase):
         resDict = json.loads(res)
         # todo check 是否有汇率返回；
         if resDict['exchange_rate']['source'] == targetS:
-            return '原始和参考申的一致'
+            return '原始和参考汇率源一致'
         if method == 2:
             pass
         if method == 1:

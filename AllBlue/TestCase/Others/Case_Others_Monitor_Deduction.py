@@ -2,7 +2,7 @@
 # 此case用于并发进行监控余额扣款测试；
 
 
-from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 import threading
 
 class Case_Others_Monitor_Deduction(CaseBase):
@@ -28,7 +28,7 @@ class Case_Others_Monitor_Deduction(CaseBase):
             self.log.info('=========Case_Others_Monitor_Deduction,测试通过')
             print("测试结果很成功，perfect！")
         else:
-            self.log.info('=========Case_Others_Monitor_Deduction,测试失败')
+            self.log.error('=========Case_Others_Monitor_Deduction,测试失败')
 
     def nima(self):
         url0 = 'http://39.105.118.191:18089/common/updatebalance'

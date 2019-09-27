@@ -2,7 +2,7 @@
 # 此case用于测试汇率接口的请求，是否是随时可以拿到政策中所配汇率；
 
 
-from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 
 class Case_Currency_FromToRate_0001(CaseBase):
 

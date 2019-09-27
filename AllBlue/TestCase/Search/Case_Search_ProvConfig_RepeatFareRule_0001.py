@@ -1,7 +1,7 @@
 # 此Case用于测试search platform config 是否复用GDS退改信息开关；
 
 from AllBlue.TestCase.CaseBase.CommonFunc import Test_RepoRule
-from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 
 class Case_Search_ProvConfig_RepeatFareRule_0001(CaseBase):
 

@@ -2,7 +2,7 @@
 # 此case 用于简单的发送请求，对于响应字段的对比；
 
 
-from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 
 class Case_Search_KeyValue_0001(CaseBase):
 
