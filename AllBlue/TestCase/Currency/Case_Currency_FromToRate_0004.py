@@ -5,7 +5,7 @@
 import json
 import random
 from AllBlue.TestCase.CaseBase.CommonFunc import CheckListOnly
-from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 
 
 class Case_Currency_FromToRate_0004(CaseBase):

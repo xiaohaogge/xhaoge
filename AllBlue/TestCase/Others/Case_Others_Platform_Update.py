@@ -1,7 +1,7 @@
 # Currency Rate
 # 此case用于并发进行监控余额扣款测试；
 
-from AllBlue.TestCase.CaseBase.AllCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 
 
 class Case_Others_Platform_Update(CaseBase):

@@ -68,10 +68,10 @@
             <!--<id>Case_Currency_VNDtoCNY_0101</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_VNDtoCNY_0101</Address>-->
         <!--</case>-->
-        <case>
-            <id>Case_Currency_OAutoRise_0103</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_OAutoRise_0103</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Currency_OAutoRise_0103</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_OAutoRise_0103</Address>-->
+        <!--</case>-->
 
 
         # others case
@@ -79,6 +79,13 @@
             <!--<id>Case_Others_Platform_Update</id>-->
             <!--<Address>AllBlue.TestCase.Others.Case_Others_Platform_Update</Address>-->
         <!--</case>-->
+
+        ## ctrip
+        <case>
+            <id>Case_Ctrip_Verify_0001</id>
+            <Address>AllBlue.TestCase.Others.Ctrip.Case_Ctrip_Verify_0001</Address>
+        </case>
+
 
     </RunCase>
 </doc>
