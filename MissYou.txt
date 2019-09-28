@@ -3,3 +3,9 @@
 
 关于学习git 操作的理解阅读文档；
     # https://git-scm.com/book/zh/v2
+
+注意理解，json格式 并不是python 的dict 格式；都是需要转换的；以及字符串都需要相互转换；
+    在json模块有2个方法， loads()：将json数据转化成dict数据  str转化成json
+                        dumps()：将dict数据转化成json数据  json转化为str
+                        load()：读取json文件数据，转成dict数据
+                        dump()：将dict数据转化成json数据后写入json文件
