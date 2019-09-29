@@ -23,3 +23,6 @@ class CtripCase(CaseBase):
     def TestResult(self):
         pass
 
+
+
+
