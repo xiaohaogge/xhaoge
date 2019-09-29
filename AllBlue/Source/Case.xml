@@ -83,7 +83,7 @@
         ## ctrip
         <case>
             <id>Case_Ctrip_Verify_0001</id>
-            <Address>AllBlue.TestCase.Others.Ctrip.Case_Ctrip_Verify_0001</Address>
+            <Address>AllBlue.TestCase.Verify.Ctrip.Case_Ctrip_Verify_0001</Address>
         </case>
 
 

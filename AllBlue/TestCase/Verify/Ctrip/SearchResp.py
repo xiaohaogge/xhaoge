@@ -14,11 +14,11 @@ class CtripSearchResponse():
         self.routings = resp['routings']
 
 
-    def getRandomRouting(self):
-        i = random.randint(0,len(self.routings)-1)
-        routing = self.routings[i]
-        print('routing:type',type(routing))
-        return routing
+    def getRandomRouting(self,provider=''):
+        if provider == '':
+            i = random.randint(0,len(self.routings)-1)
+            routing = self.routings[i]
+            return routing
 
     def getData(self):
         pass
