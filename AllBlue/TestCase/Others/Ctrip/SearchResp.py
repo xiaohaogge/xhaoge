@@ -17,4 +17,9 @@ class CtripSearchResponse():
     def getRandomRouting(self):
         i = random.randint(0,len(self.routings)-1)
         routing = self.routings[i]
+        print('routing:type',type(routing))
         return routing
+
+    def getData(self):
+        pass
+
