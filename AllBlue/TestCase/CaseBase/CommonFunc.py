@@ -3,6 +3,7 @@
 '''
 import json
 import time
+import random
 from datetime import datetime
 from AllBlue.Common.SendMethod import RunRequest
 from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
@@ -76,4 +77,25 @@ def GetTimeCurrency(method=1, fromC='USD', toC='CNY', source='BOC',timeC='2019-0
         if s['source'] == source and s['status_code']==200:
             return True,s
     return False,resp
+
+
+# nothing
+def GetRandomRoutingToVerify(cid='ctrip',resp=''):
+    '''随机的最多拿5条航线去进行verify，return routing list'''
+    result = []
+    numlist = []
+    if cid == 'ctrip':
+        if resp['status'] != 0 and resp['msg'] != 'success':
+            return  'response is fail status:%s,msg:%s'%(resp['status'],resp['msg'])
+        try:
+            for i in range(5):
+                num = random.randint(0,len(resp['routings'])-1)
+                numlist.append(num)
+        except Exception:
+            pass
+        for n in numlist:
+            result.append(resp['routings'][n])
+    return result
+
+
 

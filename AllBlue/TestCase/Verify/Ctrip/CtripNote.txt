@@ -1,0 +1,15 @@
+#阐述：
+Case_Ctrip_Verify_0001
+    此case用于测试ctrip 单程和往返是否能正常verify；
+
+Case_Ctrip_Verify_0002
+    此case用于测试选择每个供应商的一条航线去进行验价，检查座位数取严，开票航司，价格是否一致；
+
+Case_Ctrip_Verify_0003
+
+
+Case_Ctrip_Verify_0004
+
+
+Case_Ctrip_Verify_0005
+
