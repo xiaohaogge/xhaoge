@@ -46,11 +46,11 @@ def Test_FindProviderRouting(res1='', pro=''):
 # currency case
 def CheckListOnly(dataList):
     '''定义函数，传参一个list，return list中只含唯一值并且不为空字符串；'''
-    result = []
+    resul = []
     for i in dataList:
-        if i != '' and i not in result:
-            result.append(i)
-    return result
+        if i != '' and i not in resul:
+            resul.append(i)
+    return resul
 
 
 def GetTimeCurrency(method=1, fromC='USD', toC='CNY', source='BOC',timeC='2019-09-26T00:00:00.123Z'):
@@ -90,6 +90,8 @@ def GetRandomRoutingToVerify(cid='ctrip',resp=''):
         try:
             for i in range(5):
                 num = random.randint(0,len(resp['routings'])-1)
+                if len(resp['routings']) <=5:
+                    numlist.append(i)
                 numlist.append(num)
         except Exception:
             pass

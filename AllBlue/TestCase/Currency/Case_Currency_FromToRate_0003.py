@@ -20,6 +20,7 @@ class Case_Currency_FromToRate_0003(CaseBase):
         self.log.info('【Case_Currency_FromToRate_0003,进入测试步骤！】')
 
         self.log.info('【1.测试从night king中返回获取provider币种(以qunarytb为例)】')
+        self.log.info('qunarytb请求参数：%s'%self.nkRequestdata)
         res = self.sendRequest(method='POST',url=self.nkRequesturl,data=self.nkRequestdata)
         self.checkNkStatus(res)
         self.target_providers = self.Test_TargetProviders(res)
@@ -33,12 +34,13 @@ class Case_Currency_FromToRate_0003(CaseBase):
         self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
         self.nkRequestDataDict['Currency'] = 'CNY'
         sendData = json.dumps(self.nkRequestDataDict)
+        self.log.info('iwofly请求参数：%s'%sendData)
         resCOM = self.sendRequest(method='POST', url=self.nkRequesturl, data=sendData)
         self.target_providers = self.Test_TargetProviders(resCOM)
         self.log.info('【2.1.根据不同的供应商,不同的币种，进行检查是否拿到到本位币转换汇率】')
         self.log.info('target_provider:%s' % self.target_providers)
         for tar in self.target_providers:
-            self.Test_Provider_Master(provider=tar, routings=self.routingslist)
+            self.Test_Provider_Master(provider=tar,routings=self.routingslist)
 
         self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM 请求币种是HKD为例)】')
         self.nkRequestDataDict['Currency'] = 'HKD'
@@ -109,8 +111,8 @@ class Case_Currency_FromToRate_0003(CaseBase):
                 if c['policyType']=='TICKET_FEE' or c['policyType']=='PLATFORM':
                     '''顺便check一下 婴儿加价'''
                     if not c.has_key("infantChange"):
-                        result = c['policyType']
-                        self.log.error('%s政策中不存在婴儿计算'%result)
+                        r = c['policyType']
+                        self.log.error('%s政策中不存在婴儿计算'%r)
             except Exception:
                 pass
         return po_Currency_List
