@@ -1,11 +1,13 @@
 # 此模块用于读取xml文件中的信息；
 
+import os
 import xml.etree.ElementTree as ET
 
 class BaseReadConfig():
 
     def startRead(self):
-        self.Dom = ET.parse(r'.\Source\Base.xml')
+        basedir = os.path.dirname(__file__)
+        self.Dom = ET.parse(basedir+'\Base.xml')
         self.nkReqData = {"id": "nightKingReq", "search_url": ""}
         self.nkResData = {"id": "nightkingRes", "search_url": ""}
         self.logPath = {"id": "logPath", "log_path": ""}

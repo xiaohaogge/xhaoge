@@ -31,3 +31,7 @@ print(dd)
 print(de)
 
 GetTimeCurrency(method=2)
+from AllBlue.Source.BaseConfig import BaseReadConfig
+
+RR = BaseReadConfig()
+RR.startRead()
