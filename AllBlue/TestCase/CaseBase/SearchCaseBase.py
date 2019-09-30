@@ -119,9 +119,9 @@ class CaseBase(AllBase):
         pro_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,
                                          fromC=proCurrency,toC=masCurrency)
         if pro_res:
-            self.log.info('汇率转化存在；%s'% pro_res)
+            self.log.info('汇率转化存在,{}'.format(pro_res))
         else:
-            self.log.error('转化汇率不存在；from %s to %s')%(proCurrency,masCurrency)
+            self.log.error('转化汇率不存在；from %s to %s'%(proCurrency,masCurrency))
         # if cid=='iwoflyCOM':
         #     if reqCurrency != 'USD' and reqCurrency !='HKD':
         #         out_res = self.getRoutingCurrencyConvs(method=1,conversions=cuyconversions,

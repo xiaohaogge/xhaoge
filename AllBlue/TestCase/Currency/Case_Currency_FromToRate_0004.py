@@ -19,6 +19,7 @@ class Case_Currency_FromToRate_0004(CaseBase):
         self.log.info('【Case_Currency_FromToRate_0004,进入测试步骤！】')
 
         self.log.info('【1.测试从night king中返回获取不同的provider(以平台qunarytb为例)】')
+        self.log.info('qunarytb请求参数：%s' % self.nkRequestdata)
         res = self.sendRequest(method='POST',url=self.nkRequesturl,data=self.nkRequestdata)
         self.checkNkStatus(res)
         self.target_providers = self.Test_TargetProviders(res=res)
@@ -31,6 +32,7 @@ class Case_Currency_FromToRate_0004(CaseBase):
         self.log.info('【2.测试从night king中返回获取provider币种(以iwoflyCOM,请求为CNY为例)】')
         self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
         self.sendData = json.dumps(self.nkRequestDataDict)
+        self.log.info('iwofly请求参数：%s' % self.sendData)
         res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
         self.checkNkStatus(res)
         self.target_providers = self.Test_TargetProviders(res=res)
@@ -42,6 +44,7 @@ class Case_Currency_FromToRate_0004(CaseBase):
         self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM,请求为USD为例)】')
         self.nkRequestDataDict['Currency'] = 'USD'
         self.sendData = json.dumps(self.nkRequestDataDict)
+        self.log.info('iwofly请求参数：%s' % self.sendData)
         res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
         self.checkNkStatus(res)
         self.target_providers = self.Test_TargetProviders(res=res)
@@ -53,6 +56,7 @@ class Case_Currency_FromToRate_0004(CaseBase):
         self.log.info('【4.测试从night king中返回获取provider币种(以iwoflyCOM,请求为HKD为例)】')
         self.nkRequestDataDict['Currency'] = 'HKD'
         self.sendData = json.dumps(self.nkRequestDataDict)
+        self.log.info('iwofly请求参数：%s' % self.sendData)
         res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
         self.checkNkStatus(res)
         self.target_providers = self.Test_TargetProviders(res=res)
