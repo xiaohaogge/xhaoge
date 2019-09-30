@@ -1,10 +1,12 @@
 # 此模块用于读取xml文件中的信息；
 
+import os
 import xml.etree.ElementTree as ET
 
 
 def startReadPlatform():
-    Dom = ET.parse(r'.\Source\Platform.xml')
+    basedir = os.path.dirname(__file__)
+    Dom = ET.parse(basedir+'\Platform.xml')
     caseList = []
     Dom.getroot()
     try:
