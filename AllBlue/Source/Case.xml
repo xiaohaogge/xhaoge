@@ -47,22 +47,34 @@
         <!--</case>-->
 
         # currency case
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0001</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0001</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0002</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0002</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0003</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0004</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>-->
+        <!--</case>-->
         <case>
-            <id>Case_Currency_FromToRate_0001</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0001</Address>
+            <id>Case_Currency_FromToRate_0005</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0005</Address>
         </case>
-        <case>
-            <id>Case_Currency_FromToRate_0002</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0002</Address>
-        </case>
-        <case>
-            <id>Case_Currency_FromToRate_0003</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0003</Address>
-        </case>
-        <case>
-            <id>Case_Currency_FromToRate_0004</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0006</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0006</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0007</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0007</Address>-->
+        <!--</case>-->
 
         <!--<case>-->
             <!--<id>Case_Currency_OVNDtoCNY_0101</id>-->
