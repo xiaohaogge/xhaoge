@@ -6,16 +6,16 @@
 import json
 from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
 
-class Case_Currency_SGDToKRW_0102(CaseBase):
+class Case_Currency_OSGDToKRW_0102(CaseBase):
 
     def __init__(self):
         # super(Case_Currency_VNDtoCNY_0101,self).__init__()
         CaseBase.__init__(self)
-        self.log.info("===Case_Currency_SGDToKRW_0102,测试开始===")
+        self.log.info("===Case_Currency_OSGDToKRW_0102,测试开始===")
 
 
     def TestProcess(self):
-        self.log.info('【Case_Currency_SGDToKRW_0102,进入测试步骤！】')
+        self.log.info('【Case_Currency_OSGDToKRW_0102,进入测试步骤！】')
 
         self.log.info('1.测试getCurrency 从VND到CNY的汇率是否拿到;')
         res = self.sendRequest(url=self.get25Hours)
@@ -35,12 +35,12 @@ class Case_Currency_SGDToKRW_0102(CaseBase):
 
 
     def TestResult(self):
-        self.log.info('===Case_Currency_SGDToKRW_0102,测试完毕===')
+        self.log.info('===Case_Currency_OSGDToKRW_0102,测试完毕===')
         if self.flag:
-            self.log.info('=========Case_Currency_SGDToKRW_0102,测试通过')
+            self.log.info('=========Case_Currency_OSGDToKRW_0102,测试通过')
             print("测试结果很成功，perfect！")
         else:
-            self.log.info('=========Case_Currency_SGDToKRW_0102,测试失败')
+            self.log.info('=========Case_Currency_OSGDToKRW_0102,测试失败')
 
 
 

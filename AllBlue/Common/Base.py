@@ -18,7 +18,7 @@ class AllBase(RunRequest,BaseReadConfig):
         self.startRead()
         self.log = logging
         myformat = '%(asctime)s--%(levelname)s--[%(funcName)s-line:%(lineno)d]---"message":%(message)s'
-        timename = time.strftime("%Y-%m-%d-%I-%M-%S", time.localtime()) + "-MairiLog"
+        timename = time.strftime("%Y-%m-%d-%I-%M-%S", time.localtime()) + "-AllBlueLog"
         filename = r'%s%s' % (self.logPath['log_path'],timename)+'.txt'
 
         if not os.path.exists(self.logPath['log_path']):
