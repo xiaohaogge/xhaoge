@@ -1,19 +1,25 @@
 # 阐述：
 Case_Currency_FromToRate_0001
-    此case用于测试汇率接口的请求，是否是随时可以拿到政策中所配汇率
+    此case用于测试汇率接口的请求，是否是随时可以拿到政策中所配汇率；
 
 Case_Currency_FromToRate_0002
-    此case用于测试nightking search 时返回的provider、MasterCurrency，再到报价币种转换汇率是否有拿到
+    此case用于测试nightking search 时返回的provider、MasterCurrency，再到报价币种转换汇率是否有拿到；
 
 Case_Currency_FromToRate_0003
     此case用于测试nightking search 时返回的所有政策匹配涉及到的Currency-masterCurrency转换汇率是否有拿到；
 
 Case_Currency_FromToRate_0004
-    此case用于测试nightking search 时返回的rule政策匹配涉及到的Currency-masterCurrency转换汇率是否有拿
+    此case用于测试nightking search 时返回的rule政策匹配涉及到的Currency-masterCurrency转换汇率是否有拿到；
+
+Case_Currency_FromToRate_0005
+    此case用于测试nightking search 时返回的供应商原始价格，经过政策最后报出去的价格，是否计算无误；
+
+Case_Currency_FromToRate_0006
+    此case用于测试nightking search 时返回的rule政策从最原始的报价，经过加价或调价后对外报价，是否计算无误；
+
+Case_Currency_FromToRate_0007
+    此case用于测试；
 
 
-
-
-
-Case_Currency_VNDtoCNY_0101
+Case_Currency_OVNDtoCNY_0101
     此case用于测试汇率VND-CNY取值范围，以及基本参数

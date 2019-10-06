@@ -63,10 +63,22 @@
             <!--<id>Case_Currency_FromToRate_0004</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>-->
         <!--</case>-->
+        <case>
+            <id>Case_Currency_FromToRate_0005</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0005</Address>
+        </case>
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0006</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0006</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0007</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0007</Address>-->
+        <!--</case>-->
 
         <!--<case>-->
-            <!--<id>Case_Currency_VNDtoCNY_0101</id>-->
-            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_VNDtoCNY_0101</Address>-->
+            <!--<id>Case_Currency_OVNDtoCNY_0101</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_OVNDtoCNY_0101</Address>-->
         <!--</case>-->
         <!--<case>-->
             <!--<id>Case_Currency_OAutoRise_0103</id>-->
@@ -81,10 +93,10 @@
         <!--</case>-->
 
         ## ctrip
-        <case>
-            <id>Case_Ctrip_Verify_0001</id>
-            <Address>AllBlue.TestCase.Verify.Ctrip.Case_Ctrip_Verify_0001</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Ctrip_Verify_0001</id>-->
+            <!--<Address>AllBlue.TestCase.Verify.Ctrip.Case_Ctrip_Verify_0001</Address>-->
+        <!--</case>-->
 
 
     </RunCase>

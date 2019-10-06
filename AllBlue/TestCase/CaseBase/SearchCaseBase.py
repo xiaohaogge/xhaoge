@@ -63,7 +63,7 @@ class CaseBase(AllBase):
         try:
             res_Status = res['baseResponse']['status']
         except Exception as e:
-            return e
+            raise Exception('nothing error')
         if res_Status == 500:
             self.log.error('status:%s,message:%s' % (res['baseResponse']['status'], res['baseResponse']['message']))
             raise Exception(500)
