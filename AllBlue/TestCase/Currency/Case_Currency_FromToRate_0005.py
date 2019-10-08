@@ -70,10 +70,10 @@ class Case_Currency_FromToRate_0005(CaseBase):
         self.log.info('===Case_Currency_FromToRate_0005,测试完毕===')
         if self.flag:
             self.log.info('=========Case_Currency_FromToRate_0005,测试通过')
-            print("测试结果很成功，perfect！")
+            print("Case_Currency_FromToRate_0005测试结果很成功，perfect！")
         else:
             self.log.error('=========Case_Currency_FromToRate_0005,测试失败')
-            print("测试结果很失败，so bad！")
+            print("Case_Currency_FromToRate_0005测试结果很失败，so bad！")
 
 
     def Test_CountPrice(self,provider='',routings=''):
