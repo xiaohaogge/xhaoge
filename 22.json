@@ -1,0 +1,337 @@
+{
+    "baseResponse": {
+        "status": 200,
+        "message": "success",
+        "cid": "ctrip",
+        "traceId": "6f26afe8-7e08-4fef-8305-bf665fbb6fdb",
+        "pid": "mondee"
+    },
+    "routing": {
+        "data": "6f26afe8-7e08-4fef-8305-bf665fbb6fdb#55335023-5391-4313-a871-76767cbab320#GA713_E_GA846_E#0",
+        "itinerary": [
+            {
+                "originCity": "SYD",
+                "destinationCity": "SIN",
+                "segment": [
+                    {
+                        "carrier": "GA",
+                        "flightNumber": "GA713",
+                        "operatingCarrier": "GA",
+                        "operatingFlightNumber": "",
+                        "codeShare": false,
+                        "departureAirport": "SYD",
+                        "departureTime": "201912131130",
+                        "arrivalAirport": "CGK",
+                        "arrivalTime": "201912131455",
+                        "duration": 445,
+                        "cabin": "E",
+                        "bookingClass": "Q",
+                        "aircraftCode": "333",
+                        "fareBasis": "QHOXPAUS",
+                        "childFareBasis": "",
+                        "fareType": "PUBLISHED",
+                        "stopCity": [],
+                        "seats": 9,
+                        "departureTerminal": "",
+                        "arrivalTerminal": "",
+                        "baggage": {
+                            "freeBaggagePiece": -1,
+                            "freeBaggageWeight": 40,
+                            "baggageCheck": false
+                        },
+                        "status": "",
+                        "marriageGrp": "",
+                        "accountCode": "",
+                        "stopInfo": 0,
+                        "childCabin": "",
+                        "availabilitySource": "",
+                        "connection": false,
+                        "key": "",
+                        "flyTime": 0,
+                        "departureTimeWithOffset": "",
+                        "arrivalTimeWithOffset": "",
+                        "mainSegment": true,
+                        "id": ""
+                    },
+                    {
+                        "carrier": "GA",
+                        "flightNumber": "GA846",
+                        "operatingCarrier": "GA",
+                        "operatingFlightNumber": "",
+                        "codeShare": false,
+                        "departureAirport": "CGK",
+                        "departureTime": "201912131815",
+                        "arrivalAirport": "SIN",
+                        "arrivalTime": "201912132105",
+                        "duration": 110,
+                        "cabin": "E",
+                        "bookingClass": "Q",
+                        "aircraftCode": "738",
+                        "fareBasis": "QHOXPAUS",
+                        "childFareBasis": "",
+                        "fareType": "PUBLISHED",
+                        "stopCity": [],
+                        "seats": 9,
+                        "departureTerminal": "",
+                        "arrivalTerminal": "",
+                        "baggage": {
+                            "freeBaggagePiece": -1,
+                            "freeBaggageWeight": 40,
+                            "baggageCheck": false
+                        },
+                        "status": "",
+                        "marriageGrp": "",
+                        "accountCode": "",
+                        "stopInfo": 0,
+                        "childCabin": "",
+                        "availabilitySource": "",
+                        "connection": false,
+                        "key": "",
+                        "flyTime": 0,
+                        "departureTimeWithOffset": "",
+                        "arrivalTimeWithOffset": "",
+                        "mainSegment": false,
+                        "id": ""
+                    }
+                ],
+                "duration": 755,
+                "segmentSplicing": false
+            }
+        ],
+        "adultPrice": 1993.220465,
+        "adultTax": 1267.4139795,
+        "childPrice": 1993.220465,
+        "childTax": 1267.4139795,
+        "infantPrice": 0,
+        "infantTax": 0,
+        "adultTaxType": 0,
+        "childTaxType": 0,
+        "infantTaxType": 0,
+        "priceType": 0,
+        "applyType": 0,
+        "currency": "CNY",
+        "fareType": "PUBLISHED",
+        "validatingCarrier": "GA",
+        "seats": 9,
+        "fareBasis": "QHOXPAUS,QHOXPAUS",
+        "childFareBasis": "",
+        "multiTicket": false,
+        "adultYrTax": 0,
+        "adultYqTax": 0,
+        "adultUoTax": 0,
+        "childYrTax": 0,
+        "childYqTax": 0,
+        "childUoTax": 0,
+        "eligibility": "",
+        "ticketTimeLimitMinutes": 111,
+        "nationalType": 0,
+        "nationality": "",
+        "suitAge": "",
+        "ticketInvoiceType": 0,
+        "rule": {
+            "useOld": false,
+            "ruleFromOta": -404,
+            "miniRule": -404,
+            "refundBeforeDep": -404,
+            "refundBeforeDepFee": -404,
+            "changeBeforeDep": -404,
+            "changeBeforeDepFee": -404,
+            "noShowChange": -404,
+            "noShowChangeFee": -404,
+            "noShowRefund": -404,
+            "noShowRefundFee": -404,
+            "partRefund": -404,
+            "partRefundFee": -404,
+            "partEndorse": -404,
+            "partEndorsePrice": -404,
+            "currency": "CNY",
+            "noShowChangeAfter": -404,
+            "noShowChangeAfterFee": -404,
+            "noShowRefundAfter": -404,
+            "noShowRefundAfterFee": -404,
+            "cnRemark": "这是报价备注，?<>>.)*#$@#&^*^*",
+            "enRemark": "",
+            "changeDetail": null,
+            "originRuleFee": {
+                "refundBeforeFee": -404,
+                "changeBeforeFee": -404,
+                "refundBeforeNoshowFee": -404,
+                "changeBeforeNoshowFee": -404,
+                "refundAfterFee": -404,
+                "changeAfterFee": -404,
+                "refundAfterNoshowFee": -404,
+                "changeAfterNoshowFee": -404,
+                "currency": ""
+            },
+            "manualFareRule": null,
+            "repoRule": {
+                "repoIds": [],
+                "currency": "",
+                "refundFee": null,
+                "changeFee": null,
+                "partRefundFee": null,
+                "partChangeFee": null,
+                "noShowRefundFee": null,
+                "noShowChangeFee": null,
+                "noShowRefundAfterFee": null,
+                "noShowChangeAfterFee": null
+            }
+        },
+        "adultType": "",
+        "childType": "",
+        "infantType": "",
+        "routingId": "2a0c175ab37f477ea526f58ffa2908950235",
+        "cabin": "E",
+        "accountCode": "",
+        "fareCalcLine": "",
+        "tof": "",
+        "arf": "",
+        "ctof": "",
+        "viewPrice": 0,
+        "ticketPrice": 0,
+        "childTicketPrice": 0,
+        "aduTag": "",
+        "chiTag": "",
+        "providerType": "PROVIDER_API",
+        "flightCode": "",
+        "oriAdultPrice": 269,
+        "oriAdultTax": 177.3,
+        "oriChildPrice": 269,
+        "oriChildTax": 177.3,
+        "oriInfantPrice": 0,
+        "oriInfantTax": 0,
+        "posLocation": "CN",
+        "itinerarySplicing": false,
+        "currencyConversions": [
+            {
+                "from": "USD",
+                "to": "CNY",
+                "rate": 7.148415,
+                "source": "MASTER_CARD",
+                "timestamp": "2019-10-07T07:32:14Z",
+                "policyId": "CR190908T42B"
+            }
+        ],
+        "masterCurrency": "CNY",
+        "providerCurrency": "USD",
+        "providerName": "mondee",
+        "policyPriceChanges": [
+            {
+                "policyDesc": "UnimarkupPolicy:UM1908135512",
+                "displayNumber": "UM1908135512",
+                "policyId": "5d52322d0d19694b92583079",
+                "policyType": "UNI_MARKUP",
+                "adultChange": {
+                    "percentageChange": {
+                        "percentage": 0,
+                        "excludeTax": false
+                    },
+                    "absChange": {
+                        "amount": 2,
+                        "currency": "USD"
+                    },
+                    "totalChange": {
+                        "amount": 14.29683,
+                        "currency": "CNY"
+                    }
+                },
+                "childChange": {
+                    "percentageChange": {
+                        "percentage": 0,
+                        "excludeTax": false
+                    },
+                    "absChange": {
+                        "amount": 2,
+                        "currency": "USD"
+                    },
+                    "totalChange": {
+                        "amount": 14.29683,
+                        "currency": "CNY"
+                    }
+                },
+                "infantChange": null,
+                "isFeeApplyToProvider": true,
+                "otherPercentageChangeDetails": [],
+                "otherAbsChangeDetails": []
+            },
+            {
+                "policyDesc": "PlatformPolicy:PF1909030HMQ",
+                "displayNumber": "PF1909030HMQ",
+                "policyId": "5d6ddacfa9aa5d0001aeab5d",
+                "policyType": "PLATFORM",
+                "adultChange": {
+                    "percentageChange": {
+                        "percentage": 0,
+                        "excludeTax": true
+                    },
+                    "absChange": {
+                        "amount": 56,
+                        "currency": "CNY"
+                    },
+                    "totalChange": {
+                        "amount": 56,
+                        "currency": "CNY"
+                    }
+                },
+                "childChange": {
+                    "percentageChange": {
+                        "percentage": 0,
+                        "excludeTax": true
+                    },
+                    "absChange": {
+                        "amount": 56,
+                        "currency": "CNY"
+                    },
+                    "totalChange": {
+                        "amount": 56,
+                        "currency": "CNY"
+                    }
+                },
+                "infantChange": {
+                    "percentageChange": {
+                        "percentage": 0,
+                        "excludeTax": true
+                    },
+                    "absChange": {
+                        "amount": 56,
+                        "currency": "CNY"
+                    },
+                    "totalChange": {
+                        "amount": 56,
+                        "currency": "CNY"
+                    }
+                },
+                "isFeeApplyToProvider": true,
+                "otherPercentageChangeDetails": [],
+                "otherAbsChangeDetails": []
+            }
+        ],
+        "traceSpans": [],
+        "evictionMarks": [],
+        "bookingToken": "",
+        "adultPublishPrice": 1922.923635,
+        "adultPublishTax": 1267.4139795,
+        "childPublishPrice": 1922.923635,
+        "childPublishTax": 1267.4139795,
+        "infantPublishPrice": 0,
+        "infantPublishTax": 0,
+        "validSegmentsCount": 0,
+        "ticketSource": 0,
+        "saleBaggage": false,
+        "onlineCheckIn": false,
+        "aiPolicyChangeInfo": null,
+        "payload": "",
+        "routingType": ""
+    },
+    "sessionId": "BC54518E7CB1C0815D",
+    "traceSpans": [
+        {
+            "spanId": "76ff8010-04c3-42fb-9b60-1bc4bf69083b",
+            "traceType": "None",
+            "application": "night-king",
+            "desc": "night-king verify",
+            "tags": {
+                "cost": "1705ms"
+            },
+            "createdAt": "2019-10-14T07:49:56.836994891Z"
+        }
