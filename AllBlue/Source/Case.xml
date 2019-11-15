@@ -63,10 +63,10 @@
             <!--<id>Case_Currency_FromToRate_0004</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0004</Address>-->
         <!--</case>-->
-        <case>
-            <id>Case_Currency_FromToRate_0005</id>
-            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0005</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Currency_FromToRate_0005</id>-->
+            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0005</Address>-->
+        <!--</case>-->
         <!--<case>-->
             <!--<id>Case_Currency_FromToRate_0006</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0006</Address>-->
@@ -91,6 +91,10 @@
             <!--<id>Case_Others_Platform_Update</id>-->
             <!--<Address>AllBlue.TestCase.Others.Case_Others_Platform_Update</Address>-->
         <!--</case>-->
+        <case>
+            <id>Case_Others_Farerule_Select</id>
+            <Address>AllBlue.TestCase.Others.Case_Others_Farerule_Select</Address>
+        </case>
 
         ## ctrip
         <!--<case>-->
