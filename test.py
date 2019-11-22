@@ -35,3 +35,8 @@ from AllBlue.Source.BaseConfig import BaseReadConfig
 
 RR = BaseReadConfig()
 RR.startRead()
+
+d = {"liyan":"E25238209"}
+print(type(d))
+if not isinstance(d,dict):
+	print("啥")
