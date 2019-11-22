@@ -1,6 +1,6 @@
 # nothing
 
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.OrderCaseBase import CaseBase
 
 class Case_Order_KeyValue_0001(CaseBase):
 
@@ -9,7 +9,9 @@ class Case_Order_KeyValue_0001(CaseBase):
 
 
     def TestProcess(self):
-        pass
+        searchRouting = self.search()
+
+
 
 
     def TestResult(self):
