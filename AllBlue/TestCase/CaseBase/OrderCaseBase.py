@@ -38,7 +38,7 @@ class CaseBase(AllBase):
                             "routing":""
                     }'''
 
-        self.nkOrderReqData = {"Cid": "qunarytb",
+        self.nkOrderReqData = {"cid": "qunarytb",
                                 "contact": {"email":"jun_6245@hotmail.com",
                                                 "mobile":"60122540349",
                                                 "name":"jun"},
@@ -68,13 +68,11 @@ class CaseBase(AllBase):
 
     # 通过不同平台 统一发送请求
     def searchByCid(self,cid="ctrip"):
-        self.nkRequestDataDict["Cid"] = cid
-        sendData = self.dictToJson(self.nkRequestDataDict)
-        res = self.sendRequest(url=self.nkRequesturl,data=sendData)
-        return res
+        pass
 
-    # 根据不同的供应商 进行验价
-    def verifyByPid(self,routings,pid="mondee"):
+    # 从search 返回的航线中，根据供应商不同，选择一条航线；
+    def verifyByPid(self,routings,priceType=1,pid="mondee"):
+        # priceType = 1 表示默认选择最低价；
         pidRouting = []
         for i in routings:
             if i['providerName'] == pid:
@@ -82,12 +80,13 @@ class CaseBase(AllBase):
                     pidRouting.append(i)
         if len(pidRouting) == 0:
             return 0
-        num = random.randint(0,len(pidRouting)-1)
-        sdata = self.nkVerifyReqDataDict["routing"] = pidRouting[num]
-        res = self.sendRequest(url=self.nkVerifyReqUrl,data=sdata)
-        if len(res["routing"]) == 0:
-            return 1
-        return res
+        if priceType == 1:
+           routing = pidRouting[0]
+        else:  
+            num = random.randint(0,len(pidRouting)-1)
+            routing = pidRouting[num]
+        self.log.info("providerName:"+pid+" verify routing: "+routing[num])
+        return routing        
 
     # 将search 的routing结果筛选出可以进行verify的航线；
     def verifyPassRoutings(self,res):
@@ -101,7 +100,6 @@ class CaseBase(AllBase):
         return routings
 
 
-
     def search(self,cid="qunarytb",TripType="1",FromCity="BJS",ToCity="LAX",FromDate="20200223",RetDate="20200521",
                     AdultNumber=1,ChildNumber=0,InfatNumber=0):
         self.nkRequestDataDict["cid"] = cid
@@ -113,6 +111,7 @@ class CaseBase(AllBase):
         self.nkRequestDataDict["AdultNumber"] = AdultNumber
         self.nkRequestDataDict["ChildNumber"] = ChildNumber
         self.nkRequestDataDict["InfatNumber"] = InfatNumber
+        self.log.info("nightking search request： ",self.nkRequestDataDict)
         sendD = self.dictToJson(self.nkRequestDataDict)
         result = self.sendRequest(url=self.nkRequesturl, data=sendD)
         return result
@@ -124,12 +123,20 @@ class CaseBase(AllBase):
         self.nkVerifyReqDataDict["infantNum"] = infantNum
         self.nkVerifyReqDataDict["currency"] = currency
         self.nkVerifyReqDataDict["routing"] = routing
+        self.log.info("nightking verify request： ",self.nkVerifyReqDataDict)
         sendD = self.dictToJson(self.nkVerifyReqDataDict)
         res = self.sendRequest(url=self.nkVerifyReqUrl,data=sendD)
         return res
 
-    def order(self):
-        pass
+    def order(self,cid="qunarytb",locale=1,referredTraceId=0,routing="",passengers=[]):
+        self.nkOrderReqData["cid"] = cid
+        self.nkOrderReqData["locale"] = locale
+        self.nkOrderReqData["referredTraceId"] = referredTraceId
+        self.nkOrderReqData["routing"] = routing
+        self.nkOrderReqData["passengers"] = passengers
+        sendD = self.dictToJson(self.nkOrderReqData)
+        resp = self.sendRequest(url=self.nkOrderReqUrl,data=sendD)
+        return resp
 
 
 
