@@ -1,6 +1,6 @@
 #阐述：
 Case_Order_KeyValue_0001
-    此case用于测试所有的供应商能正常生成人单；
+    此case用于测试部分的api供应商能正常生成人单；
 
 Case_Order_KeyValue_0002
 
