@@ -4,8 +4,10 @@
 import os
 import time
 import logging
+import json
 from AllBlue.Common.SendMethod import RunRequest
 from AllBlue.Source.BaseConfig import BaseReadConfig
+
 
 class AllBase(RunRequest,BaseReadConfig):
 
@@ -35,4 +37,12 @@ class AllBase(RunRequest,BaseReadConfig):
             filename=filename,
             filemode='a'
         )
+
+    def jsonToDict(self,data):
+        j = json.loads(data)
+        return j
+
+    def dictToJson(self,data):
+        d = json.dumps(data)
+        return d
 

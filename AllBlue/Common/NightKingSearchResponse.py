@@ -106,3 +106,10 @@ class NightKingSearchRes():
     def routingItinerarySegmentInfo(self):
         pass
 
+    def findProvider(self,pid):
+        pidList = []
+        for i in  self.nkRouting:
+            if i["providerName"] == pid:
+                pidList.append(i)
+        num = len(pidList)
+        return num,pidList

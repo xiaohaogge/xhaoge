@@ -12,7 +12,7 @@ class CaseBase(AllBase):
         AllBase.__init__(self)
         self.flag = False
         # 测试环境的night king请求的url，data参数；
-        self.nkRequesturl = 'http://dev-api.gloryholiday.com/yuetu/search'
+        self.nkRequesturl = 'http://test-api.gloryholiday.com/yuetu/search'
         self.nkRequestdata = '''
                     {
                             "Cid": "qunarytb",

@@ -27,43 +27,43 @@ class Case_Currency_FromToRate_0006(CaseBase):
 
         self.log.info('【1.1.根据不同的供应商,rule当中涉及币种可能会不一样；】')
         for tar in self.target_providers:
-            self.Test_RuleChange(provider=tar,routings=self.routingslist)
+            self.Test_RulePolicyChange(provider=tar,routings=self.routingslist)
 
-        self.log.info('【2.测试从night king中返回获取provider币种(以iwoflyCOM,请求为CNY为例)】')
-        self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
-        self.sendData = json.dumps(self.nkRequestDataDict)
-        self.log.info('iwofly请求参数：%s' % self.sendData)
-        res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
-        self.checkNkStatus(res)
-        self.target_providers = self.Test_TargetProviders(res=res)
-        self.log.info('target_provider:%s' % self.target_providers)
-        self.log.info('【2.1.根据不同的供应商,rule当中涉及币种可能会不一样；】')
-        for tar in self.target_providers:
-            self.Test_RuleChange(provider=tar,routings=self.routingslist)
-
-        self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM,请求为USD为例)】')
-        self.nkRequestDataDict['Currency'] = 'USD'
-        self.sendData = json.dumps(self.nkRequestDataDict)
-        self.log.info('iwofly请求参数：%s' % self.sendData)
-        res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
-        self.checkNkStatus(res)
-        self.target_providers = self.Test_TargetProviders(res=res)
-        self.log.info('target_provider:%s' % self.target_providers)
-        self.log.info('【3.1.根据不同的供应商,rule当中涉及币种可能会不一样；】')
-        for tar in self.target_providers:
-            self.Test_RuleChange(provider=tar, routings=self.routingslist)
-
-        self.log.info('【4.测试从night king中返回获取provider币种(以iwoflyCOM,请求为HKD为例)】')
-        self.nkRequestDataDict['Currency'] = 'HKD'
-        self.sendData = json.dumps(self.nkRequestDataDict)
-        self.log.info('iwofly请求参数：%s' % self.sendData)
-        res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
-        self.checkNkStatus(res)
-        self.target_providers = self.Test_TargetProviders(res=res)
-        self.log.info('target_provider:%s' % self.target_providers)
-        self.log.info('【4.1.根据不同的供应商,rule当中涉及币种可能会不一样；】')
-        for tar in self.target_providers:
-            self.Test_RuleChange(provider=tar, routings=self.routingslist)
+        # self.log.info('【2.测试从night king中返回获取provider币种(以iwoflyCOM,请求为CNY为例)】')
+        # self.nkRequestDataDict['Cid'] = 'iwoflyCOM'
+        # self.sendData = json.dumps(self.nkRequestDataDict)
+        # self.log.info('iwofly请求参数：%s' % self.sendData)
+        # res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
+        # self.checkNkStatus(res)
+        # self.target_providers = self.Test_TargetProviders(res=res)
+        # self.log.info('target_provider:%s' % self.target_providers)
+        # self.log.info('【2.1.根据不同的供应商,rule当中涉及币种可能会不一样；】')
+        # for tar in self.target_providers:
+        #     self.Test_RuleChange(provider=tar,routings=self.routingslist)
+        #
+        # self.log.info('【3.测试从night king中返回获取provider币种(以iwoflyCOM,请求为USD为例)】')
+        # self.nkRequestDataDict['Currency'] = 'USD'
+        # self.sendData = json.dumps(self.nkRequestDataDict)
+        # self.log.info('iwofly请求参数：%s' % self.sendData)
+        # res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
+        # self.checkNkStatus(res)
+        # self.target_providers = self.Test_TargetProviders(res=res)
+        # self.log.info('target_provider:%s' % self.target_providers)
+        # self.log.info('【3.1.根据不同的供应商,rule当中涉及币种可能会不一样；】')
+        # for tar in self.target_providers:
+        #     self.Test_RuleChange(provider=tar, routings=self.routingslist)
+        #
+        # self.log.info('【4.测试从night king中返回获取provider币种(以iwoflyCOM,请求为HKD为例)】')
+        # self.nkRequestDataDict['Currency'] = 'HKD'
+        # self.sendData = json.dumps(self.nkRequestDataDict)
+        # self.log.info('iwofly请求参数：%s' % self.sendData)
+        # res = self.sendRequest(method='POST', url=self.nkRequesturl, data=self.sendData)
+        # self.checkNkStatus(res)
+        # self.target_providers = self.Test_TargetProviders(res=res)
+        # self.log.info('target_provider:%s' % self.target_providers)
+        # self.log.info('【4.1.根据不同的供应商,rule当中涉及币种可能会不一样；】')
+        # for tar in self.target_providers:
+        #     self.Test_RuleChange(provider=tar, routings=self.routingslist)
 
         self.flag = True
 
@@ -72,12 +72,12 @@ class Case_Currency_FromToRate_0006(CaseBase):
         self.log.info('===Case_Currency_FromToRate_0006,测试完毕===')
         if self.flag:
             self.log.info('=========Case_Currency_FromToRate_0006,测试通过')
-            print("测试结果很成功，perfect！")
+            print("Case_Currency_FromToRate_0006测试结果很成功，perfect！")
         else:
-            self.log.error('=========Case_Currency_FromToRate_0006,测试失败')
+            self.log.error('=========Case_Currency_FromToRate_0006，测试失败')
+            print("Case_Currency_FromToRate_0006测试结果很失败，so bad！")
 
-
-    def Test_RuleChange(self,provider='',routings=''):
+    def Test_RulePolicyChange(self,provider='',routings=''):
         pro_Routing_List = []
         for d in routings:
             if d['providerName'] == provider:
