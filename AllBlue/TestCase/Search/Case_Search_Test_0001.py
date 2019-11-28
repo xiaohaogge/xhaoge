@@ -3,13 +3,13 @@
 
 
 import json
-from AllBlue.Common.Base import AllBase
+from AllBlue.Common.Base import SearchBase
 from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
 
-class Case_Search_Test_0001(AllBase):
+class Case_Search_Test_0001(SearchBase):
 
     def __init__(self):
-        AllBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("nima,开始case的初始化")
         self.url = 'http://dev-api.gloryholiday.com/yuetu/search'
         self.data = ''' {

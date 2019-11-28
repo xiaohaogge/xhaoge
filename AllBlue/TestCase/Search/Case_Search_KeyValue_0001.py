@@ -2,12 +2,12 @@
 # 此case 用于简单的发送请求，对于响应字段的对比；
 
 
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import SearchBase
 
-class Case_Search_KeyValue_0001(CaseBase):
+class Case_Search_KeyValue_0001(SearchBase):
 
     def __init__(self):
-        CaseBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("nima,开始case的初始化")
 
 

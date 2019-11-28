@@ -4,13 +4,13 @@
 
 
 import json
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import SearchBase
 
-class Case_Currency_VNDtoCNY_0101(CaseBase):
+class Case_Currency_VNDtoCNY_0101(SearchBase):
 
     def __init__(self):
         # super(Case_Currency_VNDtoCNY_0101,self).__init__()
-        CaseBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("===Case_Currency_VNDtoCNY_0101,测试开始===")
 
 
