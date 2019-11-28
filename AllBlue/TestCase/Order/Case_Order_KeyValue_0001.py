@@ -16,7 +16,8 @@ class Case_Order_KeyValue_0001(OrderBase):
             self.log.info(searchAllRouting)
             return searchAllRouting
         ableVerifyRouting = self.verifyAbleRoutings(searchAllRouting["routing"])
-        pidVerifyRouting = self.verifyByPid(routings=ableVerifyRouting)
+        orderProviderList = ["mondee","myslcc","ttnet","unififi","avia","qunarf","skypker"]
+        pidVerifyRouting = self.verifyByPid(routings=ableVerifyRouting,pid="mondee")
         respVerify = self.Verify(cid="ctrip",adultNum=1,childNum=0,infantNum=0,currency="CNY",routing=pidVerifyRouting)
 
         self.log.info("开始进行order，verify航线为：%s"%respVerify)
