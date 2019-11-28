@@ -41,10 +41,10 @@
         <!--</case>-->
 
         # order case
-        <case>
-            <id>Case_Order_KeyValue_0001</id>
-            <Address>AllBlue.TestCase.Order.Case_Order_KeyValue_0001</Address>
-        </case>
+        <!--<case>-->
+            <!--<id>Case_Order_KeyValue_0001</id>-->
+            <!--<Address>AllBlue.TestCase.Order.Case_Order_KeyValue_0001</Address>-->
+        <!--</case>-->
 
         # currency case
         <!--<case>-->
@@ -95,6 +95,10 @@
             <!--<id>Case_Others_Farerule_Select</id>-->
             <!--<Address>AllBlue.TestCase.Others.Case_Others_Farerule_Select</Address>-->
         <!--</case>-->
+        <case>
+            <id>Case_Others_Sslion_Search</id>
+            <Address>AllBlue.TestCase.Others.Case_Others_Sslion_Search</Address>
+        </case>
 
         ## ctrip
         <!--<case>-->
