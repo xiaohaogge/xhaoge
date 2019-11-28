@@ -4,12 +4,12 @@
 
 import json
 from AllBlue.TestCase.CaseBase.CommonFunc import GetTimeCurrency
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import SearchBase
 
-class Case_Currency_OAutoRise_0103(CaseBase):
+class Case_Currency_OAutoRise_0103(SearchBase):
 
     def __init__(self):
-        CaseBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("===Case_Currency_OAutoRise_0103,测试开始===")
 
 

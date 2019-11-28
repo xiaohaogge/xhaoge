@@ -65,4 +65,74 @@ class CaseBase(AllBase):
     def TestResult(self):
         pass
 
+    def Search(self,cid="qunarytb",TripType="1",FromCity="BJS",ToCity="LAX",FromDate="20200223",RetDate="20200521",
+                    AdultNumber=1,ChildNumber=0,InfatNumber=0):
+        self.nkRequestDataDict["cid"] = cid
+        self.nkRequestDataDict["TripType"] = TripType
+        self.nkRequestDataDict["FromCity"] = FromCity
+        self.nkRequestDataDict["ToCity"] = ToCity
+        self.nkRequestDataDict["FromDate"] = FromDate
+        self.nkRequestDataDict["RetDate"] = RetDate
+        self.nkRequestDataDict["AdultNumber"] = AdultNumber
+        self.nkRequestDataDict["ChildNumber"] = ChildNumber
+        self.nkRequestDataDict["InfatNumber"] = InfatNumber
+        self.log.info("nightking search request： ",self.nkRequestDataDict)
+        sendD = self.dictToJson(self.nkRequestDataDict)
+        result1 = self.sendRequest(url=self.nkRequesturl, data=sendD)
+        result = self.jsonToDict(result1)
+        return result
+
+    def Verify(self,cid="",adultNum=1,childNum=0,infantNum=0,currency="CNY",routing=[]):
+        self.nkVerifyReqDataDict["cid"] = cid
+        self.nkVerifyReqDataDict["adultNum"] = adultNum
+        self.nkVerifyReqDataDict["childNum"] = childNum
+        self.nkVerifyReqDataDict["infantNum"] = infantNum
+        self.nkVerifyReqDataDict["currency"] = currency
+        self.nkVerifyReqDataDict["routing"] = routing
+        self.log.info("nightking verify request： ",self.nkVerifyReqDataDict)
+        sendD = self.dictToJson(self.nkVerifyReqDataDict)
+        res = self.sendRequest(url=self.nkVerifyReqUrl,data=sendD)
+        return res
+
+    def Order(self,cid="qunarytb",locale=1,referredTraceId=0,routing="",passengers=[]):
+        self.nkOrderReqData["cid"] = cid
+        self.nkOrderReqData["locale"] = locale
+        self.nkOrderReqData["referredTraceId"] = referredTraceId
+        self.nkOrderReqData["routing"] = routing
+        self.nkOrderReqData["passengers"] = passengers
+        sendD = self.dictToJson(self.nkOrderReqData)
+        resp = self.sendRequest(url=self.nkOrderReqUrl,data=sendD)
+        return resp
+
+    # 从search 返回的航线中，根据供应商不同，选择一条航线；
+    def verifyByPid(self,routings,priceType=1,pid="mondee"):
+        # priceType = 1 表示默认选择最低价；
+        pidRouting = []
+        for i in routings:
+            if i['providerName'] == pid:
+                if len(i["evictionMarks"]) == 0:
+                    pidRouting.append(i)
+        if len(pidRouting) == 0:
+            return 0
+        if priceType == 1:
+           routing = pidRouting[0]
+        else:
+            num = random.randint(0,len(pidRouting)-1)
+            routing = pidRouting[num]
+            print("num",num)
+            self.log.info("providerName:"+pid+" verify routing: "+routing[num])
+        return routing
+
+    # 将search 的routing结果筛选出可以进行verify的航线；
+    def verifyAbleRoutings(self,res):
+        routings = []
+        # if not isinstance(res,dict):
+        #     res = self.jsonToDict(res)
+        #     print("res",type(res))
+        # res = res["routing"]
+        print("res",type(res))
+        for i in res:
+            if len(i["evictionMarks"]) != 0 :
+                routings.append(i)
+        return routings
 

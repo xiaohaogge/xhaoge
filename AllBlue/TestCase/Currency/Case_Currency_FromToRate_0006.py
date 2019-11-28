@@ -5,13 +5,13 @@
 import json
 import random
 from AllBlue.TestCase.CaseBase.CommonFunc import CheckListOnly
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import SearchBase
 
 
-class Case_Currency_FromToRate_0006(CaseBase):
+class Case_Currency_FromToRate_0006(SearchBase):
 
     def __init__(self):
-        CaseBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("===Case_Currency_FromToRate_0006,测试开始===")
 
 

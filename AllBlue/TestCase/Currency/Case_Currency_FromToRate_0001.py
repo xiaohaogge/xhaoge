@@ -2,12 +2,12 @@
 # 此case用于测试汇率接口的请求，是否是随时可以拿到政策中所配汇率；
 
 
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import SearchBase
 
-class Case_Currency_FromToRate_0001(CaseBase):
+class Case_Currency_FromToRate_0001(SearchBase):
 
     def __init__(self):
-        CaseBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("===Case_Currency_FromToRate_0001,测试开始===")
 
 

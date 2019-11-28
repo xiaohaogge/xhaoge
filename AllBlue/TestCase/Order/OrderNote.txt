@@ -1,14 +1,15 @@
 #阐述：
 Case_Order_KeyValue_0001
-    此case用于测试部分的api供应商能正常生成人单；
+    此case用于测试部分的api供应商能正常生单流程；
 
 Case_Order_KeyValue_0002
-
+    此case 用于测试部分sabre供应商的正常生单流程；
 
 Case_Order_KeyValue_0003
-
+    此case 用于测试部分api供应商生单变人数的流程；
 
 Case_Order_KeyValue_0004
-
+    此case 用于测试部分sabre供应商生单变人数的流程；
 
 Case_Order_KeyValue_0005
+    此case 用于测试 pnr复用逻辑是否正常；

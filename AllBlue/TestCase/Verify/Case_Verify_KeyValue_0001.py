@@ -3,12 +3,12 @@
 
 
 import json
-from AllBlue.Common.Base import AllBase
+from AllBlue.TestCase.CaseBase.VerifyCaseBase import VerifyBase
 
-class Case_Verify_KeyValue_0001(AllBase):
+class Case_Verify_KeyValue_0001(VerifyBase):
 
     def __init__(self):
-        AllBase.__init__(self)
+        VerifyBase.__init__(self)
         self.log.info("nima,开始case的初始化")
         self.url = 'http://dev-api.gloryholiday.com/yuetu/search'
         self.data = '''

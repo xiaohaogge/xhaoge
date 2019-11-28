@@ -6,12 +6,12 @@
 
 import json
 from AllBlue.Common.NightKingSearchResponse import NightKingSearchRes
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import SearchBase
 
-class Case_Search_KeyValue_0002(CaseBase):
+class Case_Search_KeyValue_0002(SearchBase):
 
     def __init__(self):
-        CaseBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("===Case_Search_KeyValue_0002,测试开始===")
 
 

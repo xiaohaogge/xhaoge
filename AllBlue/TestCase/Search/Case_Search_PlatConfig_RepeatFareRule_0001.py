@@ -1,12 +1,12 @@
 # 此Case用于测试search platform config 是否复用GDS退改信息开关；
 
 from AllBlue.TestCase.CaseBase.CommonFunc import Test_RepoRule
-from AllBlue.TestCase.CaseBase.SearchCaseBase import CaseBase
+from AllBlue.TestCase.CaseBase.SearchCaseBase import SearchBase
 
-class Case_Search_PlatConfig_RepeatFareRule_0001(CaseBase):
+class Case_Search_PlatConfig_RepeatFareRule_0001(SearchBase):
 
     def __init__(self):
-        CaseBase.__init__(self)
+        SearchBase.__init__(self)
         self.log.info("===Case_Search_PlatConfig_RepeatFareRule_0001,测试开始===")
         #todo 暂时手动部署是否复用，后期实现如果没有选择复用自动修改；
         self.log.info("在测试前，先确保，platform都选择复用GDS退改,此次以qunarytb为例；")
