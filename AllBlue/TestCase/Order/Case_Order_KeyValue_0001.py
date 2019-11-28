@@ -1,4 +1,4 @@
-# nothing
+# 此case用于测试部分的api供应商能正常生单流程；
 
 from AllBlue.TestCase.CaseBase.OrderCaseBase import OrderBase
 
