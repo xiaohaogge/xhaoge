@@ -45,6 +45,23 @@
             <!--<id>Case_Order_KeyValue_0001</id>-->
             <!--<Address>AllBlue.TestCase.Order.Case_Order_KeyValue_0001</Address>-->
         <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Order_KeyValue_0002</id>-->
+            <!--<Address>AllBlue.TestCase.Order.Case_Order_KeyValue_0002</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Order_KeyValue_0003</id>-->
+            <!--<Address>AllBlue.TestCase.Order.Case_Order_KeyValue_0003</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Order_KeyValue_0004</id>-->
+            <!--<Address>AllBlue.TestCase.Order.Case_Order_KeyValue_0004</Address>-->
+        <!--</case>-->
+        <!--<case>-->
+            <!--<id>Case_Order_KeyValue_0005</id>-->
+            <!--<Address>AllBlue.TestCase.Order.Case_Order_KeyValue_0005</Address>-->
+        <!--</case>-->
+
 
         # currency case
         <!--<case>-->
