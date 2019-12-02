@@ -33,6 +33,16 @@ class SearchBase(CaseBase):
             self.log.error('checkNKStatus: unknow error ')
             raise Exception(404)
 
+    # 定义nightking 的search 是否为200，routing信息是否不为空；
+    def checkSearchIsSuccess(self,status=200,**kwargs):
+        try:
+            if kwargs['baseResponse']['status'] != status:
+                return self.log.error("search 报错：%s"%(kwargs['baseResponse']['message']))
+            if len(kwargs['routing']) == 0:
+                return self.log.warn("routing is null, routing_number=0")
+        except Exception as e:
+            return self.log.error("search 报错：%s"%e)
+
 
     def Test_Currency(self,method=1,env='dev',pro='sscts',cid='ctrip',ori="USD",tar='CNY'):
         '''定义公共方法，用于获取Cuurrncy rate；
