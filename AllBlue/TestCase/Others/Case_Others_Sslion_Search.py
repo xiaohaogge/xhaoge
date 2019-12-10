@@ -15,9 +15,9 @@ class Case_Others_Sslion_Search(CaseBase):
         th = []
         for i in range(10,30):
             for p in ["ANA","EST","JAL_EXP"]:
-                t = threading.Thread(target=self.nima(i,p))
-                t1 = threading.Thread(target=self.nimaCA(i,p))
-                t2 = threading.Thread(target=self.nimanh(i, p))
+                t = threading.Thread(target=self.nima,args=(i,p,))
+                t1 = threading.Thread(target=self.nimaCA,args=(i,p,))
+                t2 = threading.Thread(target=self.nimanh,args=(i,p,))
                 print(t)
                 th.append(t)
                 th.append(t1)
@@ -32,7 +32,7 @@ class Case_Others_Sslion_Search(CaseBase):
         pass
 
     def nima(self,day,pid):
-        url1 = "http://dev-restful-api.gloryholiday.com/dressrosa/search"
+        url1 = "http://prod-restful-api.gloryholiday.com/dressrosa/search"
         senddata = """
                            {
                             "yuetu_search_request": {
@@ -42,7 +42,7 @@ class Case_Others_Sslion_Search(CaseBase):
                                 },
                                 "trip": [
                                     {
-                                        "departure_code": "OKA",
+                                        "departure_code": "TYO",
                                         "arrival_code": "OSA",
                                         "departure_date": "2020-01-%dT00:00:00.123Z"
                                     }
@@ -67,7 +67,7 @@ class Case_Others_Sslion_Search(CaseBase):
         return self.res
 
     def nimaCA(self,day,pid):
-        url1 = "http://dev-restful-api.gloryholiday.com/dressrosa/search"
+        url1 = "http://prod-restful-api.gloryholiday.com/dressrosa/search"
         senddata = """
                            {
                             "yuetu_search_request": {
@@ -77,7 +77,7 @@ class Case_Others_Sslion_Search(CaseBase):
                                 },
                                 "trip": [
                                     {
-                                        "departure_code": "TYO",
+                                        "departure_code": "OKA",
                                         "arrival_code": "OSA",
                                         "departure_date": "2020-03-%dT00:00:00.123Z"
                                     }
@@ -102,7 +102,8 @@ class Case_Others_Sslion_Search(CaseBase):
         return self.res
 
     def nimanh(self,day,pid):
-        url1 = "http://dev-restful-api.gloryholiday.com/dressrosa/search"
+        url1 = "http://prod" \
+               "-restful-api.gloryholiday.com/dressrosa/search"
         senddata = """
                            {
                             "yuetu_search_request": {
@@ -112,8 +113,8 @@ class Case_Others_Sslion_Search(CaseBase):
                                 },
                                 "trip": [
                                     {
-                                        "departure_code": "OKA",
-                                        "arrival_code": "TYO",
+                                        "departure_code": "TYO",
+                                        "arrival_code": "OSA",
                                         "departure_date": "2020-04-%dT00:00:00.123Z"
                                     }
                                 ],

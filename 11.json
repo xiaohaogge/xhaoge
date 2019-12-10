@@ -1,0 +1,136 @@
+{
+	"cerrorCode": "0",
+	"cerrorMsg": "success",
+	"maxSeats": 9,
+	"msg": "success",
+	"orderContact": {
+		"email": "service@gloryholiday.com",
+		"mobile": "8617810070559"
+	},
+	"orderNo": "E1LOJV",
+	"passengerbaggages": [],
+	"pnrCode": "E1LOJV",
+	"routing": {
+		"adultAgeRestriction": "",
+		"adultPrice": 1804,
+		"adultTax": 241,
+		"adultTaxType": 0,
+		"airlineAncillaries": {
+			"baggageService": false,
+			"checkInServiceStatus": 1,
+			"unFreeBaggage": false
+		},
+		"applyType": 0,
+		"childPrice": 1804,
+		"childPublicPrice": 1804,
+		"childTax": 241,
+		"childTaxType": 0,
+		"currency": "RMB",
+		"data": "H4sIAAAAAAAAAI1Ry27bMBD8l/XVNJbPJXWTbKcvJ00jJU16MWSZAgq0TZAmp6L/3hGd2jnmMpwldzjL4R+qqaJN3W439e3WsGHWmmlOtaZKR3Zg5sgsVYzFQZK8X0eRZsn1mXM1G5lEnirjNEj4T+QgiZDEFLMzWZTp46DcmETtBiNKdj5EG5K2MuCSBq1160Rv11MFd1pe3E0U9ppxW+PKpQ3cqPTAjYanx+8PKJbgP+9/7XNGsUJx3a7A1lQJu0Wa01kRvyv4vuCHgh8LfsLg3i8inruhyrqFDnM6P21eHDc/l/7Lgl/g08LlqswO0pbtDgMDESWxG3k/SFJWbFDOgvVj2qmdCcKZ2Zp+D11nDsJD0p07Pr7zJxreGOZsyNbkMSTl/SAK7TBl6xT3QQ/9XkKMefaS9Wz69Q7f9fT4nMHwY2P/4/dEE/ymw/plbU5HyxNdvQ7+usx/U/BrwVtkOKe7wr8hFy8+6CTijNd//wFZ3WCQhwIAAA==",
+		"eligibility": "NOR",
+		"exchange": 0,
+		"fareBasis": "SL0OASMN",
+		"fromSegments": [
+			{
+				"aircraftCode": "73J",
+				"arrAirport": "LAX",
+				"arrTime": "202001100800",
+				"cabin": "S",
+				"cabinCount": 9,
+				"cabinGrade": "Y",
+				"carrier": "AS",
+				"codeshare": false,
+				"depAirport": "LAS",
+				"depTime": "202001100635",
+				"duration": 0,
+				"flightNumber": "AS471",
+				"operatingCarrier": "AS",
+				"operatingFlightNo": "",
+				"stopAirports": ""
+			}
+		],
+		"infantPrice": 1804,
+		"infantPublishPrice": 0,
+		"infantTax": 241,
+		"invoiceType": "F",
+		"maxPassengerCount": 9,
+		"maxStay": "365",
+		"minPassengerCount": 1,
+		"minStay": "0",
+		"multiTicket": [],
+		"nationality": "",
+		"posCode": "",
+		"priceType": 0,
+		"productType": "PUB",
+		"publishPrice": 1804,
+		"reservationType": "OT",
+		"retSegments": [],
+		"rule": {
+			"baggageInfoList": [
+				{
+					"adultBaggage": "0件",
+					"childBaggage": "0件",
+					"enAdultBaggage": "0P",
+					"enChildBaggage": "0P",
+					"enInfantBaggage": "0KG/PC",
+					"infantBaggage": "0KG",
+					"segmentNo": 1
+				}
+			],
+			"changesInfoList": [
+				{
+					"changesFee": 1230,
+					"changesStatus": "H",
+					"changesType": 0,
+					"cnRevRemark": "",
+					"currency": "CNY",
+					"enRevRemark": "",
+					"passengerType": 0,
+					"revNoShowCondition": 72,
+					"revNoshow": "T",
+					"revNoshowFee": 0
+				}
+			],
+			"fareRuleMatchMode": 1,
+			"formatBaggageInfoList": [
+				{
+					"baggagePiece": 0,
+					"baggageWeight": -1,
+					"cnBaggage": "",
+					"enBaggage": "",
+					"passengerType": 0,
+					"segmentNo": 1
+				},
+				{
+					"baggagePiece": 0,
+					"baggageWeight": -1,
+					"cnBaggage": "",
+					"enBaggage": "",
+					"passengerType": 1,
+					"segmentNo": 1
+				}
+			],
+			"isUseCtripRule": true,
+			"note": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 4.请提前值机并打印值机凭证随身携带。5.订单支付成功后，无法更改乘机信息。6.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+			"refundInfoList": [
+				{
+					"cnRefRemark": "",
+					"currency": "CNY",
+					"enRefRemark": "",
+					"passengerType": 0,
+					"refNoShowCondition": 72,
+					"refNoshow": "T",
+					"refNoshowFee": 0,
+					"refundFee": 0,
+					"refundStatus": "T",
+					"refundType": 0
+				}
+			],
+			"tariffNo": "PUB"
+		},
+		"ticketTimeLimit": 2880,
+		"validatingCarrier": "AS"
+	},
+	"sessionId": "955E877BC0AF44A027",
+	"status": 0
+}
