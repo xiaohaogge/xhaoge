@@ -19,7 +19,5 @@ class GodMain(Controler):
 
 
 if __name__ == "__main__":
-    print('程序入口')
     GodRun = GodMain()
-    print('程序结束.........................')
     GodRun.log.info('程序结束.........................')

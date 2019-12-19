@@ -1,197 +1,255 @@
 {
-	"cerrorCode": "",
-	"cerrorMsg": "",
 	"maxSeats": 9,
-	"msg": "",
-	"orderContact": {
-		"email": "service@gloryholiday.com",
-		"mobile": "8617810070559"
-	},
-	"orderNo": "EXJFZN",
-	"passengerbaggages": [],
-	"pnrCode": "EXJFZN",
+	"msg": "success",
+	"orderNo": "E1MULR",
+	"pnrCode": "E1MULR",
+	"reqId": 6612871006228842000,
 	"routing": {
-		"adultAgeRestriction": "",
-		"adultPrice": 2266,
-		"adultTax": 2255,
+		"adultPrice": 4732,
+		"adultTax": 860,
 		"adultTaxType": 0,
 		"airlineAncillaries": {
-			"baggageService": false,
-			"unFreeBaggage": false
+			"baggageService": false
 		},
 		"applyType": 0,
-		"bookingOfficeNo": "",
-		"childPrice": 2266,
-		"childPublishPrice": 2181,
-		"childTax": 2255,
+		"childPrice": 4732,
+		"childTax": 860,
 		"childTaxType": 0,
-		"complexTerm": 0,
-		"data": "1858f72b-d10d-40a8-b72f-1650bd92491a#92482bd5-1895-458a-a946-51d5c9106953#AA8907_E_AA192_E#0",
-		"eligibility": "NOR",
-		"exchange": 0,
-		"fareBasis": "SNE00YN0;SNE00YN0",
-		"forbiddenNationality": "",
+		"currency": "RMB",
+		"data": "H4sIAAAAAAAAAI1STVPbMBD9L8o1YvSxWku+2Q4QCIVS3JJw8UiOMzADPTTh1Ol/77NMyfTCcHn7JO3TW+3qt6hEKTbtTbdcnXdGGaW0LiZilBVzUWlRUmENmHlnVpQKgaCtnG0CVaomY7mwnutR5ETpeUzhf6SYJB4SSmR0iE6qtGVJwfYy9sFIG7a7lHSxjb3HJTVS7+8KY7vTbrn2egoKoWq0QRxzUJNorjcjRVFawaOmbFWjBpFzUIN4GZ4Or/Hn4REbDdb7fR/7wx6rxXhDtQA7FaWz7oT0XJzlK84zLjNeZLzMuMKjPM/FFRxZnVCYiy9vW9fHrZuc+zXjLUyuura77VYw+obVcg1ylw9baIBotGAVmXiIkq2zknQapA8+SeNpoOCjYgrQtWYSTnNo6b0JrTtS/mSrZxySMoPppbI2SbIwTdHukLRjtTWsFcXZh5OYqdEQIz78eh3AMOVdfN6PNKCK8bB6i/XxqDnSxX8j+Z6f9SPjfca1KPHvNpk/oF2uYLa6MCaw+/MXIQoSAcUCAAA=",
 		"fromSegments": [
+			{
+				"aircraftCode": "73W",
+				"arrAirport": "YVR",
+				"arrTime": "202001172219",
+				"arrivingTerminal": "",
+				"cabin": "L",
+				"cabinClass": 1,
+				"carrier": "WS",
+				"codeShare": false,
+				"depAirport": "YYZ",
+				"depTime": "202001172000",
+				"departureTerminal": "",
+				"flightNumber": "WS723",
+				"seatCount": "",
+				"sharingFlightNumber": "",
+				"stopCities": ""
+			},
 			{
 				"aircraftCode": "359",
 				"arrAirport": "HKG",
-				"arrTerminal": "",
-				"arrTime": "201912181405",
-				"cabin": "S",
-				"cabinCount": 9,
-				"cabinGrade": "Y",
-				"carrier": "AA",
-				"codeShare": true,
-				"depAirport": "SIN",
-				"depTerminal": "",
-				"depTime": "201912181000",
-				"duration": 245,
-				"flightNumber": "AA8907",
-				"operatingCarrier": "CX",
-				"operatingFlightNo": "CX658",
-				"stopAirports": "",
+				"arrTime": "202001191715",
+				"arrivingTerminal": "",
+				"cabin": "T",
+				"cabinClass": 1,
+				"carrier": "HX",
+				"codeShare": false,
+				"depAirport": "YVR",
+				"depTime": "202001181030",
+				"departureTerminal": "",
+				"flightNumber": "HX81",
+				"seatCount": "",
+				"sharingFlightNumber": "",
+				"stopCities": ""
+			}
+		],
+		"priceType": 0,
+		"retSegments": [
+			{
+				"aircraftCode": "359",
+				"arrAirport": "YVR",
+				"arrTime": "202002030830",
+				"arrivingTerminal": "",
+				"cabin": "Q",
+				"cabinClass": 1,
+				"carrier": "HX",
+				"codeShare": false,
+				"depAirport": "HKG",
+				"depTime": "202002031235",
+				"departureTerminal": "",
+				"flightNumber": "HX80",
+				"seatCount": "",
+				"sharingFlightNumber": "",
 				"stopCities": ""
 			},
 			{
 				"aircraftCode": "77W",
-				"arrAirport": "LAX",
-				"arrTerminal": "",
-				"arrTime": "201912181645",
-				"cabin": "S",
-				"cabinCount": 9,
-				"cabinGrade": "Y",
-				"carrier": "AA",
+				"arrAirport": "YYZ",
+				"arrTime": "202002032305",
+				"arrivingTerminal": "",
+				"cabin": "K",
+				"cabinClass": 1,
+				"carrier": "AC",
 				"codeShare": false,
-				"depAirport": "HKG",
-				"depTerminal": "",
-				"depTime": "201912181955",
-				"duration": 770,
-				"flightNumber": "AA192",
-				"operatingCarrier": "AA",
-				"operatingFlightNo": "AA192",
-				"stopAirports": "",
+				"depAirport": "YVR",
+				"depTime": "202002031545",
+				"departureTerminal": "",
+				"flightNumber": "AC120",
+				"seatCount": "",
+				"sharingFlightNumber": "",
 				"stopCities": ""
 			}
 		],
-		"infantPrice": 0,
-		"infantPublishPrice": 0,
-		"infantTax": 0,
-		"invoiceType": "F",
-		"maxPassengerCount": 9,
-		"maxStay": "365",
-		"minPassengerCount": 1,
-		"minStay": "0",
-		"nationality": "",
-		"planCategory": 0,
-		"posCode": "IN",
-		"priceType": 0,
-		"productType": "PRV",
-		"publishPrice": 2181,
-		"reservationType": "OT",
-		"retSegments": [],
 		"rule": {
-			"changesInfoList": [
+			"baggages": [
 				{
-					"changesFee": 0,
-					"changesStatus": "T",
-					"changesType": 0,
-					"cnRevRemark": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
-					"conditionList": null,
-					"currency": "CNY",
-					"enRevRemark": "",
-					"passengerType": 0,
-					"revNoShowCondition": 72,
-					"revNoshow": "T",
-					"revNoshowFee": 0
-				},
-				{
-					"changesFee": 0,
-					"changesStatus": "T",
-					"changesType": 0,
-					"cnRevRemark": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
-					"conditionList": null,
-					"currency": "CNY",
-					"enRevRemark": "",
-					"passengerType": 1,
-					"revNoShowCondition": 72,
-					"revNoshow": "T",
-					"revNoshowFee": 0
-				}
-			],
-			"fareRuleMatchMode": 1,
-			"formatBaggageInfoList": [
-				{
-					"baggagePiece": 2,
-					"baggageWeight": -1,
-					"cnBaggage": "",
-					"enBaggage": "",
-					"passengerType": 0,
+					"adultBaggage": "2PC,0KG",
+					"childBaggage": "2PC,0KG",
+					"remarkCn": "",
+					"remarkEn": "",
 					"segmentNo": 1
 				},
 				{
-					"baggagePiece": 2,
-					"baggageWeight": -1,
-					"cnBaggage": "",
-					"enBaggage": "",
-					"passengerType": 1,
-					"segmentNo": 1
-				},
-				{
-					"baggagePiece": 2,
-					"baggageWeight": -1,
-					"cnBaggage": "",
-					"enBaggage": "",
-					"passengerType": 0,
+					"adultBaggage": "2PC,0KG",
+					"childBaggage": "2PC,0KG",
+					"remarkCn": "",
+					"remarkEn": "",
 					"segmentNo": 2
 				},
 				{
-					"baggagePiece": 2,
-					"baggageWeight": -1,
-					"cnBaggage": "",
-					"enBaggage": "",
-					"passengerType": 1,
-					"segmentNo": 2
-				}
-			],
-			"isUseCtripRule": true,
-			"note": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
-			"refundInfoList": [
-				{
-					"cnRefRemark": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
-					"conditionList": null,
-					"currency": "CNY",
-					"enRefRemark": "",
-					"passengerType": 0,
-					"refNoShowCondition": 72,
-					"refNoshow": "T",
-					"refNoshowFee": 0,
-					"refundFee": 0,
-					"refundStatus": "T",
-					"refundType": 0
+					"adultBaggage": "2PC,0KG",
+					"childBaggage": "2PC,0KG",
+					"remarkCn": "",
+					"remarkEn": "",
+					"segmentNo": 3
 				},
 				{
-					"cnRefRemark": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
-					"conditionList": null,
-					"currency": "CNY",
-					"enRefRemark": "",
-					"passengerType": 1,
-					"refNoShowCondition": 72,
-					"refNoshow": "T",
-					"refNoshowFee": 0,
-					"refundFee": 0,
-					"refundStatus": "T",
-					"refundType": 0
+					"adultBaggage": "2PC,0KG",
+					"childBaggage": "2PC,0KG",
+					"remarkCn": "",
+					"remarkEn": "",
+					"segmentNo": 4
 				}
 			],
-			"ruleNo": "",
-			"tariffNo": "PRI"
+			"endorses": [
+				{
+					"changeFee": 3040,
+					"changeFlag": "H",
+					"changeType": 0,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 3040,
+					"changeFlag": "H",
+					"changeType": 2,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 3040,
+					"changeFlag": "H",
+					"changeType": 3,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 3040,
+					"changeFlag": "H",
+					"changeType": 1,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 3040,
+					"changeFlag": "H",
+					"changeType": 4,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 3040,
+					"changeFlag": "H",
+					"changeType": 5,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"remarkCn": "",
+					"remarkEn": ""
+				}
+			],
+			"hasFreeBaggage": true,
+			"other": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 4.请提前值机并打印值机凭证随身携带。5.订单支付成功后，无法更改乘机信息。7.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。",
+			"refunds": [
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 3580,
+					"refundFlag": "H",
+					"refundType": 0,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 2,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 3,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 3580,
+					"refundFlag": "H",
+					"refundType": 1,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 4,
+					"remarkCn": "",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 5,
+					"remarkCn": "",
+					"remarkEn": ""
+				}
+			]
 		},
-		"ticketingOfficeNo": "",
-		"validatingCarrier": "AA"
+		"validatingCarrier": "HX"
 	},
-	"sessionId": "9555342554",
 	"status": 0,
-	"valueAddResult": {
-		"shoppingCarts": null
-	}
+	"success": true
 }

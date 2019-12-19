@@ -1,136 +1,180 @@
 {
-	"cerrorCode": "0",
-	"cerrorMsg": "success",
 	"maxSeats": 9,
-	"msg": "success",
-	"orderContact": {
-		"email": "service@gloryholiday.com",
-		"mobile": "8617810070559"
-	},
-	"orderNo": "E1LOJV",
-	"passengerbaggages": [],
-	"pnrCode": "E1LOJV",
+	"msg": "",
+	"orderNo": "ENXWCI",
+	"pnrCode": "ENXWCI",
+	"reqId": 1234,
 	"routing": {
-		"adultAgeRestriction": "",
-		"adultPrice": 1804,
-		"adultTax": 241,
+		"adultPrice": 1081,
+		"adultTax": 409,
 		"adultTaxType": 0,
 		"airlineAncillaries": {
-			"baggageService": false,
-			"checkInServiceStatus": 1,
-			"unFreeBaggage": false
+			"baggageService": false
 		},
 		"applyType": 0,
-		"childPrice": 1804,
-		"childPublicPrice": 1804,
-		"childTax": 241,
+		"childPrice": 1052,
+		"childTax": 409,
 		"childTaxType": 0,
-		"currency": "RMB",
-		"data": "H4sIAAAAAAAAAI1Ry27bMBD8l/XVNJbPJXWTbKcvJ00jJU16MWSZAgq0TZAmp6L/3hGd2jnmMpwldzjL4R+qqaJN3W439e3WsGHWmmlOtaZKR3Zg5sgsVYzFQZK8X0eRZsn1mXM1G5lEnirjNEj4T+QgiZDEFLMzWZTp46DcmETtBiNKdj5EG5K2MuCSBq1160Rv11MFd1pe3E0U9ppxW+PKpQ3cqPTAjYanx+8PKJbgP+9/7XNGsUJx3a7A1lQJu0Wa01kRvyv4vuCHgh8LfsLg3i8inruhyrqFDnM6P21eHDc/l/7Lgl/g08LlqswO0pbtDgMDESWxG3k/SFJWbFDOgvVj2qmdCcKZ2Zp+D11nDsJD0p07Pr7zJxreGOZsyNbkMSTl/SAK7TBl6xT3QQ/9XkKMefaS9Wz69Q7f9fT4nMHwY2P/4/dEE/ymw/plbU5HyxNdvQ7+usx/U/BrwVtkOKe7wr8hFy8+6CTijNd//wFZ3WCQhwIAAA==",
-		"eligibility": "NOR",
-		"exchange": 0,
-		"fareBasis": "SL0OASMN",
+		"currency": "CNY",
+		"data": "4542d2c6-fd29-46f1-a9ed-d5accda9847c#0972af07-ef03-4b9a-816a-d7242fa745c7#MU271_E#0",
 		"fromSegments": [
 			{
-				"aircraftCode": "73J",
-				"arrAirport": "LAX",
-				"arrTime": "202001100800",
+				"aircraftCode": "321",
+				"arrAirport": "NRT",
+				"arrTime": "202005302055",
+				"arrivingTerminal": "",
 				"cabin": "S",
-				"cabinCount": 9,
-				"cabinGrade": "Y",
-				"carrier": "AS",
-				"codeshare": false,
-				"depAirport": "LAS",
-				"depTime": "202001100635",
-				"duration": 0,
-				"flightNumber": "AS471",
-				"operatingCarrier": "AS",
-				"operatingFlightNo": "",
-				"stopAirports": ""
+				"cabinClass": 1,
+				"carrier": "MU",
+				"codeShare": false,
+				"depAirport": "PEK",
+				"depTime": "202005301255",
+				"departureTerminal": "",
+				"flightNumber": "MU271",
+				"seatCount": "9",
+				"sharingFlightNumber": "MU",
+				"stopCities": ""
 			}
 		],
-		"infantPrice": 1804,
-		"infantPublishPrice": 0,
-		"infantTax": 241,
-		"invoiceType": "F",
-		"maxPassengerCount": 9,
-		"maxStay": "365",
-		"minPassengerCount": 1,
-		"minStay": "0",
-		"multiTicket": [],
-		"nationality": "",
-		"posCode": "",
 		"priceType": 0,
-		"productType": "PUB",
-		"publishPrice": 1804,
-		"reservationType": "OT",
 		"retSegments": [],
 		"rule": {
-			"baggageInfoList": [
+			"baggages": [
 				{
-					"adultBaggage": "0件",
-					"childBaggage": "0件",
-					"enAdultBaggage": "0P",
-					"enChildBaggage": "0P",
-					"enInfantBaggage": "0KG/PC",
-					"infantBaggage": "0KG",
+					"adultBaggage": "2PC,0KG",
+					"childBaggage": "2PC,0KG",
+					"remarkCn": "",
+					"remarkEn": "",
 					"segmentNo": 1
 				}
 			],
-			"changesInfoList": [
+			"endorses": [
 				{
-					"changesFee": 1230,
-					"changesStatus": "H",
-					"changesType": 0,
-					"cnRevRemark": "",
+					"changeFee": 1810,
+					"changeFlag": "H",
+					"changeType": 0,
 					"currency": "CNY",
-					"enRevRemark": "",
+					"noShowTime": 72,
 					"passengerType": 0,
-					"revNoShowCondition": 72,
-					"revNoshow": "T",
-					"revNoshowFee": 0
-				}
-			],
-			"fareRuleMatchMode": 1,
-			"formatBaggageInfoList": [
-				{
-					"baggagePiece": 0,
-					"baggageWeight": -1,
-					"cnBaggage": "",
-					"enBaggage": "",
-					"passengerType": 0,
-					"segmentNo": 1
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
 				},
 				{
-					"baggagePiece": 0,
-					"baggageWeight": -1,
-					"cnBaggage": "",
-					"enBaggage": "",
-					"passengerType": 1,
-					"segmentNo": 1
-				}
-			],
-			"isUseCtripRule": true,
-			"note": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 4.请提前值机并打印值机凭证随身携带。5.订单支付成功后，无法更改乘机信息。6.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
-			"refundInfoList": [
-				{
-					"cnRefRemark": "",
+					"changeFee": 0,
+					"changeFlag": "T",
+					"changeType": 2,
 					"currency": "CNY",
-					"enRefRemark": "",
+					"noShowTime": 72,
 					"passengerType": 0,
-					"refNoShowCondition": 72,
-					"refNoshow": "T",
-					"refNoshowFee": 0,
-					"refundFee": 0,
-					"refundStatus": "T",
-					"refundType": 0
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 0,
+					"changeFlag": "T",
+					"changeType": 3,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 1810,
+					"changeFlag": "H",
+					"changeType": 0,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 1,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 0,
+					"changeFlag": "T",
+					"changeType": 2,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 1,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"changeFee": 0,
+					"changeFlag": "T",
+					"changeType": 3,
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 1,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
 				}
 			],
-			"tariffNo": "PUB"
-		},
-		"ticketTimeLimit": 2880,
-		"validatingCarrier": "AS"
+			"hasFreeBaggage": true,
+			"other": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+			"refunds": [
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 2010,
+					"refundFlag": "H",
+					"refundType": 0,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 2,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 0,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 3,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 1,
+					"refundFee": 2010,
+					"refundFlag": "H",
+					"refundType": 0,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 1,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 2,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				},
+				{
+					"currency": "CNY",
+					"noShowTime": 72,
+					"passengerType": 1,
+					"refundFee": 0,
+					"refundFlag": "T",
+					"refundType": 3,
+					"remarkCn": "1.涉及多程和多国的签证须自理，若因签证等原因产生的损失自行承担。2.退改期请起飞前72小时，否则进入误机状态无法退票和改期。周一到周五09：00-16：00提交（周六日及节假日不受理）3.行李额按照航司规定 5.请提前值机并打印值机凭证随身携带。4.订单支付成功后，无法更改乘机信息。5.购票后，请关注您的邮箱邮件，我们会把您机票的相关资料给您发送到邮箱，提醒关注您的垃圾邮箱，避免遗漏您的重要机票资料而影响登机。 7*24小时客服电话010-86445118 YT",
+					"remarkEn": ""
+				}
+			]
+		}
 	},
-	"sessionId": "955E877BC0AF44A027",
 	"status": 0
 }
