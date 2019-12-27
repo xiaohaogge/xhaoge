@@ -7,10 +7,10 @@ import math
 # 公式为：（X+Y）*（Commission的百分比+预收支付成本的百分比）+（Commission的数值金额+预收支付成本的数值金额）=Y
 # Xp 票面价 Xt 税费；searchC 搜索币种，payC 支付币种；numP 人数
 numP = 1
-searchC = "KRW"
-payC = "KRW"
-Xp = 233320
-Xt = 234858
+searchC = "HKD"
+payC = "HKD"
+Xp = 4206
+Xt = 2828
 X = Xp+Xt  
 # 1014  5050.62677
 # ===================platform policy============= 
@@ -33,11 +33,11 @@ currency3 = "USD"
 # ===================Pay policy============= 
 # Y platform =加价值；
 # payP 支付网关加价百分比 orderP 生单费用百分比； ratelossP 汇损百分比；
-payP = 0.0431
+payP = 0.0309
 orderP = 0
 orderV = 0
 currency4 = "USD"
-ratelossP = 0.017
+ratelossP = 0
 ratelossV = 0
 currency5 = "USD"
 

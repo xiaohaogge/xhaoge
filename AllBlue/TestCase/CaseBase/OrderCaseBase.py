@@ -11,8 +11,6 @@ class OrderBase(CaseBase):
         CaseBase.__init__(self)
         self.passengersList = startReadOrder() # {0:[passengers],1:[],2:[]}
 
-          
-
 
     # 通过不同平台 统一发送请求
     def searchByCid(self,cid="ctrip"):
@@ -35,6 +33,11 @@ class OrderBase(CaseBase):
             for i in infant:
                 orderManList.append(i)
         return orderManList
+
+
+    # 定义判断从order 响应回来是否未200 并且routing 不为空；
+    def checkOrderIsSuccess(self):
+        pass
 
 
 
