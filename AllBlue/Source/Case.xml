@@ -64,10 +64,10 @@
 
 
         # currency case
-        <!--<case>-->
-            <!--<id>Case_Currency_FromToRate_0001</id>-->
-            <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0001</Address>-->
-        <!--</case>-->
+        <case>
+            <id>Case_Currency_FromToRate_0001</id>
+            <Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0001</Address>
+        </case>
         <!--<case>-->
             <!--<id>Case_Currency_FromToRate_0002</id>-->
             <!--<Address>AllBlue.TestCase.Currency.Case_Currency_FromToRate_0002</Address>-->
@@ -112,10 +112,10 @@
             <!--<id>Case_Others_Farerule_Select</id>-->
             <!--<Address>AllBlue.TestCase.Others.Case_Others_Farerule_Select</Address>-->
         <!--</case>-->
-        <case>
+        <!-- <case>
             <id>Case_Others_Sslion_Search</id>
             <Address>AllBlue.TestCase.Others.Case_Others_Sslion_Search</Address>
-        </case>
+        </case> -->
 
         ## ctrip
         <!--<case>-->

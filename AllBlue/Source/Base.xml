@@ -8,7 +8,7 @@
     </switch>
 
     # 配置log日志打印的存放地址
-    <logAddress>D:\Logging\yuetu\</logAddress>
+    <logAddress>E:\Logging\yuetu\</logAddress>
     <currencyURL>
         <dev>
             <exchangeRate>http://dev-restful-api.gloryholiday.com/nightking/exchangeRate</exchangeRate>
