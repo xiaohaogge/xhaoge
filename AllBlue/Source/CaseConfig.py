@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 
 def startReadCase():
     basedir = os.path.dirname(__file__)
-    Dom = ET.parse(basedir+'\Case.xml')
+    Dom = ET.parse(basedir+'Case.xml')
     caseList = []
     Dom.getroot()
     try:
