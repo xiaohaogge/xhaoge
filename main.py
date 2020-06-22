@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # 定义程序的主入口
 
 
@@ -13,8 +14,6 @@ class GodMain(Controler):
 
     def HappyGo(self):
         print("What Should I Do?")
-
-
 
 
 

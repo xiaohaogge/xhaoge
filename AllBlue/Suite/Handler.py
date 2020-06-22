@@ -1,3 +1,5 @@
+ #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # 定义在测试用力run前的数据处理；
 
 import importlib

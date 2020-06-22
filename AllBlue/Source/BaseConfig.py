@@ -1,3 +1,5 @@
+ #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # 此模块用于读取xml文件中的信息；
 
 import os

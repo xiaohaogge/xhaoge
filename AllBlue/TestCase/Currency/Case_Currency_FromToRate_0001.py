@@ -1,3 +1,5 @@
+ #!/usr/bin/python
+ # -*- coding: utf-8 -*-
 # Currency Rate
 # 此case用于测试汇率接口的请求，是否是随时可以拿到政策中所配汇率；
 

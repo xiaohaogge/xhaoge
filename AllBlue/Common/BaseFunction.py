@@ -1,3 +1,5 @@
+ #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # 此文件用于定义一些公共的函数，可以使用；
 
 import json

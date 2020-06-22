@@ -1,3 +1,5 @@
+ #!/usr/bin/python
+# -*- coding: utf-8 -*-
 # 此方法用于分解 night-king的response 返回，以便于后期使用方便；
 # return 对象实例，以及可使用的相关属性，提取信息；
 
